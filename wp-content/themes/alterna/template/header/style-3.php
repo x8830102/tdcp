@@ -24,7 +24,7 @@
                 </div>
             </div>
             
-            <div class="row">
+            <!-- <div class="row">
                 <div class="header-social-container col-md-12 col-sm-12">
                     <?php 
                     if(intval(penguin_get_options_key('header-right-area-type')) == 0) {
@@ -58,7 +58,7 @@
                         ?>
                     </nav>
                  </div>
-             </div>
+             </div> -->
      	</div>
 	</div>
 
