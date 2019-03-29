@@ -7,9 +7,11 @@
 ?>
 <header class="header-style-3">
 	<div id="alterna-header" class="<?php echo penguin_get_options_key('fixed-enable') == "on" ? "header-fixed-enabled" : "";?>">
+        <img src="<?php echo get_stylesheet_directory_uri() . '/img/header_left.png';?>" class="header_left_img hidden-xs">
 		<div class="container">
         	<div class="row">
                 <div class="logo col-md-12 col-sm-12">
+
                     <a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>"><?php 
                         if(penguin_get_options_key('logo-txt-enable')  == "on"){
 						echo '<h2>'.get_bloginfo( 'name' ).'</h2>';
@@ -24,7 +26,8 @@
                 </div>
             </div>
             
-            <!-- <div class="row">
+            <!-- close menu
+            <div class="row">
                 <div class="header-social-container col-md-12 col-sm-12">
                     <?php 
                     if(intval(penguin_get_options_key('header-right-area-type')) == 0) {
@@ -61,8 +64,8 @@
              </div> -->
      	</div>
 	</div>
-
-    <?php get_template_part( 'template/header/menu/mobile' );?>
+    <!--close mobile menu-->
+    <?php //get_template_part( 'template/header/menu/mobile' );?>
 
 <?php if(penguin_get_options_key('fixed-enable') == "on") { ?>
     <!-- menu & search form -->
@@ -72,13 +75,14 @@
                 <a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>"></a>
             </div>
 			<?php 
-                $alterna_main_menu = array(
-                    'theme_location'  	=> 'alterna_menu',
-                    'container_class'	=> 'alterna-nav-menu-container',
-                    'menu_class'    	=> 'alterna-nav-menu',
-                    'fallback_cb'	  	=> 'alterna_show_setting_primary_menu'
-                ); 
-                wp_nav_menu($alterna_main_menu);
+            /*close fix menu*/
+                // $alterna_main_menu = array(
+                //     'theme_location'  	=> 'alterna_menu',
+                //     'container_class'	=> 'alterna-nav-menu-container',
+                //     'menu_class'    	=> 'alterna-nav-menu',
+                //     'fallback_cb'	  	=> 'alterna_show_setting_primary_menu'
+                // ); 
+                // wp_nav_menu($alterna_main_menu);
             ?>
             
         	<?php if(penguin_get_options_key('header-search-enable') == "on") { ?>

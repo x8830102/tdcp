@@ -1,5 +1,5 @@
 /*
-Theme Name: alterna9
+Theme Name: tdcp
 Theme URI: http://themefocus.co/alterna/
 Version: 9.12.5
 Description:A powerful and clean theme.Designed by <a href="http://themefocus.co">ThemeFocus</a>
@@ -27,6 +27,13 @@ Text Domain: alterna
  
 /* =WordPress Core
 -------------------------------------------------------------- */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+* {
+    font-family: 'Noto Sans TC','sans-serif';
+}
+::selection{
+    background: #952b2e;
+}
 .alignnone {margin: 5px 20px 20px 0;}
 .aligncenter,div.aligncenter {display: block;margin: 5px auto 5px auto;}
 .alignright {float:right;margin: 5px 0 20px 20px;}
@@ -46,40 +53,145 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
 .gallery-caption {}
 .bypostauthor {}
 
-/*custom css*/
-.title {
-    color: #fff
+/* Custom css */
+.vc_grid-item-mini {
+    box-shadow:4px 4px 12px 4px rgba(20%,20%,40%,0.5)
+}
+/* Header */
+.logo-default {
+    float: right;
+}
+.header-style-3 #alterna-header {
+    padding: 0;
+}
+.header_left_img {
+    width: 33%;
+    height: 84px;
+    position: absolute;
+}
+/*Header End*/
+
+/* Footer */
+
+.footer-content {
+    background-color: #952b2e !important;
+    line-height: normal;
+    text-align: center;
+}
+.footer-content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 0;
+    margin-top: 10px;
 }
 
-.social {
-    margin-top: 15px;
+.footer-content a, .footer-content a:hover, .footer-content .footer-bottom-content a{
+    color: #fff;
+}
+
+.footer_link {
+    color: #fff;
+    font-size: 1.2em;
+    padding: 0 6px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.footer-copyright {
+    font-size: 12px; 
+    letter-spacing: 2px;
+}
+/* Footer End */
+
+/* Carousel */
+.excerpt {
+    font-size: 18px;
+    line-height: 1.9em;
+}
+.title {
+    font-weight: bold;
+    color: #fff
+}
+.nav-tabs {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #952b2e;
+}
+.carousel-indicators .active {
+    margin-right: 5px;
 }
 .item-img{
     background-position: center;
     background-size: cover;
-    height: 300px;
+    height: 400px;
 }
 .item_shadow {
     position: absolute;
     right: 30%;
     left: 0;
     top: 0;
-    height: 300px;
+    height: 400px;
     background: linear-gradient(to left,rgba(25,35,45,0) 0%,rgba(0,0,0,1) 100%);
 }
+/* Carousel End */
+
+/* Home Content */
+.tab-content {
+    padding: 30px 20px;
+}
+.nav-tabs>li.active>a{
+    color: #952b2e;
+    background-color: #f7e4e4;
+}
+.nav-tabs>li>a{
+    color: #fff;
+    background-color: #d06670;
+    font-size: 20px;
+    margin: 0 5px;
+    border-radius: 10px 10px 0 0;
+    padding: 10px 25px;
+}
+.nav-tabs>li>a:hover , .nav-tabs>li>a:focus{
+    color: #952b2e;
+    background-color: #f7e4e4;
+}
+#alterna-nav.header-fixed .fixed-logo {
+    float: right;
+}
+#alterna-nav {
+    border-bottom: 4px #952b2e solid;
+}
+.fixed-logo a {
+    background-size: contain;
+}
+.social_link img{
+    border-radius: 50%;
+    margin: 20px 0px 10px 0px;
+}
+.social_icon {
+    padding: 0 5px;
+}
+/* Home Content End */
+
+/* Custom Responsive */
 @media screen and (min-width: 768px) {
     .carousel-caption {
         text-align: left;
         padding-bottom: 30px;
         left: 10%;
         top: 10%;
-        line-height: 23px;
+        line-height: 25px;
     }
+    .carousel-indicators {
+        left: 85%;
+    }
+
 }
 @media screen and (max-width: 767px) {
     .item_shadow {
         right: 0%;
-        top: 65%;
+        top: 75%;
         height: 105px;
         background: linear-gradient(to bottom,rgba(25,35,45,0) 0%,rgba(0,0,0,1) 100%);
     }
@@ -87,4 +199,25 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
         right: 0;
         left: 0;
     }
+    .nav-tabs>li>a{
+        font-size: 18px;
+        padding: 10px 12px;
+    }
+    
 }
+@media screen and (max-width: 375px) {
+    .footer_link{
+        font-size: 1.1em;
+        padding: 0px 5px;
+        border-top: unset;
+        border-bottom: unset;
+        border-right: 1px solid #fff
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
+    #alterna-header .logo-default {
+        display: block;
+    }
+}
+/* Custom Responsive End */
