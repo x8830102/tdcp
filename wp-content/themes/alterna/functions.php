@@ -13,6 +13,15 @@
  */
 require_once("inc/alterna-functions.php");
 
+
+
+/**
+* All tdcp functions.
+*
+*
+*/
+require_once("inc/custom-function.php");
+
 /**
  * Get all alterna options value
  */
@@ -109,7 +118,7 @@ function alterna_init_styles_scripts() {
 	//Stylesheets
 	/* bootstrap & fontawesome css files */
 	if(penguin_get_options_key('bootstrap-fontawesome-cdn') == "on"){
-		wp_enqueue_style( 'bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' , array() , $ver );
+		wp_enqueue_style( 'bootstrap', '//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' , array() , $ver );
 		wp_enqueue_style( 'fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' , array() , $ver );
 	}else{
 		wp_enqueue_style( 'bootstrap', $dir . '/bootstrap/css/bootstrap.min.css' , array() , $ver );
@@ -144,7 +153,9 @@ function alterna_init_styles_scripts() {
 	wp_enqueue_script('jquery');
 	if ( is_singular() && comments_open() ) { wp_enqueue_script( 'comment-reply' );	}
 	if(penguin_get_options_key('bootstrap-fontawesome-cdn') == "on"){
-		wp_enqueue_script( 'bootstrap' , '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' , array('jquery') , $ver , true);
+		wp_enqueue_script( 'jquery','//code.jquery.com/jquery-3.3.1.slim.min.js' , array() , '1.0' );
+		wp_enqueue_script( 'popper', '//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' , array() , '1.0' );
+		wp_enqueue_script( 'bootstrap', '//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', array() , '1.0' );
 	}else{
 		wp_enqueue_script( 'bootstrap' , $dir . '/bootstrap/js/bootstrap.min.js' , array('jquery') , $ver , true);
 	}

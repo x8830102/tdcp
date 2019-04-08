@@ -1,2 +1,7 @@
-*
-!wp-content/theme/*
+/wp-include
+/wp-admin
+.htaccess
+wp-config.php
+/wp-content/plugins/
+/wp-content/uploads/
+!/wp-content/themes/alterna

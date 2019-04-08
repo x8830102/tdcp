@@ -7,7 +7,7 @@
 ?>
 <header class="header-style-3">
 	<div id="alterna-header" class="<?php echo penguin_get_options_key('fixed-enable') == "on" ? "header-fixed-enabled" : "";?>">
-        <img src="<?php echo get_stylesheet_directory_uri() . '/img/header_left.png';?>" class="header_left_img hidden-xs">
+        <img src="<?php echo get_stylesheet_directory_uri() . '/img/header_left.png';?>" class="header_left_img d-none d-sm-block">
 		<div class="container">
         	<div class="row">
                 <div class="logo col-md-12 col-sm-12">

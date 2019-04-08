@@ -49,7 +49,7 @@
                     </ol>
 
                     <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
+                    <div class="carousel-inner" >
                         <?php
                         foreach ( $slider_content as $key => $value ) {
                             if ( isset( $slider_id[ $key ] ) ) {
@@ -59,13 +59,13 @@
                                     $active = '';
                                 }
                         ?>
-                                <div class="item <?php echo $active; ?>">
+                                <div class="carousel-item <?php echo $active; ?>">
                                     <a href="<?php echo $slider_url[ $key ]; ?>">
                                         <div class="item-img" style="background-image:url('<?php echo $slider_img[ $key ]; ?>')"></div>
                                         <!-- <img src="<?php echo $slider_img[ $key ]; ?>" alt="<?php echo $slider_title[ $key ]; ?>">
   -->
                                         <div class="item_shadow">
-                                            <div class="carousel-caption col-md-8 hidden-xs">
+                                            <div class="carousel-caption col-md-8 d-none d-sm-block">
                                                 <h3 class="title">
                                                     <?php echo $slider_title[ $key ]; ?>
                                                 </h3>
@@ -73,7 +73,7 @@
                                                     <?php echo $slider_excerpt[ $key ]; ?>
                                                 </div>
                                             </div>
-                                            <div class="carousel-caption col-md-12 hidden-lg">
+                                            <div class="carousel-caption col-md-12 d-lg-none">
                                                 <h3 class="title">
                                                     <?php echo $slider_title[ $key ]; ?>
                                                 </h3>
