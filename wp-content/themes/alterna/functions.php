@@ -167,6 +167,7 @@ function alterna_init_styles_scripts() {
 	wp_enqueue_script( 'csstransforms3d' , $dir . '/js/csstransforms3d.js' , array('jquery') , $ver , true);
 	wp_enqueue_script( 'alterna' , $dir . '/js/jquery.theme.js' , array('jquery') , $ver , true);
 	wp_enqueue_script( 'custom' , $dir . '/js/custom.js' , array('jquery') ,fileatime( dirname(__file__).'/js/custom.js' ), true);
+	 wp_localize_script( 'custom', 'wp_ajax_obj', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 }
 add_action('wp_enqueue_scripts', 'alterna_init_styles_scripts');
 

@@ -1,15 +1,56 @@
 // custom js
-(function($) {
+(function($, document) {
     "use strict";
-
-    function bootstrap_carousel() {
-       $('.carousel').carousel({
-            pause: "hover"
-        }) 
-    }
-    
-
     $(document).ready(function(){
-        bootstrap_carousel();
+        $('.nav-link').on('click', function(){
+            let active_tab = $(this).attr('aria-controls')
+            $('.load_more').data('active_tab', active_tab);
+            $('.load_more').data('term_name', $(this).text())
+        })
+        $('.load_more').on('click', function(){
+            let data = {}
+            let term_id = 0;
+            let current_tab = $(this).data('active_tab')
+            let post_count = $('#'+current_tab+' .post_list_item').length
+            let term_name = $('.load_more').data('term_name')
+            $.ajax({
+                url: 'wp-json/wp/v2/categories',
+                type: 'GET',
+                async: false,
+                data: {'search': term_name},
+                success: function(result){
+                    term_id = result[0].id
+                }
+            })
+            data = {
+                'categories' : term_id,
+                'per_page'  : 6,
+                'offset' : post_count
+            }
+            $.ajax({
+                url: 'wp-json/wp/v2/posts',
+                type: 'GET',
+                data: data,
+                success: function(result){
+                    // console.log(result)
+                    result.forEach(function(item, index, array){
+                        // console.log(array)
+                        $('.home_post_list .row').append(`
+                        <div class="col-md-4 col-sm-12 col-lg-3 post_list_item">
+                            <a href="${item.link}" class="post_list_link">
+                            <div class="post_list_img">
+                                <img src="${item.post_img}">
+                            </div>
+                            <div class="post_list_content">
+                                <p class="post_list_title">${item.title.rendered}</p>
+                                <li class="fa fa-calendar" style="margin-right: 3px;"> </li><span>${item.excerpt.rendered}</span>
+                            </div>
+                            </a>
+                        </div>`)
+                    })
+                    
+                }
+            })
+        })
     })
-})(jQuery)
+})(jQuery, document)
