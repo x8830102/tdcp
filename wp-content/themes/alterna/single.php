@@ -6,6 +6,7 @@
  */
 get_header();
 // get page layout 
+
 $layout 		= alterna_get_page_layout(); 
 $layout_class 	= alterna_get_page_layout_class();
 $sidebar_name	= penguin_get_post_meta_key('sidebar-type');
@@ -17,7 +18,13 @@ if($sidebar_name == '' || $sidebar_name == "Global Sidebar"){
 	}
 }
 ?>
+<div class="container-fuild page_top_banner">
+    <div class="row top_banner p-5 justify-content-center">
+        <a href="<?php echo get_field('page_top_banner_link', 2);?>"><img src="<?php echo get_field('page_top_banner_img', 2);?>" alt=""></a>
+    </div>
+</div>
 <div id="main" class="container">
+        
     	<div class="row">
         	<section class="<?php echo $layout == 1 ? 'col-md-12 col-sm-12' : 'alterna-col col-lg-9 col-md-8 col-sm-8 alterna-'.$layout_class; ?>">
             	<?php
@@ -100,7 +107,7 @@ if($sidebar_name == '' || $sidebar_name == "Global Sidebar"){
                             <?php
                             }
                             ?>
-                            <header class="entry-header">
+                            <!-- <header class="entry-header">
                                 <?php the_title( '<h3 class="entry-title" itemprop="name"><a href="' . esc_url( get_permalink() ) . '" itemprop="url">', '</a></h3>' ); ?>
                                 <div class="post-meta">
                                     <div class="post-date"><i class="fa fa-calendar"></i><span class="entry-date updated" itemprop="datePublished"><?php echo get_the_date(); ?></span></div>
@@ -123,7 +130,7 @@ if($sidebar_name == '' || $sidebar_name == "Global Sidebar"){
                                     <?php } ?>
                                     <?php edit_post_link(__('Edit', 'alterna'), '<div class="post-edit"><i class="fa fa-edit"></i>', '</div>'); ?>
                                 </div>
-                            </header>
+                            </header> -->
                             
                             <?php if(get_post_format() != "quote") { ?>
                             <div class="entry-content" itemprop="articleBody">
@@ -204,9 +211,9 @@ if($sidebar_name == '' || $sidebar_name == "Global Sidebar"){
                             </div>
                             <?php } ?>
                             
-                            <?php comments_template(); ?>
+                            <?php //comments_template(); ?>
                             
-                            <?php alterna_single_content_nav('single-nav-bottom'); ?>
+                            <?php //alterna_single_content_nav('single-nav-bottom'); ?>
                         </article>
                 <?php
 					}

@@ -77,6 +77,13 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
     background-color: #952b2e !important;
     line-height: normal;
     text-align: center;
+    border-top: 6px #952b2e solid;
+}
+.footer-bottom-content{
+    background-color: #952b2e !important;
+    line-height: normal;
+    text-align: center;
+    border-top: 1px #952b2e solid !important;
 }
 .footer-content .container {
     display: flex;
@@ -113,11 +120,6 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
     font-weight: bold;
     color: #fff
 }
-.nav-tabs {
-    display: flex;
-    justify-content: flex-end;
-    border-bottom: 1px solid #952b2e;
-}
 .carousel-indicators .active {
     margin-right: 5px;
 }
@@ -145,25 +147,44 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
 .tab-content {
     padding: 30px 0px;
 }
+
 .nav-tabs {
     padding: 0;
     margin: 0;
+    border-bottom: 1px solid #952b2e;
 }
-.nav-tabs>li.active>a{
-    color: #952b2e;
-    background-color: #f7e4e4;
+.nav-tabs .nav-link.active{
+    color: #952b2e !important;
+    background-color: #f7e4e4 !important;
+    border-color: transparent;
 }
 .nav-tabs>li>a{
-    color: #fff;
-    background-color: #d06670;
-    font-size: 20px;
-    margin: 0 5px;
-    border-radius: 10px 10px 0 0;
-    padding: 10px 25px;
+    color: #fff !important;
+    background-color: #d06670 !important;
+    font-size: 20px !important;
+    margin: 0 5px !important;
+    border-radius: 10px 10px 0 0 !important;
+    padding: 10px 25px !important;
 }
 .nav-tabs>li>a:hover , .nav-tabs>li>a:focus{
-    color: #952b2e;
-    background-color: #f7e4e4;
+    color: #952b2e !important;
+    background-color: #f7e4e4 !important;
+}
+.home_pills {
+    border-bottom: 2px solid #ac7a1c;
+    padding: 0 0px 15px 15px;
+    /* padding-left: 5px; */
+    font-size: 20px;
+}
+.home_pills .nav-link.active {
+    background-color: transparent;
+    color: #d6973a;
+}
+.home_pills .nav-link {
+    color: #ac7a1c;
+}
+.home_pills .nav-link:hover {
+    color: #d6973a;
 }
 #alterna-nav.header-fixed .fixed-logo {
     float: right;
