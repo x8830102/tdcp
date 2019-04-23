@@ -28,6 +28,8 @@ Text Domain: alterna
 /* =WordPress Core
 -------------------------------------------------------------- */
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+
 * {
     font-family: 'Noto Sans TC','sans-serif';
 }
@@ -98,8 +100,8 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
     margin-top: 10px;
 }
 
-.footer-content a, .footer-content a:hover, .footer-content .footer-bottom-content a{
-    color: #fff;
+.footer-content a, .footer-copyright a:hover, .footer-content .footer-bottom-content a{
+    color: #fff !important;
 }
 
 .footer_link {
@@ -149,7 +151,7 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
 
 /* Home Content */
 .tab-content {
-    padding: 30px 0px;
+    padding: 10px 0px;
 }
 
 .nav-tabs {
@@ -176,9 +178,8 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
 }
 .home_pills {
     border-bottom: 2px solid #ac7a1c;
-    padding: 0 0px 15px 15px;
-    /* padding-left: 5px; */
     font-size: 20px;
+    margin: 15px 10px 20px 10px;
 }
 .home_pills .nav-link.active {
     background-color: transparent;
@@ -247,6 +248,128 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
 .load_more:hover {
     color: #952b2e !important;
 }
+.calendar_container {
+    padding: 30px;
+}
+.calendar_background {
+    background-color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 8px #888888;
+}
+.calendar_content {
+    background-color: #e2d2e1;
+    margin: 15px;
+}
+.calendar_column a:hover .calendar_event {
+    background-color: #fff !important;
+    color: #b9a4c7;
+}
+.calendar_content ul{
+    margin: 10px;
+}
+.calendar_content li{
+    list-style: none;
+    font-size: 12px;
+    padding: 5px;
+    display: flex;
+}
+.calendar_mobile_content {
+    background-color: #fbc3f7;
+    margin: 15px;
+}
+.calendar_mobile_column {
+    padding-bottom: 10px;
+}
+.calendar_mobile_column_content{
+    border: 3px solid #d06670;
+    margin: 15px;
+}
+.calendar_mobile_column_content a:hover {
+    color: #d06670;
+}
+.calendar_mobile_column_head {
+    padding: 0 30px;
+    text-align: center;
+}
+.month_mobile_text{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    font-weight: 600;
+    color: #d06670;
+    text-shadow: 5px 5px 10px #d06670;
+}
+.calendar_mobile_content ul {
+    display: flex;
+    margin: 0 5px;
+    padding: 10px 0;
+}
+.calendar_mobile_content li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align-last: center;
+    list-style: none;
+    font-size: 16px;
+    padding: 0 10px;
+}
+.mobile_event_date_item span {
+    background-color: #b9a4c7;
+    border-radius: 5px;
+    padding: 3px;
+    color: #fff;
+}
+.calendar_mobile_content li span{
+    align-items: center;
+}
+.calendar_month {
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    font-size: 16px;
+}
+.calendar_week {
+    display: inline-flex;
+    margin: 0 5px;
+    width: 35px;
+    font-size: 16px;
+}
+.calendar_event {
+    display: inline-flex;
+    background-color: #fff;
+    padding: 0 10px;
+    color: #000;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    width: 60%;
+}
+
+.calendar_column {
+    flex: 1 0 25%;
+}
+.calendar_mobile_column {
+    flex: 1 0 100%;
+}
+.mobile_event_date_item {
+    width: 30%;
+}
+.mobile_event_name_item {
+    width: 70%;
+}
+.month_text {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    text-shadow: 5px 5px 10px #888888;
+}
 /* Home Content End */
 
 
@@ -301,6 +424,23 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
 }
 .entry-content {
     padding: 30px;
+}
+
+.share_btn_container {
+    display: inline-flex;
+    background-color: #952B2E;
+    align-items: center;
+    padding: 10px;
+}
+.share_text {
+    display: inline-block;
+    border-right: 1px solid #fff;
+    margin-right: 10px;
+    padding: 10px;
+    color: #fff;
+}
+.shareaholic-canvas {
+    margin-top: 3px;
 }
 
 /**single page End**/
@@ -376,6 +516,12 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
     }
     .entry-content {
         padding: 0;
+    }
+    .calendar_container {
+        padding: 0;
+    }
+    .calendar_mobile_content {
+        margin: 15px 0;
     }
 }
 @media screen and (max-width: 375px) {

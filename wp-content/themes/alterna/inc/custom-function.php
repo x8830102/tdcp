@@ -79,7 +79,7 @@ function get_post_trim_excerpt_for_api( $object ) {
     //return the post meta
     return  wp_trim_words(get_the_excerpt($post_id), 95, '[...]');
 }
-
+//根據活動日期取得當月份所有文章
 add_action( 'wp_ajax_nopriv_get_post_list_by_date', 'get_post_list_by_date_func', 10, 2 );
 add_action( 'wp_ajax_get_post_list_by_date', 'get_post_list_by_date_func', 10, 2 );
 function get_post_list_by_date_func(){
@@ -87,7 +87,7 @@ function get_post_list_by_date_func(){
     $term_name = sanitize_text_field($_POST['term_name']) ?  sanitize_text_field($_POST['term_name']) : '最新活動';
     $posts_per_page = absint( $_POST['posts_per_page'] ) ? absint( $_POST['posts_per_page'] ) : 6;
     $offset = absint($_POST['offset']) ? absint($_POST['offset']) : 0;
-    $date = absint( $_POST['event_date'] ) ? absint( $_POST['event_date'] ) : date('Ym');
+    $month = !empty( $_POST['event_date'] ) ? sanitize_text_field( $_POST['event_date'] ) : date('m');
 
     $args = array (
         'post_type' => 'post',
@@ -99,16 +99,92 @@ function get_post_list_by_date_func(){
         array(
               'key'   => 'event_start_date',
               'compare' => 'LIKE',
-              'value'   => $date,
+              'value'   => date('Y').$month,
           ),
         
         ),
     );
     // get posts
-    $posts = get_posts($args);
-    foreach ($posts as $key => $value) {
-        $posts[$key]->post_img = get_the_post_thumbnail_url( $value->ID, 'medium' );
+    $posts['posts'] = get_posts($args);
+    foreach ($posts['posts'] as $key => $value) {
+        $posts['posts'][$key]->post_img = get_the_post_thumbnail_url($value->ID, 'medium');
     }
+
+    $current_month_daycount = date("t", strtotime(date("Y-").$month."-1"));
+    $calendar ='';
+    for( $i=1;$i<=$current_month_daycount;$i++) {
+        $color = '#b9a4c7';
+        $day = str_pad($i, 2, '0', STR_PAD_LEFT);
+        $week = date("D", strtotime(date("Y").$month.$day));
+        //取得當月每日的文章
+        $args = array (
+            'post_type' => 'post',
+            'post_status' => 'publish',
+            'category_name' => $term_name,
+            'posts_per_page' => $posts_per_page,
+            'offset'  => $offset,
+            'meta_query' => array(
+            array(
+                  'key'   => 'event_start_date',
+                  'compare' => 'LIKE',
+                  'value'   => date('Y').$month.$day,
+              ),
+            
+            ),
+        );
+        $daliy_post = get_posts($args);
+        // 取得當月每日的文章 End
+
+        // Mobile HTML 
+        if(!empty($daliy_post)) {
+            $calendar_mobile = '
+            <div class="calendar_mobile_column">
+                <div class="calendar_mobile_column_head">
+                    <span class="month_mobile_text">' . date('F',strtotime(date("Y-").$month."-1")) . '</span>
+                </div>
+                <div class="calendar_mobile_column_content">
+                    <ul style="color: #d06670;border-bottom: 3px solid #d06670;">
+                        <li class="mobile_event_date_item">日期</li>
+                        <li class="mobile_event_name_item">活動名稱</li>
+                    </ul>
+                    <ul style="color: #000;font-weight: 500;">';
+            foreach ($daliy_post as $key => $value) {
+                $calendar_mobile .= '<a href="' .$value->guid. '" class="d-flex" style="width:100%;"><li class="mobile_event_date_item"><span>' . $month.'/'.str_pad($i,2,'0',STR_PAD_LEFT) . '</span></li>';
+                $calendar_mobile .= '<li class="mobile_event_name_item"><span>' . $value->post_title . '</span></li></a>';
+            }
+            $calendar_mobile .='
+                    </ul>
+                </div>
+            </div>';
+        }
+        // Mobile HTML End
+
+        // PC HTML
+        if ($i==1 || $i==11 || $i==21) {
+            $calendar .= '<div class="calendar_column">';
+            $calendar .= '<ul>';
+        }
+        if($week == 'Sat' || $week == 'Sun'){
+            $color ='#b0add0';
+        }
+            $calendar .= '<a href="' .$daliy_post[0]->guid. '"><li>';
+            $calendar .= '<div class="calendar_month" style="background-color: '.$color.';">'.$i.'</div>';
+            $calendar .= '<div class="calendar_week" style="color: '.$color.';">'.$week.'</div>';
+            $calendar .= '<div class="calendar_event" style="background-color: '.$color.';">'.$daliy_post[0]->post_title.'</div>';
+            $calendar .= '</li></a>';
+        if($i == 10 || $i==20 || $i==$current_month_daycount){
+            $calendar .= '</ul>';
+            $calendar .= '</div>';
+        }
+    }
+    $calendar .= '<div class="calendar_column d-flex flex-column justify-content-around">';
+    $calendar .= '<span class="month_text">' . date('F',strtotime(date("Y-").$month."-1")) . '</span>';
+    $calendar .= '<img src="' . get_template_directory_uri(). '/img/custom/calendar_img.png" alt="">';
+    $calendar .= '</div>';
+    // PC HTML
+             
+    $posts['calendar_html'] = $calendar;
+    $posts['calendar_mobile_html'] = $calendar_mobile;
     echo json_encode($posts);
     die();
 }

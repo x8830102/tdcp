@@ -4,7 +4,7 @@
  *
  * @since alterna 7.0
  */
-
+echo 'test';
 // Get a key from https://www.google.com/recaptcha/admin/create
 $publickey 	= penguin_get_post_meta_key('recaptcha-pub-api');
 $privatekey = penguin_get_post_meta_key('recaptcha-pri-api');

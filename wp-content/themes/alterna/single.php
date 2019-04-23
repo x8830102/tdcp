@@ -172,7 +172,14 @@ if(!$is_event_post) {
                     <div class="entry-content" itemprop="articleBody">
                         <?php the_content(); ?>
                         <?php wp_link_pages(); ?>
+                        <div class="share_btn_container">
+                            <div class="share_text">分享</div>
+                            <div class="shareaholic-canvas" data-app="share_buttons" data-app-id-name="post_below_content"></div>
+                        </div>
+                        
+                        
                     </div>
+
                     <?php } ?>
                     
                     <?php

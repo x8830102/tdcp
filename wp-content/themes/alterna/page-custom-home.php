@@ -67,13 +67,14 @@ $posts = get_posts($args);
       </div>
 
       <div class="tab-pane fade" id="event" role="tabpanel" aria-labelledby="profile-tab">
+        <!-- 月份Tabs -->
         <ul class="nav nav-pills home_pills" role="tablist">
         <?php 
         for($i=1;$i<=12;$i++){
           if($i<10){
             $i = str_pad($i,2,"0",STR_PAD_LEFT);
           }
-          $date = date('Y').$i;
+          $date = $i;
           $args = array (
               'post_type' => 'post',
               'category_name' => '最新活動',
@@ -82,7 +83,7 @@ $posts = get_posts($args);
                 array(
                       'key'   => 'event_start_date',
                       'compare' => 'LIKE',
-                      'value'   => $date
+                      'value'   => date('Y').$date
                   ),
                 )
           );
@@ -98,11 +99,24 @@ $posts = get_posts($args);
         }
       ?>
         </ul>
+        <!-- 月份Tabs End  -->
         <div class="home_post_list">
+          <div class="calendar_container">
+            <div class="col-lg-12 calendar_background">
+              <div class="calendar_content d-none d-lg-flex fade show">
+
+              </div>
+              <div class="calendar_mobile_content d-lg-none fade show">
+
+              </div>
+            </div>
+          </div>
           <div class="row">
           </div>
         </div>
-        <?php //do_action('get_post_list_by_date', '最新活動', '6', 0, 201904);?>
+        <?php 
+          //do_action('get_post_list_by_date', '最新活動', '6', 0, 201904);
+        ?>
       </div>
 
       <div class="tab-pane fade" id="news" role="tabpanel" aria-labelledby="contact-tab">

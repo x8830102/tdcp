@@ -18,8 +18,8 @@
                 success: function(result){
                     let post_list_item =''
                     console.log(result)
-                    result.forEach(function(item, index, array){
-
+                    result.posts.forEach(function(item, index, array){
+                        // console.log(item)
                         post_list_item +=`
                                 <div class="col-md-4 col-sm-12 col-lg-3 post_list_item">
                                     <a href="${item.guid}" class="post_list_link">
@@ -34,6 +34,11 @@
                                 </div>`
                     })
                     $('#event .home_post_list .row').html(post_list_item)
+                    $('.calendar_content').html(result.calendar_html)
+                    $('.calendar_mobile_content').html(result.calendar_mobile_html)
+
+
+
                 },
                 error: function(result){
                     console.log(result)
@@ -95,10 +100,6 @@
             })
         }
         $('.event_nav_link').on('click', function(e){
-//             FB.ui({
-//   method: 'share',
-//   href: 'https://developers.facebook.com/docs/',
-// }, function(response){});
             get_event_post_list(e)
         })
         $('#event-tab').on('click', function(e){
