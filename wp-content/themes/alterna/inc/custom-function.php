@@ -147,7 +147,7 @@ function get_post_list_by_date_func(){
                         <li class="mobile_event_date_item">日期</li>
                         <li class="mobile_event_name_item">活動名稱</li>
                     </ul>
-                    <ul style="color: #000;font-weight: 500;">';
+                    <ul style="color: #000;">';
             foreach ($daliy_post as $key => $value) {
                 $calendar_mobile .= '<a href="' .$value->guid. '" class="d-flex" style="width:100%;"><li class="mobile_event_date_item"><span>' . $month.'/'.str_pad($i,2,'0',STR_PAD_LEFT) . '</span></li>';
                 $calendar_mobile .= '<li class="mobile_event_name_item"><span>' . $value->post_title . '</span></li></a>';
