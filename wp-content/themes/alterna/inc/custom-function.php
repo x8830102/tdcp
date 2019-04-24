@@ -1,10 +1,65 @@
 <?php
-
+wp_register_sidebar_widget(
+    'event_post_date',      // wpdocs unique widget id
+    'Event Post Date',        // widget name
+    'event_post_date',    // callback function
+    array(              // options
+        ''
+    )
+);
+ 
+/**
+ * Display the wpdocs widget
+ */
+function event_post_date($args) {
+   echo $args['before_widget'];
+   echo $args['before_title'] . '歷年活動' .  $args['after_title'];
+   echo $args['after_widget'];
+   // Print some HTML for the widget to display here.
+   for( $year= 2000; $year<=(int)date('Y'); $year++ ) {
+       $arg = array(
+            'post_type' => 'post',
+            'post_status' => 'publish',
+            'category_name' => '最新活動',
+            'meta_query' => array(
+            array(
+                  'key'   => 'event_start_date',
+                  'compare' => 'LIKE',
+                  'value'   => $year,
+              ),
+            
+            )
+        );
+        $query = new WP_Query($arg);
+        if ( $query->have_posts() ) {
+            ?>
+            <div>
+            <ul>
+                <li><a href="?date=<?php echo $year;?>"><?php echo $year;?></a></li>
+            <?php
+            while ($query->have_posts() ) {
+                $query->the_post();
+                ?>
+                    <ul>
+                        <li><a href="?date=<?php echo $year.'-'.get_the_date('m');?>"><?php echo get_the_date('M');?></a></li>
+                    </ul>
+                <?php
+            }
+            ?>
+            </ul>
+            </div>
+            <?php
+            wp_reset_postdata();
+        }
+    }
+}
 add_action( 'get_post_list', 'get_post_list_func', 10, 3 );
 
 function get_post_list_func( $term_name, $posts_per_page, $offset=0) {
 
     $arg = array(
+        'post_type' => 'post',
+        'post_status' => 'publish',
         'category_name' => $term_name,
         'posts_per_page' => $posts_per_page,
         'offset'  => $offset

@@ -40,6 +40,9 @@ Text Domain: alterna
     font-size: 18px;
     line-height: 1.9em;
 }
+a:hover{
+    color: #952b2e !important;
+}
 .alignnone {margin: 5px 20px 20px 0;}
 .aligncenter,div.aligncenter {display: block;margin: 5px auto 5px auto;}
 .alignright {float:right;margin: 5px 0 20px 20px;}
@@ -209,7 +212,7 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
 }
 .post_list_item {
     padding: 0;
-
+    background-color: #fff;
     margin: 20px;
     border: 1px solid #fff;
     box-shadow: 0px 0px 8px #888888
@@ -346,7 +349,6 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
     color: #000;
     border-radius: 15px;
     font-size: 16px;
-    font-weight: 500;
     text-align: center;
     width: 60%;
 }
@@ -442,7 +444,12 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
 .shareaholic-canvas {
     margin-top: 3px;
 }
-
+.post-date-type .post-type {
+    background-color: #952b2e;
+}
+.left-line {
+    background-color: #952b2e;
+}
 /**single page End**/
 /* Custom Responsive */
 @media (max-width: 1200px) and (min-width: 992px)  {

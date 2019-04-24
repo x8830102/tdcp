@@ -63,3 +63,4 @@ $blog_show_type =	penguin_get_post_meta_key('blog-show-type');
     </div>
         
 <?php get_footer(); ?>
+					

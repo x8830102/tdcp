@@ -23,8 +23,6 @@ $posts = get_posts($args);
 // print_r($posts);
 ?>
 <?php get_template_part('template/page/carousel');?>
-<!-- <div id="fb-root"></div> -->
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.2&appId=1794381184191942&autoLogAppEvents=1"></script>
 
 <div class="container">
     <div class="row">
@@ -37,7 +35,7 @@ $posts = get_posts($args);
             <a href="#" class="social_icon"><img src="<?php echo get_template_directory_uri();?>/img/ig_icon.png" alt="ig_icon"></a>
             <a href="#" class="social_icon"><img src="<?php echo get_template_directory_uri();?>/img/yb_icon.png" alt="yb_icon"></a>
         </div>
-        <ul class="nav nav-tabs col-md-12 flex-column flex-sm-row" id="homeTab" role="tablist">
+        <ul class="nav nav-tabs col-md-12 flex-column flex-sm-row justify-content-end" id="homeTab" role="tablist">
           <li class="nav-item">
             <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">園區動態</a>
           </li>
@@ -48,14 +46,6 @@ $posts = get_posts($args);
             <a class="nav-link" id="news-tab" data-toggle="tab" href="#news" role="tab" aria-controls="news" aria-selected="false">自造新聞</a>
           </li>
         </ul>
-
-        <!-- <div class="col-md-12 d-md-none">
-            <ul class="nav nav-tabs">
-              <li role="presentation" class="active"><a href="#home" data-toggle="tab">動態</a></li>
-              <li role="presentation" ><a href="#event" data-toggle="tab">活動</a></li>
-              <li role="presentation"><a href="#news" data-toggle="tab">新聞</a></li>
-            </ul>
-        </div> -->
     </div>
 </div>
 <div calss="container-fluid" style="background-color: #fff">
@@ -69,6 +59,9 @@ $posts = get_posts($args);
       <div class="tab-pane fade" id="event" role="tabpanel" aria-labelledby="profile-tab">
         <!-- 月份Tabs -->
         <ul class="nav nav-pills home_pills" role="tablist">
+          <li class="nav-item">
+            <a href="" data-toggle="pill" role="tab" class="nav-link event_nav_link">歷史活動</a>
+          </li>
         <?php 
         for($i=1;$i<=12;$i++){
           if($i<10){
@@ -101,6 +94,7 @@ $posts = get_posts($args);
         </ul>
         <!-- 月份Tabs End  -->
         <div class="home_post_list">
+          <!--活動行事曆-->
           <div class="calendar_container">
             <div class="col-lg-12 calendar_background">
               <div class="calendar_content d-none d-lg-flex fade show">
@@ -111,6 +105,7 @@ $posts = get_posts($args);
               </div>
             </div>
           </div>
+          <!--活動行事曆 End-->
           <div class="row">
           </div>
         </div>

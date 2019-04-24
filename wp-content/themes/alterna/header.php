@@ -76,7 +76,7 @@ $current_tax = get_query_var('taxonomy');
 			}else{
 		?>
             <div class="page-header-wrap">
-                <?php get_template_part( 'template/page/header-title' );?> 
+                <?php //get_template_part( 'template/page/header-title' );?> 
             </div><!-- end page-header-wrap -->
         <?php } ?>
 		<div class="content-wrap">
