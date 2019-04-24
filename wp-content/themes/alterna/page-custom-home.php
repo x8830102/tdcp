@@ -59,9 +59,7 @@ $posts = get_posts($args);
       <div class="tab-pane fade" id="event" role="tabpanel" aria-labelledby="profile-tab">
         <!-- 月份Tabs -->
         <ul class="nav nav-pills home_pills" role="tablist">
-          <li class="nav-item">
-            <a href="" data-toggle="pill" role="tab" class="nav-link event_nav_link">歷史活動</a>
-          </li>
+            <a href="歷史活動" class="nav-link">歷史活動</a>
         <?php 
         for($i=1;$i<=12;$i++){
           if($i<10){
