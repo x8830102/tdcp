@@ -37,13 +37,18 @@ function event_post_date($args) {
             <ul>
                 <li><a href="?date=<?php echo $year;?>"><?php echo $year;?></a></li>
             <?php
+            $post_month = '';
             while ($query->have_posts() ) {
                 $query->the_post();
+                $next_post_month = get_the_date('m');
+                if($post_month != $next_post_month){
+                    $post_month = $next_post_month;
                 ?>
                     <ul>
-                        <li><a href="?date=<?php echo $year.'-'.get_the_date('m');?>"><?php echo get_the_date('M');?></a></li>
+                        <li><a href="?date=<?php echo $year.'-'.$post_month;?>"><?php echo get_the_date('M');?></a></li>
                     </ul>
                 <?php
+                }
             }
             ?>
             </ul>
