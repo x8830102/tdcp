@@ -1,6 +1,12 @@
 // custom js
 (function($, document) {
     "use strict";
+ $(window).load(function() {
+      $('.mflexslider').flexslider({
+        animation: "slide",
+        controlNav: "thumbnails"
+      });
+    });
     $(document).ready(function(){
 
         const get_event_post_list = function(e){

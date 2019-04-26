@@ -351,10 +351,11 @@ function alterna_flexslider_func($atts, $content = null){
 	$alterna_flexslider_items = array();
 	extract( shortcode_atts( array(
 		  'auto' => 'no',
-		  'delay' => '5000'
+		  'delay' => '5000',
+		  'navtype' => false
 		  ), $atts ) );
 		  
-	$output = '<div class="flexslider alterna-fl post-gallery" '.($auto == "yes" ? 'data-delay="'.esc_attr($delay).'"' : '').' ><ul class="slides">';
+	$output = '<div id="slider" class="flexslider alterna-fl post-gallery" '.($auto == "yes" ? 'data-delay="'.esc_attr($delay).'"' : '').'><ul class="slides">';
 	
 	do_shortcode($content);
 	if(count($alterna_flexslider_items) > 0){
@@ -364,6 +365,16 @@ function alterna_flexslider_func($atts, $content = null){
 	}
 	
 	$output .= '</ul></div>';
+	
+
+	$output .= '<div id="carousel"  class="flexslider"><ul class="slides">';
+		if(count($alterna_flexslider_items) > 0){
+			foreach($alterna_flexslider_items as $alterna_flexslider_item){
+				$output .= '<li>'.$alterna_flexslider_item.'</li>';
+			}
+		}
+	$output .=	'</ul></div>';
+
 	return $output;
 }
 add_shortcode('flexslider', 'alterna_flexslider_func');
