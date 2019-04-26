@@ -21,7 +21,6 @@ $args = array (
 // get posts
 $posts = get_posts($args);
 // print_r($posts);
-
 ?>
 <?php get_template_part('template/page/carousel');?>
 
@@ -36,23 +35,6 @@ $posts = get_posts($args);
             <a href="#" class="social_icon"><img src="<?php echo get_template_directory_uri();?>/img/ig_icon.png" alt="ig_icon"></a>
             <a href="#" class="social_icon"><img src="<?php echo get_template_directory_uri();?>/img/yb_icon.png" alt="yb_icon"></a>
         </div>
-        <!-- Place somewhere in the <body> of your page -->
-<div class="flexslider">
-  <ul class="slides">
-    <li data-thumb="http://localhost/panmedia/aj_envionment/wp-content/uploads/2019/02/demo_img_111-450x254.jpg">
-      <img src="http://localhost/panmedia/aj_envionment/wp-content/uploads/2019/02/demo_img_111-450x254.jpg" />
-    </li>
-    <li data-thumb="http://localhost/panmedia/aj_envionment/wp-content/uploads/2019/03/demo_img_11-450x254.jpg">
-      <img src="http://localhost/panmedia/aj_envionment/wp-content/uploads/2019/03/demo_img_11-450x254.jpg" />
-    </li>
-    <li data-thumb="http://localhost/panmedia/aj_envionment/wp-content/uploads/2019/03/demo_img_311-450x254.jpg">
-      <img src="http://localhost/panmedia/aj_envionment/wp-content/uploads/2019/03/demo_img_311-450x254.jpg" />
-    </li>
-    <li data-thumb="http://localhost/panmedia/aj_envionment/wp-content/uploads/2019/02/demo_img_2-450x254.jpg">
-      <img src="http://localhost/panmedia/aj_envionment/wp-content/uploads/2019/02/demo_img_2-450x254.jpg" />
-    </li>
-  </ul>
-</div>
         <ul class="nav nav-tabs col-md-12 flex-column flex-sm-row justify-content-end" id="homeTab" role="tablist">
           <li class="nav-item">
             <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">園區動態</a>

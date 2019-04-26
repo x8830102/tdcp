@@ -1014,6 +1014,10 @@ function getCookie(name){
 		}else{
 			$(this).flexslider({
 				slideshow: false,
+				animation: "slide",
+			    controlNav: false,
+			    animationLoop: false,
+			    sync: "#carousel",
 			});
 		}
     });
