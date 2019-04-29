@@ -25,6 +25,9 @@ function event_post_date($args) {
             'post_type' => 'post',
             'post_status' => 'publish',
             'category_name' => '最新活動',
+            'orderby'   => 'meta_value',
+            'order'     => 'ASC',
+            'posts_per_page' => '-1',
             'meta_query' => array(
             array(
                   'key'   => 'event_start_date',
@@ -45,6 +48,7 @@ function event_post_date($args) {
             while ($query->have_posts() ) {
                 $query->the_post();
                 $next_post_month = get_the_date('m');
+                // echo $next_post_month;
                 if($post_month != $next_post_month){
                     $post_month = $next_post_month;
                 ?>
