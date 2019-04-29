@@ -42,7 +42,7 @@
                                 $active = '';
                             }
                         ?>
-                            <li data-target="#carousel-main" data-slide-to="<?php echo $key; ?>" class="<?php echo $active; ?>"></li>
+                            <li data-target="#carousel-main" data-slide-to="<?php echo $key; ?>" class="<?php echo $active; echo $key > 2 ? 'd-none d-lg-block' :''; ?>"></li>
                         <?php
                         }
                         ?>
@@ -65,7 +65,7 @@
                                         <!-- <img src="<?php echo $slider_img[ $key ]; ?>" alt="<?php echo $slider_title[ $key ]; ?>">
   -->
                                         <div class="item_shadow">
-                                            <div class="carousel-caption col-md-8 d-none d-sm-block">
+                                            <div class="carousel-caption col-md-8 d-none d-lg-block">
                                                 <h3 class="title">
                                                     <?php echo $slider_title[ $key ]; ?>
                                                 </h3>
@@ -74,9 +74,12 @@
                                                 </div>
                                             </div>
                                             <div class="carousel-caption col-md-12 d-lg-none">
-                                                <h3 class="title">
+                                                <h4 class="title">
                                                     <?php echo $slider_title[ $key ]; ?>
-                                                </h3>
+                                                </h4>
+                                                <div class="excerpt">
+                                                    <?php echo mb_substr($slider_excerpt[ $key ], 0 ,44, "utf-8"). '...'; ?>
+                                                </div>
                                             </div>
                                         </div>
                                     </a>

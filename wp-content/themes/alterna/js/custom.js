@@ -23,9 +23,9 @@
                 data: arg,
                 success: function(result){
                     let post_list_item =''
-                    console.log(result)
+                    // console.log(result)
                     result.posts.forEach(function(item, index, array){
-                        // console.log(item)
+                        // console.log(item.post_title)
                         post_list_item +=`
                                 <div class="col-md-4 col-sm-12 col-lg-3 post_list_item">
                                     <a href="${item.guid}" class="post_list_link">
@@ -78,7 +78,7 @@
                 data: data,
                 success: function(result){
                     result.forEach(function(item, index, array){
-                        // console.log(array)
+                        console.log(item)
                         $('#'+current_tab+' .home_post_list .row').append(`
                         <div class="col-md-4 col-sm-12 col-lg-3 post_list_item fade">
                             <a href="${item.link}" class="post_list_link">
@@ -86,7 +86,7 @@
                                 <img src="${item.post_img}">
                             </div>
                             <div class="post_list_content">
-                                <p class="post_list_title">${item.title.rendered}</p>
+                                <p class="post_list_title">${item.trim_title}</p>
                                 <li class="fa fa-calendar" style="margin-right: 3px;"> </li><span>${item.trim_excerpt}</span>
                             </div>
                             </a>

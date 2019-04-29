@@ -26,16 +26,14 @@ $posts = get_posts($args);
 
 <div class="container">
     <div class="row">
-        <div class="col-md-12 social_link">
-          <!-- <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="icon" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">分享</a></div> -->
-            <!-- <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore"><img src=" alt="fb_icon"></a> -->
-            <!-- <a class="fb-share-button" data-href="" data-layout="icon" data-size="large" data-width="35" data-height="35" style="background-image: url(<?php echo get_template_directory_uri();?>/img/fb_icon.png);width: 35px;height: 35px;"></a> -->
-            <a href="#" class="social_icon"><img src="<?php echo get_template_directory_uri();?>/img/fb_icon.png" alt="fb_icon"></a>
-            <a href="#" class="social_icon"><img src="<?php echo get_template_directory_uri();?>/img/line_icon.png" alt="line_icon"></a>
-            <a href="#" class="social_icon"><img src="<?php echo get_template_directory_uri();?>/img/ig_icon.png" alt="ig_icon"></a>
-            <a href="#" class="social_icon"><img src="<?php echo get_template_directory_uri();?>/img/yb_icon.png" alt="yb_icon"></a>
+        <div class="col-md-12 social_link d-flex">
+            <a href="https://www.facebook.com/PunPlace" class="social_icon"><img src="<?php echo get_template_directory_uri();?>/img/fb_icon.png" alt="fb_icon"></a>
+            <a href="http://pse.ee/5TBVX" class="social_icon"><img src="<?php echo get_template_directory_uri();?>/img/line_icon.png" alt="line_icon"></a>
+            <a href="https://www.instagram.com/fablabtainan/" class="social_icon"><img src="<?php echo get_template_directory_uri();?>/img/ig_icon.png" alt="ig_icon"></a>
+            <a href="https://www.youtube.com/channel/UCxROwE5Wni7VFQsBOE79HKA" class="social_icon"><img src="<?php echo get_template_directory_uri();?>/img/yb_icon.png" alt="yb_icon"></a>
+            <?php get_search_form();?>
         </div>
-        <ul class="nav nav-tabs col-md-12 flex-column flex-sm-row justify-content-end" id="homeTab" role="tablist">
+        <ul class="nav nav-tabs col-md-12 flex-row flex-sm-row justify-content-end" id="homeTab" role="tablist">
           <li class="nav-item">
             <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">園區動態</a>
           </li>

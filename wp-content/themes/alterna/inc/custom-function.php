@@ -7,7 +7,11 @@ wp_register_sidebar_widget(
         ''
     )
 );
- 
+
+function limit_string($text='', $limit=0) {
+    $limit_text = mb_substr(wp_strip_all_tags($text, true), 0 , $limit, 'utf-8'). '...';
+    return $limit_text;
+}
 /**
  * Display the wpdocs widget
  */
@@ -87,8 +91,8 @@ function get_post_list_func( $term_name, $posts_per_page, $offset=0) {
                         <?php echo the_post_thumbnail( 'post-thumbnail', '' );?>
                     </div>
                     <div class="post_list_content">
-                        <p class="post_list_title"><?php echo the_title();?></p>
-                        <li class="fa fa-calendar" style="margin-right: 3px;"> </li><span><?php echo wp_trim_words(get_the_excerpt(),95,'[...]'); ?></span>
+                        <p class="post_list_title"><?php  echo mb_substr(the_title(), 0, 18, "utf-8");?></p>
+                        <li class="fa fa-calendar" style="margin-right: 3px;"> </li><span><?php echo limit_string(get_the_excerpt(), 22); ?></span>
                     </div>
                     </a>
                 </div>
@@ -124,6 +128,11 @@ function create_api_posts_field() {
            'schema'          => null,
         )
     );
+    register_rest_field( 'post', 'trim_title', array(
+           'get_callback'    => 'get_post_trim_title_for_api',
+           'schema'          => null,
+        )
+    );
 }
 function get_post_thumbnail_for_api( $object ) {
     //get the id of the post object array
@@ -137,7 +146,14 @@ function get_post_trim_excerpt_for_api( $object ) {
     $post_id = $object['id'];
 
     //return the post meta
-    return  wp_trim_words(get_the_excerpt($post_id), 95, '[...]');
+    return  limit_string(get_the_excerpt($post_id), 22);
+}
+function get_post_trim_title_for_api( $object ) {
+    //get the id of the post object array
+    $post_id = $object['id'];
+
+    //return the post meta
+    return mb_substr(get_the_title($post_id), 0, 18, 'utf-8');
 }
 //根據活動日期取得當月份所有文章
 add_action( 'wp_ajax_nopriv_get_post_list_by_date', 'get_post_list_by_date_func', 10, 2 );
