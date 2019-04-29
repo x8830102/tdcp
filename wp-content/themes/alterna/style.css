@@ -223,6 +223,9 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
 .social_icon {
     padding: 0 5px;
 }
+.social_icon img {
+    width: 50px;
+}
 .post_list_item {
     padding: 0;
     height: 410px;
@@ -292,7 +295,7 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
     display: flex;
 }
 .calendar_mobile_content {
-    background-color: #fbc3f7;
+    background-color: #DFD3E0;
     margin: 15px;
 }
 .calendar_mobile_column {
@@ -471,6 +474,24 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
 .post-edit {
     display: none;
 }
+.slides {
+    display: flex;
+    margin: 0;
+}
+.slides li {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.order .show {
+    display: inline;
+    float: right;
+    cursor: pointer; 
+}
+.order .close {
+    display: none;
+    cursor: pointer; 
+}
 /**single page End**/
 /* Custom Responsive */
 @media (max-width: 1200px) and (min-width: 992px)  {
@@ -570,6 +591,9 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
     }
     .excerpt {
         font-size: 13px;
+    }
+    .mobile_event_date_item span {
+        font-size: 12px;
     }
 }
 

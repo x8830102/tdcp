@@ -1,12 +1,37 @@
 // custom js
 (function($, document) {
     "use strict";
- $(window).load(function() {
-      $('.mflexslider').flexslider({
-        animation: "slide",
-        controlNav: "thumbnails"
-      });
-    });
+    $(window).load(function(){
+        // flexslide
+        $('#slider').flexslider({
+            slideshow: false ,
+            animation: "slide",
+            controlNav: false,
+            animationLoop: false,
+            sync: "#carousel",
+            start: function(){
+            }
+        });
+        $('#carousel').flexslider({
+            animation: "slide",
+            controlNav: false,
+            animationLoop: false,
+            slideshow: false,
+            itemWidth: 210,
+            itemMargin: 5,
+            asNavFor: '#slider',
+            start: function(){
+            }
+        })
+        // $(document).on('click', '.rtbs_menu a', function (e) {
+        //     // e.preventDefault();
+        //     ('#slider').resize();
+        // })
+        $('.rtbs_menu ').on('click', function(){
+            $('#slider').resize();
+            $('#carousel').resize();
+        })
+    })
     $(document).ready(function(){
 
         const get_event_post_list = function(e){
@@ -23,9 +48,8 @@
                 data: arg,
                 success: function(result){
                     let post_list_item =''
-                    // console.log(result)
+                    console.log(result)
                     result.posts.forEach(function(item, index, array){
-                        // console.log(item.post_title)
                         post_list_item +=`
                                 <div class="col-md-4 col-sm-12 col-lg-3 post_list_item">
                                     <a href="${item.guid}" class="post_list_link">
@@ -118,6 +142,18 @@
         })
         $('#home .load_more').on('click', function(e){
             get_home_post_list(e)
+        })
+        $('.order .show').on('click', function(e){
+            e.preventDefault();
+            $(this).toggle();
+            $('.order .close').toggle();
+            $(this).parent().parent().children('ul').slideDown();
+        })
+        $('.order .close').on('click', function(e){
+            e.preventDefault();
+            $(this).toggle();
+            $('.order .show').toggle();
+            $(this).parent().parent().children('ul').slideUp();
         })
     })
 })(jQuery, document)

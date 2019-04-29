@@ -351,11 +351,11 @@ function alterna_flexslider_func($atts, $content = null){
 	$alterna_flexslider_items = array();
 	extract( shortcode_atts( array(
 		  'auto' => 'no',
-		  'delay' => '5000',
+		  'delay' => '0',
 		  'navtype' => false
 		  ), $atts ) );
 		  
-	$output = '<div id="slider" class="flexslider alterna-fl post-gallery" '.($auto == "yes" ? 'data-delay="'.esc_attr($delay).'"' : '').'><ul class="slides">';
+	$output = '<div id="slider" class="flexslider " '.($auto == "yes" ? 'data-delay="'.esc_attr($delay).'"' : '').'><ul class="slides">';
 	
 	do_shortcode($content);
 	if(count($alterna_flexslider_items) > 0){

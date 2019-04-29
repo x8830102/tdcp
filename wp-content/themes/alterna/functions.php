@@ -158,11 +158,17 @@ function alterna_init_styles_scripts() {
 		wp_enqueue_script( 'popper',  $dir . '/bootstrap/js/popper.min.js' , array() , '1.0' );
 		wp_enqueue_script( 'bootstrap', $dir . '/bootstrap/4.3/js/bootstrap.min.js', array() , $ver , true);
 	}
-	wp_enqueue_script( 'isotope' , $dir . '/js/isotope.pkgd.min.js' , array('jquery') , $ver , true);
+	wp_enqueue_script(
+		'isotope',
+		$dir . '/js/isotope.pkgd.min.js',
+		array( 'jquery' ),
+		$ver,
+		true
+	);
 	wp_enqueue_script( 'fancyBox_mousewheel' , $dir . '/js/fancyBox/jquery.mousewheel-3.0.6.pack.js' , array('jquery') , $ver , true);
 	wp_enqueue_script( 'fancyBox_js' , $dir . '/js/fancyBox/jquery.fancybox.pack.js' , array('jquery') , $ver , true);
 	wp_enqueue_script( 'fancyBox_helpers_js' , $dir . '/js/fancyBox/helpers/jquery.fancybox-thumbs.js' , array('jquery') , $ver , true);
-	wp_enqueue_script( 'flexslider_js' , $dir . '/js/flexslider/jquery.flexslider-min.js' , array('jquery') , $ver , true);
+	wp_enqueue_script( 'flexslider_js' , $dir . '/js/flexslider/jquery.flexslider-min.js#asyncload' , array('jquery') , fileatime( dirname(__file__).'/js/flexslider/jquery.flexslider-min.js' ) , true);
 	wp_enqueue_script( 'csstransforms3d' , $dir . '/js/csstransforms3d.js' , array('jquery') , $ver , true);
 	wp_enqueue_script( 'alterna' , $dir . '/js/jquery.theme.js' , array('jquery') , $ver , true);
 	wp_enqueue_script( 'custom' , $dir . '/js/custom.js' , array('jquery') ,fileatime( dirname(__file__).'/js/custom.js' ), true);

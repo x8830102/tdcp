@@ -40,9 +40,13 @@ function event_post_date($args) {
         $query = new WP_Query($arg);
         if ( $query->have_posts() ) {
             ?>
-            <div>
+            <div class="order">
             <ul>
-                <li><a href="?date=<?php echo $year;?>"><?php echo $year;?></a></li>
+                <li>
+                    <a href="?date=<?php echo $year;?>"><?php echo $year;?></a>
+                    <a class="show">+</a>
+                    <a class="close">-</a>
+                </li>
             <?php
             $post_month = '';
             while ($query->have_posts() ) {
@@ -52,7 +56,7 @@ function event_post_date($args) {
                 if($post_month != $next_post_month){
                     $post_month = $next_post_month;
                 ?>
-                    <ul>
+                    <ul style="display:none;">
                         <li><a href="?date=<?php echo $year.'-'.$post_month;?>"><?php echo get_the_date('M');?></a></li>
                     </ul>
                 <?php
@@ -95,7 +99,7 @@ function get_post_list_func( $term_name, $posts_per_page, $offset=0) {
                         <?php echo the_post_thumbnail( 'post-thumbnail', '' );?>
                     </div>
                     <div class="post_list_content">
-                        <p class="post_list_title"><?php  echo mb_substr(the_title(), 0, 18, "utf-8");?></p>
+                        <p class="post_list_title"><?php echo mb_substr(get_the_title(), 0, 18);?></p>
                         <li class="fa fa-calendar" style="margin-right: 3px;"> </li><span><?php echo limit_string(get_the_excerpt(), 22); ?></span>
                     </div>
                     </a>
@@ -188,10 +192,23 @@ function get_post_list_by_date_func(){
     $posts['posts'] = get_posts($args);
     foreach ($posts['posts'] as $key => $value) {
         $posts['posts'][$key]->post_img = get_the_post_thumbnail_url($value->ID, 'medium');
+        $posts['posts'][$key]->post_excerpt = limit_string($value->post_excerpt, 22);
     }
 
     $current_month_daycount = date("t", strtotime(date("Y-").$month."-1"));
     $calendar ='';
+    $calendar_mobile ='';
+    $calendar_mobile = '
+        <div class="calendar_mobile_column">
+            <div class="calendar_mobile_column_head">
+                <span class="month_mobile_text">' . date('F',strtotime(date("Y-").$month."-1")) . '</span>
+            </div>
+            <div class="calendar_mobile_column_content">
+                <ul style="color: #d06670;border-bottom: 3px solid #d06670;">
+                    <li class="mobile_event_date_item">日期</li>
+                    <li class="mobile_event_name_item">活動名稱</li>
+                </ul>';
+                
     for( $i=1;$i<=$current_month_daycount;$i++) {
         $color = '#b9a4c7';
         $day = str_pad($i, 2, '0', STR_PAD_LEFT);
@@ -214,29 +231,16 @@ function get_post_list_by_date_func(){
         );
         $daliy_post = get_posts($args);
         // 取得當月每日的文章 End
-
+        // print_r($daliy_post);exit;
         // Mobile HTML 
         if(!empty($daliy_post)) {
-            $calendar_mobile = '
-            <div class="calendar_mobile_column">
-                <div class="calendar_mobile_column_head">
-                    <span class="month_mobile_text">' . date('F',strtotime(date("Y-").$month."-1")) . '</span>
-                </div>
-                <div class="calendar_mobile_column_content">
-                    <ul style="color: #d06670;border-bottom: 3px solid #d06670;">
-                        <li class="mobile_event_date_item">日期</li>
-                        <li class="mobile_event_name_item">活動名稱</li>
-                    </ul>
-                    <ul style="color: #000;">';
-            foreach ($daliy_post as $key => $value) {
-                $calendar_mobile .= '<a href="' .$value->guid. '" class="d-flex" style="width:100%;"><li class="mobile_event_date_item"><span>' . $month.'/'.str_pad($i,2,'0',STR_PAD_LEFT) . '</span></li>';
-                $calendar_mobile .= '<li class="mobile_event_name_item"><span>' . $value->post_title . '</span></li></a>';
-            }
-            $calendar_mobile .='
-                    </ul>
-                </div>
-            </div>';
+            // print_r($daliy_post);
+            $calendar_mobile .= '<ul style="color: #000;">';
+            $calendar_mobile .= '<a href="' .$daliy_post[0]->guid. '" class="d-flex" style="width:100%;"><li class="mobile_event_date_item"><span>' . $month.'/'.str_pad($i,2,'0',STR_PAD_LEFT) . '</span></li>';
+            $calendar_mobile .= '<li class="mobile_event_name_item"><span>' . $daliy_post[0]->post_title . '</span></li></a>';
+            $calendar_mobile .=  '</ul>';
         }
+        // exit;
         // Mobile HTML End
 
         // PC HTML
@@ -257,6 +261,9 @@ function get_post_list_by_date_func(){
             $calendar .= '</div>';
         }
     }
+    $calendar_mobile .='
+                </div>
+            </div>';
     $calendar .= '<div class="calendar_column d-flex flex-column justify-content-around">';
     $calendar .= '<span class="month_text">' . date('F',strtotime(date("Y-").$month."-1")) . '</span>';
     $calendar .= '<img src="' . get_template_directory_uri(). '/img/custom/calendar_img.png" alt="">';
@@ -268,3 +275,15 @@ function get_post_list_by_date_func(){
     echo json_encode($posts);
     die();
 }
+
+// Async load
+function ikreativ_async_scripts($url)
+{
+    if ( strpos( $url, '#asyncload') === false )
+        return $url;
+    else if ( is_admin() )
+        return str_replace( '#asyncload', '', $url );
+    else
+    return str_replace( '#asyncload', '', $url )."' async='async"; 
+    }
+add_filter( 'clean_url', 'ikreativ_async_scripts', 11, 1 );
