@@ -104,7 +104,7 @@ function get_post_list_func( $term_name, $posts_per_page, $offset=0) {
                     </div>
                     <div class="post_list_content">
                         <p class="post_list_title"><?php echo mb_substr(get_the_title(), 0, 18);?></p>
-                        <li class="fa fa-calendar" style="margin-right: 3px;"> </li><span><?php echo limit_string(get_the_excerpt(), 26); ?></span>
+                        <li class="fa fa-calendar" style="margin-right: 3px;"> </li><span><?php echo limit_string(get_the_excerpt(), 30); ?></span>
                     </div>
                     </a>
                 </div>
@@ -163,7 +163,7 @@ function get_post_trim_excerpt_for_api( $object ) {
     $post_id = $object['id'];
 
     //return the post meta
-    return  limit_string(get_the_excerpt($post_id), 26);
+    return  limit_string(get_the_excerpt($post_id), 30);
 }
 function get_post_trim_title_for_api( $object ) {
     //get the id of the post object array
@@ -206,7 +206,7 @@ function get_post_list_by_date_func(){
     $posts['posts'] = get_posts($args);
     foreach ($posts['posts'] as $key => $value) {
         $posts['posts'][$key]->post_img = get_the_post_thumbnail_url($value->ID, 'medium');
-        $posts['posts'][$key]->post_excerpt = limit_string($value->post_excerpt, 26);
+        $posts['posts'][$key]->post_excerpt = limit_string($value->post_excerpt, 30);
     }
 
     $current_month_daycount = date("t", strtotime(date("Y-").$month."-1"));
