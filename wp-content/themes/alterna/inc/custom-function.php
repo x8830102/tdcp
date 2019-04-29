@@ -12,9 +12,9 @@ function limit_string($text='', $limit=0) {
     $limit_text = mb_substr(wp_strip_all_tags($text, true), 0 , $limit, 'utf-8'). '...';
     return $limit_text;
 }
-/**
- * Display the wpdocs widget
- */
+/*
+* 側邊攔 : 歷年活動
+*/
 function event_post_date($args) {
    echo $args['before_widget'];
    echo $args['before_title'] . '歷年活動' .  $args['after_title'];
@@ -70,8 +70,12 @@ function event_post_date($args) {
         }
     }
 }
-add_action( 'get_post_list', 'get_post_list_func', 10, 3 );
 
+
+/*
+* 首頁初始載入文章
+*/
+add_action( 'get_post_list', 'get_post_list_func', 10, 3 );
 function get_post_list_func( $term_name, $posts_per_page, $offset=0) {
 
     $arg = array(
@@ -100,7 +104,7 @@ function get_post_list_func( $term_name, $posts_per_page, $offset=0) {
                     </div>
                     <div class="post_list_content">
                         <p class="post_list_title"><?php echo mb_substr(get_the_title(), 0, 18);?></p>
-                        <li class="fa fa-calendar" style="margin-right: 3px;"> </li><span><?php echo limit_string(get_the_excerpt(), 22); ?></span>
+                        <li class="fa fa-calendar" style="margin-right: 3px;"> </li><span><?php echo limit_string(get_the_excerpt(), 26); ?></span>
                     </div>
                     </a>
                 </div>
@@ -121,6 +125,11 @@ function get_post_list_func( $term_name, $posts_per_page, $offset=0) {
     <?php
 }
 
+/*
+* 調整 WP-REST-API 
+* post_title,post_excerpt 欄位(限制字數)
+* 新增 post_img (URL)
+*/
 //add custom field to rest api
 add_action( 'rest_api_init', 'create_api_posts_field' );
 function create_api_posts_field() {
@@ -154,7 +163,7 @@ function get_post_trim_excerpt_for_api( $object ) {
     $post_id = $object['id'];
 
     //return the post meta
-    return  limit_string(get_the_excerpt($post_id), 22);
+    return  limit_string(get_the_excerpt($post_id), 26);
 }
 function get_post_trim_title_for_api( $object ) {
     //get the id of the post object array
@@ -163,7 +172,12 @@ function get_post_trim_title_for_api( $object ) {
     //return the post meta
     return mb_substr(get_the_title($post_id), 0, 18, 'utf-8');
 }
-//根據活動日期取得當月份所有文章
+
+/*
+* 首頁依照月份tab 觸發ajax 取得文章資料 (預設取得當前月份)
+* 並產生 日歷HTML (PC,手機)
+*/
+//
 add_action( 'wp_ajax_nopriv_get_post_list_by_date', 'get_post_list_by_date_func', 10, 2 );
 add_action( 'wp_ajax_get_post_list_by_date', 'get_post_list_by_date_func', 10, 2 );
 function get_post_list_by_date_func(){
@@ -192,7 +206,7 @@ function get_post_list_by_date_func(){
     $posts['posts'] = get_posts($args);
     foreach ($posts['posts'] as $key => $value) {
         $posts['posts'][$key]->post_img = get_the_post_thumbnail_url($value->ID, 'medium');
-        $posts['posts'][$key]->post_excerpt = limit_string($value->post_excerpt, 22);
+        $posts['posts'][$key]->post_excerpt = limit_string($value->post_excerpt, 26);
     }
 
     $current_month_daycount = date("t", strtotime(date("Y-").$month."-1"));
@@ -277,7 +291,7 @@ function get_post_list_by_date_func(){
 }
 
 // Async load
-function ikreativ_async_scripts($url)
+function async_scripts($url)
 {
     if ( strpos( $url, '#asyncload') === false )
         return $url;
@@ -286,4 +300,4 @@ function ikreativ_async_scripts($url)
     else
     return str_replace( '#asyncload', '', $url )."' async='async"; 
     }
-add_filter( 'clean_url', 'ikreativ_async_scripts', 11, 1 );
+add_filter( 'clean_url', 'async_scripts', 11, 1 );
