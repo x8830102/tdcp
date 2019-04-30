@@ -100,7 +100,7 @@ function get_post_list_func( $term_name, $posts_per_page, $offset=0) {
                 <div class="col-md-4 col-sm-12 col-lg-3 post_list_item">
                     <a href="<?php echo the_permalink();?>" class="post_list_link">
                     <div class="post_list_img">
-                        <?php echo the_post_thumbnail( 'post-thumbnail', '' );?>
+                        <?php echo the_post_thumbnail( 'medium', '' );?>
                     </div>
                     <div class="post_list_content">
                         <p class="post_list_title"><?php echo mb_substr(get_the_title(), 0, 18);?></p>

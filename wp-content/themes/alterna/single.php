@@ -37,9 +37,10 @@ if(!$is_event_post) {
     <div class="container post_image_container">
     <?php
     if(has_post_thumbnail(get_the_ID())){
-        $attachment_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
+        $attachment_image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
     ?>
-    <img src="<?php echo esc_url($attachment_image[0]); ?>" alt="<?php echo get_the_title(); ?>" />
+    <div class="single_img" style="background-image: url(<?php echo esc_url($attachment_image[0]); ?>)"></div>
+   <!--  <img src="<?php echo esc_url($attachment_image[0]); ?>" alt="<?php echo get_the_title(); ?>" /> -->
         <!-- <div class="post_image_content" style="background-image: url(<?php echo esc_url($attachment_image[0]); ?>)">
             <img src="<?php echo esc_url($attachment_image[0]); ?>" alt="<?php echo get_the_title(); ?>" />
             

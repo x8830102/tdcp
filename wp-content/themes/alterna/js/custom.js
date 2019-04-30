@@ -23,22 +23,24 @@
             start: function(){
             }
         })
-        // $(document).on('click', '.rtbs_menu a', function (e) {
-        //     // e.preventDefault();
-        //     ('#slider').resize();
-        // })
         $('.rtbs_menu ').on('click', function(){
             $('#slider').resize();
             $('#carousel').resize();
         })
     })
     $(document).ready(function(){
+        
+        const get_event_post_list = function(e,type=''){
 
-        const get_event_post_list = function(e){
-            e.preventDefault();
+            let event_date = ''
+            if(type = 'click') {
+                event_date = $(e.currentTarget).data('event_date')
+            } else {
+                event_date = e.data('event_date')
+            }
             let arg = {
                 'action' : 'get_post_list_by_date',
-                'event_date'  : $(e.currentTarget).data('event_date') || ''
+                'event_date'  : event_date
             }
             // console.log(arg)
             $.ajax({
@@ -51,7 +53,7 @@
                     console.log(result)
                     result.posts.forEach(function(item, index, array){
                         post_list_item +=`
-                                <div class="col-md-4 col-sm-12 col-lg-3 post_list_item">
+                                <div class="col-md-5 col-sm-8 col-lg-3 post_list_item">
                                     <a href="${item.guid}" class="post_list_link">
                                     <div class="post_list_img">
                                         <img src="${item.post_img}">
@@ -75,7 +77,7 @@
                 }
             })
         }
-
+        get_event_post_list($('#event-tab'))
         const get_home_post_list = function(e) {
             let data = {}
             let term_id = 0;
@@ -130,11 +132,9 @@
             })
         }
         $('.event_nav_link').on('click', function(e){
-            get_event_post_list(e)
+            get_event_post_list(e, 'click')
         })
-        $('#event-tab').on('click', function(e){
-            get_event_post_list(e)
-        })
+
         $('.nav-link').on('click', function(){
             let active_tab = $(this).attr('aria-controls')
             $('.load_more').data('active_tab', active_tab);
@@ -146,14 +146,36 @@
         $('.order .show').on('click', function(e){
             e.preventDefault();
             $(this).toggle();
-            $('.order .close').toggle();
+            $(this).next().toggle();
             $(this).parent().parent().children('ul').slideDown();
         })
         $('.order .close').on('click', function(e){
             e.preventDefault();
             $(this).toggle();
-            $('.order .show').toggle();
+            $(this).prev().toggle();
             $(this).parent().parent().children('ul').slideUp();
         })
+        const options = {
+            // 如果 root 不給值，或是給 null，root 就會是你的 viewport，超讚！
+            root: null,
+            // 我希望它即將出現在 viewport 之前就觸發 callback，這邊設定它往下滑動時進入 viewport 之前 100px 就觸發去拉圖片
+            rootMargin: '0px 0px 100px 0px',
+            threshold: 1.0,
+        };
+        const $imgList = document.querySelectorAll('img');
+        const callback = function(entries, observer) {
+            entries.forEach(function($img) {
+                if ($img.isisIntersecting) {
+                    // 假設圖片真正的 src 放在它的 data-src 裡
+                    $img.target.src = $img.target.dataset.src;
+                    // 已經換上真正的 src，不用再監控了
+                    observer.unobserve($img.target);
+                }
+            });
+        };
+        const observer = new IntersectionObserver(callback, options);
+        // 註冊監控所有的圖片
+        $imgList.forEach($img => observer.observe($img));
+        
     })
 })(jQuery, document)

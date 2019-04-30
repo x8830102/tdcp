@@ -45,13 +45,40 @@ if($date) {
                 query_posts($args);
                 
                 // blog posts
+                
                 if ( have_posts() ) {
                     while ( have_posts() ) { 
-                        the_post();
-                        get_template_part( 'template/blog/content', get_post_format() );
+                        the_post(); 
+            ?>
+                <article id="post-<?php the_ID(); ?>" <?php post_class('post-entry search-item'); ?> itemscope itemtype="http://schema.org/Article">
+                    <?php if(has_post_thumbnail(get_the_ID())) { ?>
+                    <aside class="post-thumbnail">
+                            <div class="post-img">
+                                <?php
+                                echo get_the_post_thumbnail(get_the_ID(), "thumbnail" , array('alt' => get_the_title(),'title' => ''));
+                                ?>
+                            </div>
+                    </aside>
+                    <?php } ?>
+                    <section class="post-content">
+                        <header class="entry-header">
+                        <?php the_title( '<h3 class="entry-title" itemprop="name"><a href="' . esc_url( get_permalink() ) . '" itemprop="url">', '</a></h3>' ); ?>
+                            <div class="entry-meta">
+                                
+                                <span class="entry-date"><i class="fa fa-clock-o"></i><a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><time class="entry-date updated" itemprop="datePublished" datetime="<?php echo esc_attr( get_the_date( 'c' ) ); ?>"><?php echo esc_html( get_the_date() ); ?></time></a></span>
+                                <span class="author vcard"> <i class="fa fa-user"></i><a class="url fn n" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><?php echo get_the_author(); ?></span></span></a></span>
+                            </div>
+                        </header>
+                        <div class="entry-summary" itemprop="articleSection">
+                        <?php the_excerpt(); ?>
+                        </div>
+                    </section>
+                </article>
+            <?php   
                     }
                     alterna_content_pagination('nav-bottom' , 'pagination-centered');
-                }else{
+                }else{ 
+
                      get_template_part( 'template/blog/content', 'none' );
                 }
                 

@@ -75,6 +75,12 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
 .sidebar-searchform > div {
     padding: 0px;
 }
+.body.login div#login h1 a {
+    background-size: cover;
+}
+.post-thumbnail{
+    width: 150px;
+}
 /* Header */
 .logo-default {
     float: right;
@@ -228,7 +234,7 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
 }
 .post_list_item {
     padding: 0;
-    height: 480px;
+    height: 485px;
     background-color: #fff;
     margin: 20px;
     border: 1px solid #fff;
@@ -492,7 +498,19 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
     display: none;
     cursor: pointer; 
 }
+.shareaholic-share-buttons-container.shareaholic-horizontal ul.shareaholic-share-buttons li.shareaholic-share-button{
+    display: list-item !important;
+}
+.single_img {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /**single page End**/
+
+
 /* Custom Responsive */
 @media (max-width: 1200px) and (min-width: 992px)  {
 
@@ -578,6 +596,12 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
     .nav-tabs>li>a {
         padding: 10px 10px !important;
         font-size: 16px !important;
+    }
+    .single_img {
+        height: 300px;
+    }
+    .post_list_item {
+        height: auto;
     }
 
 }

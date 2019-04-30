@@ -5,21 +5,21 @@
  */
 
 get_header();
-$today = date('Ymd');
-$args = array (
-    'post_type' => 'post',
-    'meta_query' => array(
-    array(
-          'key'   => 'event_start_date',
-          'compare' => 'LIKE',
-          'value'   => 201904,
-      ),
+// $today = date('Ymd');
+// $args = array (
+//     'post_type' => 'post',
+//     'meta_query' => array(
+//     array(
+//           'key'   => 'event_start_date',
+//           'compare' => 'LIKE',
+//           'value'   => 201904,
+//       ),
     
-    ),
-);
+//     ),
+// );
 
-// get posts
-$posts = get_posts($args);
+// // get posts
+// $posts = get_posts($args);
 // print_r($posts);
 ?>
 <?php get_template_part('template/page/carousel');?>
@@ -34,11 +34,12 @@ $posts = get_posts($args);
             <?php get_search_form();?>
         </div>
         <ul class="nav nav-tabs col-md-12 flex-row flex-sm-row justify-content-end" id="homeTab" role="tablist">
+          
           <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">園區動態</a>
+            <a class="nav-link active" id="event-tab" data-toggle="tab" href="#event" role="tab" aria-controls="event" aria-selected="true">最新活動</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="event-tab" data-toggle="tab" href="#event" role="tab" aria-controls="event" aria-selected="false">最新活動</a>
+            <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">園區動態</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" id="news-tab" data-toggle="tab" href="#news" role="tab" aria-controls="news" aria-selected="false">自造新聞</a>
@@ -50,11 +51,11 @@ $posts = get_posts($args);
   <div class="container" style="background-color: #f7e4e4 ">
     <div class="tab-content">
 
-      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <div class="tab-pane fade " id="home" role="tabpanel" aria-labelledby="home-tab">
         <?php do_action('get_post_list', '園區動態', '6', 0);?>
       </div>
 
-      <div class="tab-pane fade" id="event" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="tab-pane fade show active" id="event" role="tabpanel" aria-labelledby="profile-tab">
         <!-- 月份Tabs -->
         <ul class="nav nav-pills home_pills" role="tablist">
             <a href="歷史活動" class="nav-link">歷史活動</a>
