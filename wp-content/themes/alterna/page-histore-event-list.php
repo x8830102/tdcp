@@ -70,7 +70,7 @@ if($date) {
                             </div>
                         </header>
                         <div class="entry-summary" itemprop="articleSection">
-                        <?php the_excerpt(); ?>
+                        <?php echo limit_string(get_the_excerpt(), 44); ?>
                         </div>
                     </section>
                 </article>
