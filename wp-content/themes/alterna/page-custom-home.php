@@ -62,9 +62,11 @@ get_header();
         <?php 
         for($i=1;$i<=12;$i++){
           if($i<10){
-            $i = str_pad($i,2,"0",STR_PAD_LEFT);
+            $date = str_pad($i,2,"0",STR_PAD_LEFT);
+          } else {
+            $date = $i;
           }
-          $date = $i;
+          
           $args = array (
               'post_type' => 'post',
               'category_name' => '最新活動',

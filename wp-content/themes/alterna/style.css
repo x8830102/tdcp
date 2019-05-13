@@ -193,10 +193,12 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
     margin: 0 5px !important;
     border-radius: 10px 10px 0 0 !important;
     padding: 10px 25px !important;
+    border: unset !important;
 }
 .nav-tabs>li>a:hover , .nav-tabs>li>a:focus{
     color: #952b2e !important;
     background-color: #f7e4e4 !important;
+    border-color: unset !important;
 }
 .home_pills {
     border-bottom: 2px solid #ac7a1c;
@@ -507,7 +509,9 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
     background-position: center;
     background-repeat: no-repeat;
 }
-
+.rtbs_menu ul li .active:hover{
+ color: #fff !important;
+}
 /**single page End**/
 
 
@@ -565,6 +569,9 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
     .footer_link {
         margin: 10px 0;
     }
+    .post_list_item {
+        height: auto;
+    }
     
 }
 @media screen and (max-width: 575px) {
@@ -600,9 +607,7 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
     .single_img {
         height: 300px;
     }
-    .post_list_item {
-        height: auto;
-    }
+    
 
 }
 @media screen and (max-width: 375px) {

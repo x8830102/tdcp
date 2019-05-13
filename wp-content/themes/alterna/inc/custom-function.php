@@ -265,11 +265,20 @@ function get_post_list_by_date_func(){
         if($week == 'Sat' || $week == 'Sun'){
             $color ='#b0add0';
         }
-            $calendar .= '<a href="' .$daliy_post[0]->guid. '"><li>';
-            $calendar .= '<div class="calendar_month" style="background-color: '.$color.';">'.$i.'</div>';
+        if(!empty($daliy_post[0])){
+            $calendar .= '<a href="' .$daliy_post[0]->guid. '">';
+        }
+            
+            $calendar .= '<li><div class="calendar_month" style="background-color: '.$color.';">'.$i.'</div>';
             $calendar .= '<div class="calendar_week" style="color: '.$color.';">'.$week.'</div>';
             $calendar .= '<div class="calendar_event" style="background-color: '.$color.';">'.$daliy_post[0]->post_title.'</div>';
-            $calendar .= '</li></a>';
+            $calendar .= '</li>';
+
+        if(!empty($daliy_post[0])){
+            $calendar .= '</a>';
+        }  
+            
+
         if($i == 10 || $i==20 || $i==$current_month_daycount){
             $calendar .= '</ul>';
             $calendar .= '</div>';

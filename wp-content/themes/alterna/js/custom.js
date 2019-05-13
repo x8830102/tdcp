@@ -3,33 +3,47 @@
     "use strict";
     $(window).load(function(){
         // flexslide
-        $('#slider').flexslider({
-            slideshow: false ,
-            animation: "slide",
-            controlNav: false,
-            animationLoop: false,
-            sync: "#carousel",
-            start: function(){
-            }
-        });
-        $('#carousel').flexslider({
-            animation: "slide",
-            controlNav: false,
-            animationLoop: false,
-            slideshow: false,
-            itemWidth: 210,
-            itemMargin: 5,
-            asNavFor: '#slider',
-            start: function(){
-            }
-        })
         $('.rtbs_menu ').on('click', function(){
-            $('#slider').resize();
-            $('#carousel').resize();
+            // $('#slider').resize();
+            // $('#carousel').resize();
+            $('#slider').flexslider({
+                slideshow: false ,
+                animation: "slide",
+                controlNav: false,
+                animationLoop: false,
+                sync: "#carousel",
+                after: function(slider){
+                }
+            });
+            $('#carousel').flexslider({
+                animation: "slide",
+                controlNav: false,
+                animationLoop: false,
+                slideshow: false,
+                itemWidth: 210,
+                itemMargin: 5,
+                asNavFor: '#slider',
+                after: function(slider){
+                }
+            })
+            // $(window).resize()
         })
+        
     })
     $(document).ready(function(){
-        jQuery('meta[property="og:site_name"]').remove();
+        const init = function() {
+            $('html').css('min-height',$(window).height())
+            $('body').css('min-height',$(window).height())
+            if($('.wrapper').height() < $(window).height() ) {
+                $('.wrapper').css('min-height',$(window).height())
+                $('.footer-wrap').css('position', 'absolute')
+                $('.footer-wrap').css('width', '100%')
+                $('.footer-wrap').css('bottom', '0')
+            }
+            
+            
+        }
+        
         const get_event_post_list = function(e,type=''){
 
             let event_date = ''
@@ -155,27 +169,7 @@
             $(this).prev().toggle();
             $(this).parent().parent().children('ul').slideUp();
         })
-        // const options = {
-        //     // 如果 root 不給值，或是給 null，root 就會是你的 viewport，超讚！
-        //     root: null,
-        //     // 我希望它即將出現在 viewport 之前就觸發 callback，這邊設定它往下滑動時進入 viewport 之前 100px 就觸發去拉圖片
-        //     rootMargin: '0px 0px 100px 0px',
-        //     threshold: 1.0,
-        // };
-        // const $imgList = document.querySelectorAll('img');
-        // const callback = function(entries, observer) {
-        //     entries.forEach(function($img) {
-        //         if ($img.isisIntersecting) {
-        //             // 假設圖片真正的 src 放在它的 data-src 裡
-        //             $img.target.src = $img.target.dataset.src;
-        //             // 已經換上真正的 src，不用再監控了
-        //             observer.unobserve($img.target);
-        //         }
-        //     });
-        // };
-        // const observer = new IntersectionObserver(callback, options);
-        // // 註冊監控所有的圖片
-        // $imgList.forEach($img => observer.observe($img));
-        
+
+        init();
     })
 })(jQuery, document)
