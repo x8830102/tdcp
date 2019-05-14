@@ -107,6 +107,11 @@ get_header();
           <!--活動行事曆 End-->
           <div class="row">
           </div>
+          <div class="col-md-12 text-center">
+            <button type="button" class="btn btn-light load_more" data-term_name="最新活動" data-active_tab="event">
+                More
+            </button>
+          </div> 
         </div>
         <?php 
           //do_action('get_post_list_by_date', '最新活動', '6', 0, 201904);
@@ -116,13 +121,13 @@ get_header();
       <div class="tab-pane fade" id="news" role="tabpanel" aria-labelledby="contact-tab">
         <ul class="nav nav-pills home_pills" role="tablist">
           <li class="nav-item">
-            <a href="#new_knowledge" data-toggle="pill" role="tab" class="nav-link active">南創新知</a>
+            <a href="#new_knowledge" id="new_knowledge-tab" data-toggle="pill" role="tab" class="nav-link active">南創新知</a>
           </li>
           <li class="nav-item">
-            <a href="#documentary" data-toggle="pill" role="tab" class="nav-link">南創紀實</a>
+            <a href="#documentary" id="documentary-tab" data-toggle="pill" role="tab" class="nav-link">南創紀實</a>
           </li>
           <li class="nav-item">
-            <a href="#story" data-toggle="pill" role="tab" class="nav-link">南創故事</a>
+            <a href="#story" id="story-tab" data-toggle="pill" role="tab" class="nav-link">南創故事</a>
           </li>
         </ul>
         <div class="tab-content">

@@ -227,6 +227,7 @@ function get_post_list_by_date_func(){
         $color = '#b9a4c7';
         $day = str_pad($i, 2, '0', STR_PAD_LEFT);
         $week = date("D", strtotime(date("Y").$month.$day));
+        $post_title = '';
         //取得當月每日的文章
         $args = array (
             'post_type' => 'post',
@@ -249,6 +250,8 @@ function get_post_list_by_date_func(){
         // Mobile HTML 
         if(!empty($daliy_post)) {
             // print_r($daliy_post);
+            $post_title = get_field('event_display_name', $daliy_post[0]->ID) ;
+
             $calendar_mobile .= '<ul style="color: #000;">';
             $calendar_mobile .= '<a href="' .$daliy_post[0]->guid. '" class="d-flex" style="width:100%;"><li class="mobile_event_date_item"><span>' . $month.'/'.str_pad($i,2,'0',STR_PAD_LEFT) . '</span></li>';
             $calendar_mobile .= '<li class="mobile_event_name_item"><span>' . $daliy_post[0]->post_title . '</span></li></a>';
@@ -271,7 +274,7 @@ function get_post_list_by_date_func(){
             
             $calendar .= '<li><div class="calendar_month" style="background-color: '.$color.';">'.$i.'</div>';
             $calendar .= '<div class="calendar_week" style="color: '.$color.';">'.$week.'</div>';
-            $calendar .= '<div class="calendar_event" style="background-color: '.$color.';">'.$daliy_post[0]->post_title.'</div>';
+            $calendar .= '<div class="calendar_event" style="background-color: '.$color.';">'.$post_title.'</div>';
             $calendar .= '</li>';
 
         if(!empty($daliy_post[0])){
