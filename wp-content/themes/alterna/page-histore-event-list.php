@@ -7,21 +7,16 @@ get_header();
 global $paged;
 $per_page_num = 10;
 $page_cats = '最新活動';
-$date = !empty($_GET['date']) ? $_GET['date'] : date('Y-m') ;
+$searh_date = '';
+$date = !empty($_GET['date']) ? $_GET['date'] : date('Y/m') ;
 if($date) {
     $year = explode('-', $date)[0];
     $month = !empty(explode('-', $date)[1]) ? explode('-', $date)[1] : '';
     if (!empty($month)) {
-        $date_query = array(
-            'year' => $year,
-            'month' => $month
-        );
+        $searh_date = $year.'-'.$month;
     } else {
-        $date_query = array(
-            'year' => $year,
-        );
+        $searh_date = $year;
     }
-    
 }
 ?>
 <div id="main" class="container">
@@ -37,9 +32,16 @@ if($date) {
                                 'post_status' => 'publish',
                                 'paged' => $paged,
                                 'posts_per_page'=> $per_page_num,
-                                'category_name' => $page_cats
+                                'category_name' => $page_cats,
+                                'meta_query' => array(
+                                    array(
+                                          'key'   => 'event_start_date',
+                                          'compare' => 'LIKE',
+                                          'value'   => $searh_date
+                                      ),
+                                    )
                              );
-                $args['date_query'] = $date_query;
+                // $args['date_query'] = $date_query;
 
                 // The Query
                 query_posts($args);
@@ -65,7 +67,7 @@ if($date) {
                         <?php the_title( '<h3 class="entry-title" itemprop="name"><a href="' . esc_url( get_permalink() ) . '" itemprop="url">', '</a></h3>' ); ?>
                             <div class="entry-meta">
                                 
-                                <span class="entry-date"><i class="fa fa-clock-o"></i><a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><time class="entry-date updated" itemprop="datePublished" datetime="<?php echo esc_attr( get_the_date( 'c' ) ); ?>"><?php echo esc_html( get_the_date() ); ?></time></a></span>
+                                <span class="entry-date"><i class="fa fa-clock-o"></i><a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><time class="entry-date updated" itemprop="datePublished" datetime="<?php echo esc_attr( get_the_date( 'c' ) ); ?>"><?php echo esc_html( date('Y-m-d',strtotime(get_field('event_start_date', get_the_ID()))) ); ?></time></a></span>
                                 <span class="author vcard"> <i class="fa fa-user"></i><a class="url fn n" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><?php echo get_the_author(); ?></span></span></a></span>
                             </div>
                         </header>

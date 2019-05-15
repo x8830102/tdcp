@@ -34,10 +34,10 @@ function event_post_date($args) {
                   'compare' => 'LIKE',
                   'value'   => $year,
               ),
-            
             )
         );
         $query = new WP_Query($arg);
+        $date_cht = array('一月','二月','三月','四月','五月','六月','七月','八月','九月','十月','十一月','十二月');
         if ( $query->have_posts() ) {
             ?>
             <div class="order">
@@ -51,13 +51,13 @@ function event_post_date($args) {
             $post_month = '';
             while ($query->have_posts() ) {
                 $query->the_post();
-                $next_post_month = get_the_date('m');
+                $next_post_month = date('m',strtotime(get_field('event_start_date', get_the_ID())));
                 // echo $next_post_month;
                 if($post_month != $next_post_month){
                     $post_month = $next_post_month;
                 ?>
                     <ul style="display:none;">
-                        <li><a href="?date=<?php echo $year.'-'.$post_month;?>"><?php echo get_the_date('M');?></a></li>
+                        <li><a href="?date=<?php echo $year.'-'.$post_month;?>"><?php echo $date_cht[(int)date('n',strtotime(get_field('event_start_date', get_the_ID())))-1];?></a></li>
                     </ul>
                 <?php
                 }
@@ -98,7 +98,7 @@ function get_post_list_func( $term_name, $posts_per_page, $offset=0) {
                     $query->the_post();
                  ?>
                 <div class="col-md-4 col-sm-12 col-lg-3 post_list_item">
-                    <a href="<?php echo the_permalink();?>" class="post_list_link">
+                    <a href="<?php echo the_permalink();?>" class="post_list_link"  target="_blank">
                     <div class="post_list_img">
                         <?php echo the_post_thumbnail( 'medium', '' );?>
                     </div>
@@ -197,7 +197,7 @@ function get_post_list_by_date_func(){
         array(
               'key'   => 'event_start_date',
               'compare' => 'LIKE',
-              'value'   => date('Y').$month,
+              'value'   => date('Y').'-'.$month,
           ),
         
         ),
@@ -239,7 +239,7 @@ function get_post_list_by_date_func(){
             array(
                   'key'   => 'event_start_date',
                   'compare' => 'LIKE',
-                  'value'   => date('Y').$month.$day,
+                  'value'   => date('Y')."-".$month."-".$day,
               ),
             
             ),
@@ -253,7 +253,7 @@ function get_post_list_by_date_func(){
             $post_title = get_field('event_display_name', $daliy_post[0]->ID) ;
 
             $calendar_mobile .= '<ul style="color: #000;">';
-            $calendar_mobile .= '<a href="' .$daliy_post[0]->guid. '" class="d-flex" style="width:100%;"><li class="mobile_event_date_item"><span>' . $month.'/'.str_pad($i,2,'0',STR_PAD_LEFT) . '</span></li>';
+            $calendar_mobile .= '<a href="' .$daliy_post[0]->guid. '" class="d-flex" style="width:100%;"  target="_blank"><li class="mobile_event_date_item"><span>' . $month.'/'.str_pad($i,2,'0',STR_PAD_LEFT) . '</span></li>';
             $calendar_mobile .= '<li class="mobile_event_name_item"><span>' . $daliy_post[0]->post_title . '</span></li></a>';
             $calendar_mobile .=  '</ul>';
         }

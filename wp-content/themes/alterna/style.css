@@ -43,6 +43,10 @@ Text Domain: alterna
 a:hover{
     color: #952b2e !important;
 }
+body.login div#login h1 a {
+    height: 84px ;
+    background-size: cover ;
+}
 .alignnone {margin: 5px 20px 20px 0;}
 .aligncenter,div.aligncenter {display: block;margin: 5px auto 5px auto;}
 .alignright {float:right;margin: 5px 0 20px 20px;}
