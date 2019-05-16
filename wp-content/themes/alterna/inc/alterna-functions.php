@@ -1464,20 +1464,20 @@ if ( ! function_exists( 'alterna_get_styles' ) ) :
 /**
  * Get theme style path
  */
-function alterna_get_styles($type = 'theme'){
-	$default_css;
-	$uploads = wp_upload_dir();
-	if($type == 'theme'){
-		$default_css = get_template_directory_uri().'/css/alterna.css';
-		if (file_exists($uploads['basedir'] . '/alterna/alterna-styles.css')) {
-			$default_css = $uploads['baseurl'] . '/alterna/alterna-styles.css';
-		}
-	}else if($type == 'woocommerce'){
-		$default_css = get_template_directory_uri().'/woocommerce/assets/css/woocommerce.css';
-		if (file_exists($uploads['basedir'] . '/alterna/alterna-woocommerce.css')) {
-			$default_css = $uploads['baseurl'] . '/alterna/alterna-woocommerce.css';
-		}
-	}
-	return $default_css;
-}
+// function alterna_get_styles($type = 'theme'){
+// 	$default_css;
+// 	$uploads = wp_upload_dir();
+// 	if($type == 'theme'){
+// 		$default_css = get_template_directory_uri().'/css/alterna.css';
+// 		// if (file_exists($uploads['basedir'] . '/alterna/alterna-styles.css')) {
+// 		// 	$default_css = $uploads['baseurl'] . '/alterna/alterna-styles.css';
+// 		// }
+// 	}else if($type == 'woocommerce'){
+// 		$default_css = get_template_directory_uri().'/woocommerce/assets/css/woocommerce.css';
+// 		if (file_exists($uploads['basedir'] . '/alterna/alterna-woocommerce.css')) {
+// 			$default_css = $uploads['baseurl'] . '/alterna/alterna-woocommerce.css';
+// 		}
+// 	}
+// 	return $default_css;
+// }
 endif;

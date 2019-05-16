@@ -1,8 +1,11 @@
-/wp-include
-/wp-admin
+wp-include
+wp-admin
 .htaccess
 wp-config.php
-/wp-content/plugins/
-/wp-content/uploads/
-/wp-content/mu-plugins/
-!/wp-content/themes/alterna
+wp-content/plugins/*
+wp-content/debug.log
+wp-content/gallery
+wp-content/uploads/
+wp-content/mu-plugins/
+wp-content/themes/alterna/node_modules/*
+!wp-content/themes/alterna

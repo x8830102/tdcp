@@ -134,12 +134,12 @@ function alterna_init_styles_scripts() {
 	$alterna_options_update = get_option('alterna_options_update');
 	$style_ver = isset($alterna_options_update['version']) ? $alterna_options_update['version'] : $ver;
 	
-	wp_enqueue_style( 'alterna_style', alterna_get_styles()  , array() , $style_ver );
-	if (class_exists( 'woocommerce' )) { 
-		wp_enqueue_style( 'woocommerce', alterna_get_styles('woocommerce')  , array() , $style_ver );
-	}
+	// wp_enqueue_style( 'alterna_style', alterna_get_styles()  , array() , $style_ver );
+	// if (class_exists( 'woocommerce' )) { 
+	// 	wp_enqueue_style( 'woocommerce', alterna_get_styles('woocommerce')  , array() , $style_ver );
+	// }
 	
-	wp_enqueue_style( 'style', get_stylesheet_uri()  , array() , fileatime( dirname(__file__).'/style.css' ));
+	wp_enqueue_style( 'main_style', $dir . '/dist/maincss.min.css'  , array() , fileatime( dirname(__file__).'/dist/maincss.min.css' ));
 
 	//Font
 	alterna_get_custom_font();
@@ -149,7 +149,10 @@ function alterna_init_styles_scripts() {
 	}
 	
 	//Javascripts
-	wp_enqueue_script('jquery');
+	// wp_enqueue_script( 'alterna' , $dir . '/js/jquery.theme.js' , array('jquery') , $ver , true);
+	wp_enqueue_script( 'main' , $dir . '/dist/mainjs.min.js' , '',fileatime( dirname(__file__).'/dist/mainjs.min.js' ), true);
+	wp_localize_script( 'main', 'wp_ajax_obj', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
+	// wp_enqueue_script('jquery');
 	if ( is_singular() && comments_open() ) { wp_enqueue_script( 'comment-reply' );	}
 	if(penguin_get_options_key('bootstrap-fontawesome-cdn') == "on"){
 		
@@ -170,9 +173,7 @@ function alterna_init_styles_scripts() {
 	wp_enqueue_script( 'fancyBox_helpers_js' , $dir . '/js/fancyBox/helpers/jquery.fancybox-thumbs.js' , array('jquery') , $ver , true);
 	wp_enqueue_script( 'flexslider_js' , $dir . '/js/flexslider/jquery.flexslider-min.js#asyncload' , array('jquery') , fileatime( dirname(__file__).'/js/flexslider/jquery.flexslider-min.js' ) , true);
 	wp_enqueue_script( 'csstransforms3d' , $dir . '/js/csstransforms3d.js' , array('jquery') , $ver , true);
-	wp_enqueue_script( 'alterna' , $dir . '/js/jquery.theme.js' , array('jquery') , $ver , true);
-	wp_enqueue_script( 'custom' , $dir . '/js/custom.js' , array('jquery') ,fileatime( dirname(__file__).'/js/custom.js' ), true);
-	 wp_localize_script( 'custom', 'wp_ajax_obj', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
+	
 }
 add_action('wp_enqueue_scripts', 'alterna_init_styles_scripts');
 
