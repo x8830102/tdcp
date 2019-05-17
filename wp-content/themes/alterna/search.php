@@ -44,7 +44,7 @@ $layout_class = alterna_get_page_layout_class('global');
                             </div>
                         </header>
                         <div class="entry-summary" itemprop="articleSection">
-                        <?php the_excerpt(); ?>
+                        <?php echo limit_string(get_the_excerpt(), 44); ?>
                         </div>
                     </section>
                 </article>

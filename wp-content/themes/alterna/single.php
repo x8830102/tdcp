@@ -177,6 +177,19 @@ if(!$is_event_post) {
                             <div class="share_text">分享</div>
                             <div class="shareaholic-canvas" data-app="share_buttons" data-app-id-name="post_below_content"></div>
                         </div>
+                        <div style="display: inline;">
+                            <?php 
+                                $tilte = urlencode(get_the_title());
+                                $start_date =  date('Ymd', strtotime(get_field('event_start_date', get_the_ID()))) . 'T'.
+                                    date('His', strtotime('-8 hours',strtotime(get_field('event_start_date', get_the_ID())))). 'Z';
+                                $end_date = date('Ymd', strtotime(get_field('event_end_date', get_the_ID()))) . 'T'.
+                                    date('His', strtotime('-8 hours',strtotime(get_field('event_end_date', get_the_ID())))). 'Z';
+                                $dates = $start_date . '/' . $end_date;
+                                $details = urlencode(get_field('google_calendar_description', get_the_ID()));
+                                $location = !empty(get_field('google_calendar_location', get_the_ID())) ? urlencode(get_field('google_calendar_location', get_the_ID())) : urlencode('台南市中西區南門路21號');
+                            ?>
+                            <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=<?php echo $tilte; ?>&dates=<?php echo $dates; ?>&details=<?php echo $details; ?>&location=<?php echo $location; ?>&sf=true&output=xml" target="_blank" rel="nofollow">加入行事曆</a>
+                        </div>
                         
                         
                     </div>

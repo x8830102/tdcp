@@ -518,6 +518,12 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
 }
 /**single page End**/
 
+/*
+* search page
+*/
+.post-entry.search-item {
+    display: flex;
+}
 
 /* Custom Responsive */
 @media (max-width: 1200px) and (min-width: 992px)  {
