@@ -27,10 +27,10 @@ get_header();
 <div class="container">
     <div class="row">
         <div class="col-md-12 social_link d-flex">
-            <a href="https://www.facebook.com/PunPlace" class="social_icon"><img src="<?php echo get_template_directory_uri();?>/img/fb_icon.png" alt="fb_icon"></a>
-            <a href="http://pse.ee/5TBVX" class="social_icon"><img src="<?php echo get_template_directory_uri();?>/img/line_icon.png" alt="line_icon"></a>
-            <a href="https://www.instagram.com/fablabtainan/" class="social_icon"><img src="<?php echo get_template_directory_uri();?>/img/ig_icon.png" alt="ig_icon"></a>
-            <a href="https://www.youtube.com/channel/UCxROwE5Wni7VFQsBOE79HKA" class="social_icon"><img src="<?php echo get_template_directory_uri();?>/img/yb_icon.png" alt="yb_icon"></a>
+            <a href="https://www.facebook.com/PunPlace" class="social_icon" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/fb_icon.png" alt="fb_icon" ></a>
+            <a href="http://pse.ee/5TBVX" class="social_icon" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/line_icon.png" alt="line_icon" ></a>
+            <a href="https://www.instagram.com/fablabtainan/" class="social_icon" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/ig_icon.png" alt="ig_icon" ></a>
+            <a href="https://www.youtube.com/channel/UCxROwE5Wni7VFQsBOE79HKA" class="social_icon" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/yb_icon.png" alt="yb_icon" ></a>
             <?php get_search_form();?>
         </div>
         <ul class="nav nav-tabs col-md-12 flex-row flex-sm-row justify-content-end" id="homeTab" role="tablist">

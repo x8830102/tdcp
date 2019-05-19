@@ -43,7 +43,7 @@ function event_post_date($args) {
             <div class="order">
             <ul>
                 <li>
-                    <a href="?date=<?php echo $year;?>"><?php echo $year;?></a>
+                    <a href="?date=<?php echo $year;?>" id ="<?php echo $year;?>"><?php echo $year;?></a>
                     <a class="show">+</a>
                     <a class="close">-</a>
                 </li>
@@ -57,7 +57,7 @@ function event_post_date($args) {
                     $post_month = $next_post_month;
                 ?>
                     <ul style="display:none;">
-                        <li><a href="?date=<?php echo $year.'-'.$post_month;?>"><?php echo $date_cht[(int)date('n',strtotime(get_field('event_start_date', get_the_ID())))-1];?></a></li>
+                        <li><a href="?date=<?php echo $year.'-'.$post_month;?>" id ="<?php echo $year.'-'.$post_month;?>"><?php echo $date_cht[(int)date('n',strtotime(get_field('event_start_date', get_the_ID())))-1];?></a></li>
                     </ul>
                 <?php
                 }
@@ -269,7 +269,7 @@ function get_post_list_by_date_func(){
             $color ='#b0add0';
         }
         if(!empty($daliy_post[0])){
-            $calendar .= '<a href="' .$daliy_post[0]->guid. '">';
+            $calendar .= '<a href="' .$daliy_post[0]->guid. '" target="_blank">';
         }
             
             $calendar .= '<li><div class="calendar_month" style="background-color: '.$color.';">'.$i.'</div>';
