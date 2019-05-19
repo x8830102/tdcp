@@ -65,7 +65,7 @@
                 success: function(result){
                     let post_list_item =''
                     let load_more = ''
-                    console.log(result)
+                    // console.log(result)
                     result.posts.forEach(function(item, index, array){
                         post_list_item +=`
                             <div class="col-md-5 col-sm-8 col-lg-3 post_list_item">
@@ -223,7 +223,7 @@
             if( date[0] === "?date") {
                 $('#'+date[1]).parent().parent().children('ul').slideDown()
                 let split_date = date[1].split('-')
-                console.log(split_date.length )
+                // console.log(split_date.length )
                 if(split_date.length >= 2) {
 
                     $('#'+split_date[0]).parent().parent().children('ul').slideDown()
