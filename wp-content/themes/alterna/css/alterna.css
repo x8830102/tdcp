@@ -266,7 +266,7 @@ ol.mline ol:last-child {
 body.boxed-layout {
   background-size: 100px 100px;
   background-repeat: repeat;
-  background-image: url('http://122.146.205.71wp-content/themes/alterna/img/bgnoise_lg.png');
+  background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/bgnoise_lg.png');
 }
 .wrapper {
   max-width: 1170px;
@@ -311,7 +311,7 @@ body.boxed-layout {
 }
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
   body.boxed-layout {
-    background-image: url('http://122.146.205.71wp-content/themes/alterna/img/bgnoise_lg@2x.png');
+    background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/bgnoise_lg@2x.png');
   }
 }
 /* = 3. Header
@@ -612,7 +612,7 @@ body.boxed-layout {
 .fixed-logo a {
   width: 165px;
   height: 44px;
-  background-image: url("http://122.146.205.71wp-content/uploads/2019/03/tdcp_logo.png");
+  background-image: url("http://122.146.205.71/wp-content/uploads/2019/03/tdcp_logo.png");
   background-size: 165px 44px;
 }
 @media (max-width: 767px) {
@@ -675,7 +675,7 @@ body.boxed-layout {
   list-style: none outside none;
   float: left;
   position: relative;
-  background: url('http://122.146.205.71wp-content/themes/alterna/img/menu_line.png') no-repeat right center;
+  background: url('http://122.146.205.71/wp-content/themes/alterna/img/menu_line.png') no-repeat right center;
 }
 .alterna-nav-menu li {
   -webkit-transition: background-color 500ms;
@@ -795,7 +795,7 @@ body.boxed-layout {
   height: 37px;
   right: 0px;
   top: -1px;
-  background-image: url('http://122.146.205.71wp-content/themes/alterna/img/search_icon.png');
+  background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/search_icon.png');
   background-size: 24px 24px;
   background-position: center;
   background-repeat: no-repeat;
@@ -1792,7 +1792,7 @@ header.header-fixed.header-style-6 .right-content {
 }
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
   .searchform .sf-searchsubmit {
-    background-image: url('http://122.146.205.71wp-content/themes/alterna/img/search_icon@2x.png');
+    background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/search_icon@2x.png');
   }
 }
 /* = 4. Page Sliders
@@ -1809,7 +1809,7 @@ header.header-fixed.header-style-6 .right-content {
   position: relative;
   background-size: 297px 297px;
   background-repeat: repeat;
-  background-image: url('http://122.146.205.71wp-content/themes/alterna/img/bright_squares.png');
+  background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/bright_squares.png');
 }
 #page-header .page-header-content {
   display: inline-block;
@@ -1825,7 +1825,7 @@ header.header-fixed.header-style-6 .right-content {
 #page-header .top-shadow {
   position: absolute;
   top: -1px;
-  background: transparent url('http://122.146.205.71wp-content/themes/alterna/img/header-top-shadow.png') no-repeat center top;
+  background: transparent url('http://122.146.205.71/wp-content/themes/alterna/img/header-top-shadow.png') no-repeat center top;
   background-size: 100% 30px;
   width: 100%;
   height: 30px;
@@ -1860,7 +1860,7 @@ header.header-fixed.header-style-6 .right-content {
 }
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
   #page-header {
-    background-image: url('http://122.146.205.71wp-content/themes/alterna/img/bright_squares@2x.png');
+    background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/bright_squares@2x.png');
   }
 }
 /* = 6. Pages
@@ -2180,7 +2180,7 @@ div.center-link:hover {
 .post-quote-entry .post-quote-icon {
   width: 50px;
   height: 50px;
-  background-image: url('http://122.146.205.71wp-content/themes/alterna/img/custom/icon-quote-post.png');
+  background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/custom/icon-quote-post.png');
   background-size: 50px 50px;
   background-repeat: no-repeat;
   position: absolute;
@@ -2235,7 +2235,7 @@ div.center-link:hover {
 }
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
   .post-quote-entry .post-quote-icon {
-    background-image: url('http://122.146.205.71wp-content/themes/alterna/img/custom/icon-quote-post@2x.png');
+    background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/custom/icon-quote-post@2x.png');
   }
 }
 /* Portfolio */
@@ -2953,7 +2953,7 @@ div.center-link:hover {
   cursor: pointer;
   background-color: #333;
   border-radius: 4px;
-  background-image: url("http://122.146.205.71/wp-content/themes/alterna/img/custom/icon_chevron_top.png");
+  background-image: url("http://122.146.205.71//wp-content/themes/alterna/img/custom/icon_chevron_top.png");
   background-size: 30px 30px;
   background-position: center;
   background-repeat: no-repeat;
@@ -2989,7 +2989,7 @@ div.center-link:hover {
 }
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
   #back-top {
-    background-image: url("http://122.146.205.71/wp-content/themes/alterna/img/custom/icon_chevron_top@2x.png");
+    background-image: url("http://122.146.205.71//wp-content/themes/alterna/img/custom/icon_chevron_top@2x.png");
   }
 }
 /* = 7. Widgets
@@ -3268,7 +3268,7 @@ div.center-link:hover {
   border: none;
   outline: 0 !important;
   background-color: #7ab80e;
-  background-image: url('http://122.146.205.71wp-content/themes/alterna/img/search_icon.png');
+  background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/search_icon.png');
   background-size: 26px 26px;
   background-position: center;
   background-repeat: no-repeat;
@@ -3301,7 +3301,7 @@ div.center-link:hover {
   background-position: center;
   background-repeat: no-repeat;
   text-indent: 10000px;
-  background-image: url('http://122.146.205.71wp-content/themes/alterna/img/search_icon.png');
+  background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/search_icon.png');
 }
 .sidebar-searchform input[type=submit]:hover,
 .widget_product_search input[type="submit"]:hover {
@@ -3310,7 +3310,7 @@ div.center-link:hover {
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
   .sidebar-searchform input[type=submit],
   .widget_product_search input[type="submit"] {
-    background-image: url('http://122.146.205.71wp-content/themes/alterna/img/search_icon@2x.png');
+    background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/search_icon@2x.png');
   }
 }
 /* Blog Widget */
@@ -3658,28 +3658,28 @@ ul.widget-portfolio-recent li {
   background-size: 30px 30px;
 }
 .big-icon-link {
-  background-image: url('http://122.146.205.71wp-content/themes/alterna/img/custom/icon_link.png');
+  background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/custom/icon_link.png');
 }
 .big-icon-preview {
-  background-image: url('http://122.146.205.71wp-content/themes/alterna/img/custom/icon_preview.png');
+  background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/custom/icon_preview.png');
 }
 .big-icon-video {
-  background-image: url('http://122.146.205.71wp-content/themes/alterna/img/custom/icon_video.png');
+  background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/custom/icon_video.png');
 }
 .big-icon-music {
-  background-image: url('http://122.146.205.71wp-content/themes/alterna/img/custom/icon_music.png');
+  background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/custom/icon_music.png');
 }
 .big-icon-picture {
-  background-image: url('http://122.146.205.71wp-content/themes/alterna/img/custom/icon_img.png');
+  background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/custom/icon_img.png');
 }
 .big-icon-slideshow {
-  background-image: url('http://122.146.205.71wp-content/themes/alterna/img/custom/icon_gallery.png');
+  background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/custom/icon_gallery.png');
 }
 .big-icon-file {
-  background-image: url('http://122.146.205.71wp-content/themes/alterna/img/custom/icon_file.png');
+  background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/custom/icon_file.png');
 }
 .big-icon-quote {
-  background-image: url('http://122.146.205.71wp-content/themes/alterna/img/custom/icon_quote.png');
+  background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/custom/icon_quote.png');
 }
 .alterna-sc-icon {
   margin-bottom: 10px;
@@ -3743,28 +3743,28 @@ ul.widget-portfolio-recent li {
 }
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
   .big-icon-link {
-    background-image: url('http://122.146.205.71wp-content/themes/alterna/img/custom/icon_link@2x.png');
+    background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/custom/icon_link@2x.png');
   }
   .big-icon-preview {
-    background-image: url('http://122.146.205.71wp-content/themes/alterna/img/custom/icon_preview@2x.png');
+    background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/custom/icon_preview@2x.png');
   }
   .big-icon-video {
-    background-image: url('http://122.146.205.71wp-content/themes/alterna/img/custom/icon_video@2x.png');
+    background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/custom/icon_video@2x.png');
   }
   .big-icon-music {
-    background-image: url('http://122.146.205.71wp-content/themes/alterna/img/custom/icon_music@2x.png');
+    background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/custom/icon_music@2x.png');
   }
   .big-icon-picture {
-    background-image: url('http://122.146.205.71wp-content/themes/alterna/img/custom/icon_img@2x.png');
+    background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/custom/icon_img@2x.png');
   }
   .big-icon-slideshow {
-    background-image: url('http://122.146.205.71wp-content/themes/alterna/img/custom/icon_gallery@2x.png');
+    background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/custom/icon_gallery@2x.png');
   }
   .big-icon-file {
-    background-image: url('http://122.146.205.71wp-content/themes/alterna/img/custom/icon_file@2x.png');
+    background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/custom/icon_file@2x.png');
   }
   .big-icon-quote {
-    background-image: url('http://122.146.205.71wp-content/themes/alterna/img/custom/icon_quote@2x.png');
+    background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/custom/icon_quote@2x.png');
   }
 }
 /* Button */
@@ -4697,7 +4697,7 @@ a.btn:hover.border-btn.red {
   bottom: 10px;
 }
 .testimonials .testimonials-content .testimonials-arraw {
-  background: url('http://122.146.205.71wp-content/themes/alterna/img/testimonials_arraw.png') no-repeat;
+  background: url('http://122.146.205.71/wp-content/themes/alterna/img/testimonials_arraw.png') no-repeat;
   width: 30px;
   height: 20px;
   display: block;
@@ -6048,10 +6048,10 @@ h6.alterna-sc-entry-title .alterna-sc-title-icon {
   background-color: #7ab80e;
 }
 .flexslider.alterna-fl .flex-prev {
-  background-image: url('http://122.146.205.71wp-content/themes/alterna/img/custom/icon_chevron_left.png');
+  background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/custom/icon_chevron_left.png');
 }
 .flexslider.alterna-fl .flex-next {
-  background-image: url('http://122.146.205.71wp-content/themes/alterna/img/custom/icon_chevron_right.png');
+  background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/custom/icon_chevron_right.png');
 }
 .flexslider.alterna-fl:hover .flex-prev {
   left: 0px;
@@ -6069,10 +6069,10 @@ h6.alterna-sc-entry-title .alterna-sc-title-icon {
 }
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
   .flexslider.alterna-fl .flex-prev {
-    background-image: url('http://122.146.205.71wp-content/themes/alterna/img/custom/icon_chevron_left@2x.png');
+    background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/custom/icon_chevron_left@2x.png');
   }
   .flexslider.alterna-fl .flex-next {
-    background-image: url('http://122.146.205.71wp-content/themes/alterna/img/custom/icon_chevron_right@2x.png');
+    background-image: url('http://122.146.205.71/wp-content/themes/alterna/img/custom/icon_chevron_right@2x.png');
   }
 }
 /* Fancybox */
