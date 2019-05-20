@@ -1,4 +1,8 @@
 <?php
+if (function_exists('add_theme_support'))
+{
+    add_image_size('thumbnail', 150, 150, true); // Small Thumbnail
+}
 wp_register_sidebar_widget(
     'event_post_date',      // wpdocs unique widget id
     'Event Post Date',        // widget name

@@ -8,7 +8,7 @@ global $paged;
 $per_page_num = 10;
 $page_cats = '最新活動';
 $searh_date = '';
-$date = !empty($_GET['date']) ? $_GET['date'] : date('Y/m') ;
+$date = !empty($_GET['date']) ? $_GET['date'] : date('Y-m') ;
 if($date) {
     $year = explode('-', $date)[0];
     $month = !empty(explode('-', $date)[1]) ? explode('-', $date)[1] : '';
@@ -57,7 +57,7 @@ if($date) {
                     <aside class="post-thumbnail">
                             <div class="post-img">
                                 <?php
-                                echo get_the_post_thumbnail(get_the_ID(), "thumbnail" , array('alt' => get_the_title(),'title' => ''));
+                                echo get_the_post_thumbnail(get_the_ID(), array('150', '150') , array('alt' => get_the_title(),'title' => ''));
                                 ?>
                             </div>
                     </aside>
