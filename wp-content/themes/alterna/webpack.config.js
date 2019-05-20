@@ -20,7 +20,7 @@ const paths = {
 module.exports = {
     entry: {
         mainjs: glob.sync("./js/**/*(custom.js|jquery.theme.js)"),
-        maincss: glob.sync("./**/*(style.css|alterna.css)"),
+        maincss: glob.sync("{./**/style.css,./../../uploads/alterna/alterna-styles.css}"),
     },
     output: {
         path: paths.DIST,
