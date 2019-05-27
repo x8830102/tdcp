@@ -61,8 +61,8 @@ $current_tax = get_query_var('taxonomy');
     <meta property="og:url" content="<?php echo get_permalink();?>">
     <meta property="og:description" content="<?php wp_strip_all_tags(the_excerpt());?>">
     <meta property="og:image:url" content="<?php the_post_thumbnail_url( 'post-thumbnail' );?>">
-    <meta property="og:image:width" content="450">
-    <meta property="og:image:height" content="450">
+    <meta property="og:image:width" content="350">
+    <meta property="og:image:height" content="350">
 <?php wp_head();?>
 </head>
 <body <?php body_class($global_layout); ?>>
