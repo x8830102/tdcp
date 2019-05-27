@@ -175,9 +175,19 @@ if(!$is_event_post) {
                         <?php wp_link_pages(); ?>
                         <div class="share_btn_container">
                             <div class="share_text">分享</div>
-                            <div class="shareaholic-canvas" data-app="share_buttons" data-app-id-name="post_below_content"></div>
-                        </div>
-                        <div style="display: inline;">
+                            <!-- <div class="shareaholic-canvas" data-app="share_buttons" data-app-id-name="post_below_content">
+                                
+                            </div> -->
+                            <a href="javascript:void(0);" class="fb share">
+                                <li class="share-item"><img src="<?php echo get_template_directory_uri();?>/img/fb_icon.png"></li>
+                            </a>
+                            <a href="javascript:void(0);" class="fb send">
+                                <i class="fab fa-facebook-messenger"></i>
+                                <li class="share-item"><img src="<?php echo get_template_directory_uri();?>/img/fb_icon.png"></li>
+                            </a>
+                            <a href='javascript: void(window.open(&apos;https://lineit.line.me/share/ui?url=&apos; .concat(encodeURIComponent(location.href)) ));' title='分享給 LINE 好友'>
+                                <li class="share-item"><img src="<?php echo get_template_directory_uri();?>/img/line_icon.png"></li>
+                            </a>
                             <?php 
                                 $tilte = urlencode(get_the_title());
                                 $start_date =  date('Ymd', strtotime(get_field('event_start_date', get_the_ID()))) . 'T'.
@@ -189,10 +199,16 @@ if(!$is_event_post) {
                                 $location = !empty(get_field('google_calendar_location', get_the_ID())) ? urlencode(get_field('google_calendar_location', get_the_ID())) : urlencode('台南市中西區南門路21號');
                             ?>
                             <?php if($is_event_post) { ?>
-                                <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=<?php echo $tilte; ?>&dates=<?php echo $dates; ?>&details=<?php echo $details; ?>&location=<?php echo $location; ?>&sf=true&output=xml" target="_blank" rel="nofollow">加入行事曆</a>
+                                <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=<?php echo $tilte; ?>&dates=<?php echo $dates; ?>&details=<?php echo $details; ?>&location=<?php echo $location; ?>&sf=true&output=xml" target="_blank" rel="nofollow">
+                                    <li>
+                                        <img src="<?php echo get_template_directory_uri();?>/img/calendar.png">
+                                    </li>
+                                </a>
                             <?php }?>
                             
                         </div>
+
+                        
                         
                         
                     </div>

@@ -464,6 +464,15 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
     align-items: center;
     padding: 10px;
 }
+.share_btn_container a {
+    padding: 0 10px;
+}
+.share_btn_container li {
+    list-style: none;
+}
+.share_btn_container img {
+    border-radius: 50%;
+}
 .share_text {
     display: inline-block;
     border-right: 1px solid #fff;

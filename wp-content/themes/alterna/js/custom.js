@@ -32,6 +32,41 @@
     })
     $(document).ready(function(){
         const init = function() {
+            // fb init
+            window.fbAsyncInit = function() {
+                FB.init({
+                appId            : '138399296799412',
+                autoLogAppEvents : true,
+                xfbml            : true,
+                version          : 'v2.10'
+                });
+                FB.AppEvents.logPageView();
+            };
+            (function(d, s, id){
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {return;}
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+
+            // fb share
+            $(document).on('click', '.fb.share', function(){
+                console.log('test')
+                FB.ui({
+                    method: 'share',
+                    mobile_iframe: true,
+                    href: location.href+'?utm_campaign=tdcp&utm_medium=facebook&utm_source=event'
+                }, function(response){});
+            });
+            $(document).on('click', '.fb.send', function(){
+                console.log('test')
+                FB.ui({
+                    method: 'send',
+                    mobile_iframe: true,
+                    link:location.href
+                }, function(response){});
+            });
             $('html').css('min-height',$(window).height())
             $('body').css('min-height',$(window).height())
             let content_heigth = $(window).height() - ($('.header-wrap').height() + $('.footer-wrap').height())

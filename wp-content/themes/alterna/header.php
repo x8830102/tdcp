@@ -56,6 +56,13 @@ $current_tax = get_query_var('taxonomy');
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/respond.min.js"></script>
 	<![endif]-->
+    <meta proprety="fb:app" content="138399296799412">
+    <meta property="og:title" content="<?php the_title();?>">
+    <meta property="og:url" content="<?php echo get_permalink();?>">
+    <meta property="og:description" content="<?php the_excerpt();?>">
+    <meta property="og:image:url" content="<?php the_post_thumbnail_url( 'post-thumbnail' );?>">
+    <meta property="og:image:width" content="350">
+    <meta property="og:image:height" content="350">
 <?php wp_head();?>
 </head>
 <body <?php body_class($global_layout); ?>>
