@@ -35,10 +35,10 @@
             // fb init
             window.fbAsyncInit = function() {
                 FB.init({
-                appId            : '138399296799412',
+                appId            : '354868454881906',
                 autoLogAppEvents : true,
                 xfbml            : true,
-                version          : 'v2.10'
+                version          : 'v2.9'
                 });
                 FB.AppEvents.logPageView();
             };
