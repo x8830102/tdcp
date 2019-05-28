@@ -67,6 +67,10 @@ $current_tax = get_query_var('taxonomy');
 <?php wp_head();?>
 </head>
 <body <?php body_class($global_layout); ?>>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNN2WSN"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 	<div class="wrapper">
 		<div class="header-wrap">
         	<?php get_template_part( 'template/header/banner' );?>
