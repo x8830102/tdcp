@@ -185,7 +185,7 @@ if(!$is_event_post) {
                                 <i class="fab fa-facebook-messenger"></i>
                                 <li class="share-item"><img src="<?php echo get_template_directory_uri();?>/img/messenger_icon.png"></li>
                             </a>
-                            <a href='javascript: void(window.open(&apos;https://lineit.line.me/share/ui?url=&apos; .concat(encodeURIComponent(location.href+"?utm_campaign=tdcp&utm_medium=event&utm_source=line")) ));' title='分享給 LINE 好友'>
+                            <a href='javascript: void(window.open(&apos;https://lineit.line.me/share/ui?url=&apos; .concat(encodeURIComponent(location.href+"?utm_campaign=tdcp&utm_medium=social&utm_source=line")) ));' title='分享給 LINE 好友'>
                                 <li class="share-item"><img src="<?php echo get_template_directory_uri();?>/img/line_icon.png"></li>
                             </a>
                             <?php 

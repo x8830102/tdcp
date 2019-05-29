@@ -56,7 +56,7 @@
                 FB.ui({
                     method: 'share',
                     mobile_iframe: true,
-                    href: location.href+'?utm_campaign=tdcp&utm_medium=event&utm_source=facebook'
+                    href: location.href+'?utm_campaign=tdcp&utm_medium=social&utm_source=facebook'
                 }, function(response){});
             });
             $(document).on('click', '.fb.send', function(){
