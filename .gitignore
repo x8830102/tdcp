@@ -8,4 +8,5 @@ wp-content/gallery
 wp-content/uploads/
 wp-content/mu-plugins/
 wp-content/themes/alterna/node_modules/*
+wp-content/themes/alterna/dist/
 !wp-content/themes/alterna
