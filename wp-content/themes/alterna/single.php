@@ -179,14 +179,14 @@ if(!$is_event_post) {
                                 
                             </div> -->
                             <a href="javascript:void(0);" class="fb share">
-                                <li class="share-item"><img src="<?php echo get_template_directory_uri();?>/img/fb_icon.png"></li>
+                                <li class="share-item"><img class="fb_share" src="<?php echo get_template_directory_uri();?>/img/fb_icon.png"></li>
                             </a>
                             <a href="javascript:void(0);" class="fb send">
                                 <i class="fab fa-facebook-messenger"></i>
-                                <li class="share-item"><img src="<?php echo get_template_directory_uri();?>/img/messenger_icon.png"></li>
+                                <li class="share-item"><img class="fb_send" src="<?php echo get_template_directory_uri();?>/img/messenger_icon.png"></li>
                             </a>
                             <a href='javascript: void(window.open(&apos;https://lineit.line.me/share/ui?url=&apos; .concat(encodeURIComponent(location.href+"?utm_campaign=tdcp&utm_medium=social&utm_source=line")) ));' title='分享給 LINE 好友'>
-                                <li class="share-item"><img src="<?php echo get_template_directory_uri();?>/img/line_icon.png"></li>
+                                <li class="share-item"><img class="line_share" src="<?php echo get_template_directory_uri();?>/img/line_icon.png"></li>
                             </a>
                             <?php 
                                 $tilte = urlencode(get_the_title());
@@ -201,7 +201,7 @@ if(!$is_event_post) {
                             <?php if($is_event_post) { ?>
                                 <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=<?php echo $tilte; ?>&dates=<?php echo $dates; ?>&details=<?php echo $details; ?>&location=<?php echo $location; ?>&sf=true&output=xml" target="_blank" rel="nofollow">
                                     <li>
-                                        <img src="<?php echo get_template_directory_uri();?>/img/calendar_icon.png">
+                                        <img class="add_calendar" src="<?php echo get_template_directory_uri();?>/img/calendar_icon.png">
                                     </li>
                                 </a>
                             <?php }?>
