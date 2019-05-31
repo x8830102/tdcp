@@ -3,7 +3,8 @@
     "use strict";
     $(window).load(function(){
         // flexslide
-        $('.rtbs_menu ').on('click', function(){
+        $('.rtbs_menu li').on('click', function(){
+            console.log('test')
             // $('#slider').resize();
             // $('#carousel').resize();
             $('#slider').flexslider({

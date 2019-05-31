@@ -21,7 +21,7 @@ if($date) {
 ?>
 <div id="main" class="container">
     <div class="row">
-        <section class="col-lg-9 col-md-8 col-sm-8">
+        <section class="col-lg-9 col-md-8 col-sm-8 histore-list">
             <?php 
                 
                 if($paged == 0){
@@ -87,7 +87,7 @@ if($date) {
                 wp_reset_postdata();
             ?>
         </section>
-        <aside class="alterna-col col-lg-3 col-md-4 col-sm-4?>"><?php generated_dynamic_sidebar(); ?></aside>
+        <aside class="alterna-col col-lg-3 col-md-4 col-sm-4 histore-sidebar"><?php generated_dynamic_sidebar(); ?></aside>
 
     </div>
 </div>

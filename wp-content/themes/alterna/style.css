@@ -603,6 +603,7 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
     .home_post_list .row {
         justify-content: center;
     }
+
     
 }
 @media screen and (max-width: 575px) {
@@ -638,7 +639,12 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
     .single_img {
         height: 300px;
     }
-    
+    .histore-list {
+        order: 2;
+    }
+    .histore-sidebar {
+        order: 1;
+    }
 
 }
 @media screen and (max-width: 375px) {
