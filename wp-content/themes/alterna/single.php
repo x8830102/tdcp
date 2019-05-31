@@ -20,7 +20,7 @@ if($sidebar_name == '' || $sidebar_name == "Global Sidebar"){
 ?>
 <div class="container-fuild page_top_banner">
     <div class="row top_banner p-5 justify-content-center">
-        <a class="top_banner_link" href="<?php echo get_field('page_top_banner_link', 2);?>"><img src="<?php echo get_field('page_top_banner_img', 2);?>" alt=""></a>
+        <a href="<?php echo get_field('page_top_banner_link', 2);?>"><img class="top_banner" src="<?php echo get_field('page_top_banner_img', 2);?>" alt=""></a>
     </div>
 </div>
 <?php
