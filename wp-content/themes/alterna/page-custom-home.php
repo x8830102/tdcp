@@ -58,7 +58,7 @@ get_header();
       <div class="tab-pane fade show active" id="event" role="tabpanel" aria-labelledby="profile-tab">
         <!-- 月份Tabs -->
         <ul class="nav nav-pills home_pills" role="tablist">
-            <a href="歷史活動" class="nav-link" target="_blank">歷史活動</a>
+            <a href="歷史活動" class="nav-link">歷史活動</a>
         <?php 
         for($i=1;$i<=12;$i++){
           if($i<10){

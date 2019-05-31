@@ -415,6 +415,9 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
     background-color: #f7e4e4;
     padding: 50px;
 }
+.single_page_container section {
+    padding: 0px;
+}
 .post_image_container {
     top: -50px;
     background-color: #d06670;
@@ -525,6 +528,12 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
 .rtbs_menu ul li .active:hover{
  color: #fff !important;
 }
+.entry-content iframe {
+    width: 100%;
+}
+.rtbs .rtbs_content {
+    padding: 0;
+}
 /**single page End**/
 
 /*
@@ -588,9 +597,7 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto;}
     .post_category_container {
         padding: 15px 20px 0 20px;
     }
-    .entry-content iframe {
-        width: 100%;
-    }
+    
     .footer-content .col-md-8{
         flex-direction: column;
     }

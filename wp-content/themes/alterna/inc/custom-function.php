@@ -115,7 +115,7 @@ function get_post_list_func( $term_name, $posts_per_page, $offset=0) {
                     $query->the_post();
                  ?>
                 <div class="col-md-4 col-sm-12 col-lg-3 post_list_item">
-                    <a href="<?php echo the_permalink();?>" class="post_list_link"  target="_blank">
+                    <a href="<?php echo the_permalink();?>" class="post_list_link">
                     <div class="post_list_img">
                         <?php echo the_post_thumbnail( 'medium', '' );?>
                     </div>
@@ -270,7 +270,7 @@ function get_post_list_by_date_func(){
             $post_title = get_field('event_display_name', $daliy_post[0]->ID) ;
 
             $calendar_mobile .= '<ul style="color: #000;">';
-            $calendar_mobile .= '<a href="' .$daliy_post[0]->guid. '" class="d-flex" style="width:100%;"  target="_blank"><li class="mobile_event_date_item"><span>' . $month.'/'.str_pad($i,2,'0',STR_PAD_LEFT) . '</span></li>';
+            $calendar_mobile .= '<a href="' .$daliy_post[0]->guid. '" class="d-flex" style="width:100%;"><li class="mobile_event_date_item"><span>' . $month.'/'.str_pad($i,2,'0',STR_PAD_LEFT) . '</span></li>';
             $calendar_mobile .= '<li class="mobile_event_name_item"><span>' . $daliy_post[0]->post_title . '</span></li></a>';
             $calendar_mobile .=  '</ul>';
         }
@@ -286,7 +286,7 @@ function get_post_list_by_date_func(){
             $color ='#b0add0';
         }
         if(!empty($daliy_post[0])){
-            $calendar .= '<a href="' .$daliy_post[0]->guid. '" target="_blank">';
+            $calendar .= '<a href="' .$daliy_post[0]->guid. '">';
         }
             
             $calendar .= '<li><div class="calendar_month" style="background-color: '.$color.';">'.$i.'</div>';
