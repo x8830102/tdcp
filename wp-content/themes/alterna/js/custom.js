@@ -38,7 +38,6 @@
                 success: function(result){
                     let post_list_item =''
                     let load_more = ''
-                    // console.log(result)
                     result.posts.forEach(function(item, index, array){
                         post_list_item +=`
                             <div class="col-md-5 col-sm-8 col-lg-3 post_list_item">
@@ -59,6 +58,12 @@
                         $('#event .home_post_list .row').html(post_list_item)
                         $('.calendar_content').html(result.calendar_html)
                         $('.calendar_mobile_content').html(result.calendar_mobile_html)
+                    }
+                    if(result.have_more != true) {
+                        $('#event .load_more').hide();
+                    } else {
+                        console.log('show??')
+                        $('#event .load_more').show();
                     }
                     
                     

@@ -67,6 +67,12 @@ get_header();
             $date = $i;
           }
           
+          // 當前日期樣式
+          if(date('m') == $i) {
+            $active = 'active';
+          } else {
+            $active = '';
+          }
           $args = array (
               'post_type' => 'post',
               'category_name' => '最新活動',
@@ -84,7 +90,7 @@ get_header();
           if(!empty($posts)){
             ?>
             <li class="nav-item">
-              <a href="" data-toggle="pill" data-event_date="<?php echo $date;?>" role="tab" class="nav-link event_nav_link"><?php echo $i.'月';?></a>
+              <a href="" data-toggle="pill" data-event_date="<?php echo $date;?>" role="tab" class="nav-link event_nav_link <?php echo $active;?>"><?php echo $i.'月';?></a>
             </li>
             <?php
           }
@@ -97,10 +103,10 @@ get_header();
           <div class="calendar_container">
             <div class="col-lg-12 calendar_background">
               <div class="calendar_content d-none d-lg-flex fade show">
-
+              <!-- ajax put content -->
               </div>
               <div class="calendar_mobile_content d-lg-none fade show">
-
+              <!-- ajax put content -->
               </div>
             </div>
           </div>

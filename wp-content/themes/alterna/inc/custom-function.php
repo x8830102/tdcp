@@ -37,7 +37,7 @@ function event_post_date($args) {
    echo $args['before_title'] . '歷年活動' .  $args['after_title'];
    echo $args['after_widget'];
    // Print some HTML for the widget to display here.
-   for( $year= 2000; $year<=(int)date('Y'); $year++ ) {
+   for( $year= 2000; $year<(int)date('Y'); $year++ ) {
        $arg = array(
             'post_type' => 'post',
             'post_status' => 'publish',
@@ -99,6 +99,18 @@ function get_post_list_func( $term_name, $posts_per_page, $offset=0) {
         'post_type' => 'post',
         'post_status' => 'publish',
         'category_name' => $term_name,
+        'posts_per_page' => 7,
+        'offset'  => $offset
+    );
+    $posts['have_more'] = false;
+    $posts = get_posts($arg);
+    if(count($posts) > 6 ){
+        $posts['have_more'] = true;
+    }
+    $arg = array(
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'category_name' => $term_name,
         'posts_per_page' => $posts_per_page,
         'offset'  => $offset
     );
@@ -130,7 +142,7 @@ function get_post_list_func( $term_name, $posts_per_page, $offset=0) {
             ?>
             </div>
             <div class="col-md-12 text-center">
-                <button type="button" class="btn btn-light load_more" data-term_name="園區動態" data-active_tab="home">
+                <button type="button" class="btn btn-light load_more <?php echo $posts['have_more'] ? '': 'd-none'?>" data-term_name="園區動態" data-active_tab="home">
                     More
                 </button>
             </div>   
@@ -200,7 +212,7 @@ add_action( 'wp_ajax_get_post_list_by_date', 'get_post_list_by_date_func', 10, 2
 function get_post_list_by_date_func(){
     //$term_name,$posts_per_page, $offset=0, $date
     $term_name = sanitize_text_field($_POST['term_name']) ?  sanitize_text_field($_POST['term_name']) : '最新活動';
-    $posts_per_page = absint( $_POST['posts_per_page'] ) ? absint( $_POST['posts_per_page'] ) : 6;
+    $posts_per_page = absint( $_POST['posts_per_page'] ) ? absint( $_POST['posts_per_page'] ) : 7;
     $offset = absint($_POST['offset']) ? absint($_POST['offset']) : 0;
     $month = !empty( $_POST['event_date'] ) ? sanitize_text_field( $_POST['event_date'] ) : date('m');
 
@@ -219,13 +231,37 @@ function get_post_list_by_date_func(){
         
         ),
     );
+    $posts['posts'] = get_posts($args);
+    if(count($posts['posts']) > 6) {
+        $posts['have_more'] = true;
+    }
+    $args = array (
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'category_name' => $term_name,
+        'posts_per_page' => 6,
+        'offset'  => $offset,
+        'meta_query' => array(
+        array(
+              'key'   => 'event_start_date',
+              'compare' => 'LIKE',
+              'value'   => date('Y').'-'.$month,
+          ),
+        
+        ),
+    );
     // get posts
     $posts['posts'] = get_posts($args);
     foreach ($posts['posts'] as $key => $value) {
-        $posts['posts'][$key]->post_img = get_the_post_thumbnail_url($value->ID, 'medium');
-        $posts['posts'][$key]->post_excerpt = limit_string($value->post_excerpt, 30);
+        if($key <=6) {
+            $posts['posts'][$key]->post_img = get_the_post_thumbnail_url($value->ID, 'medium');
+            $posts['posts'][$key]->post_excerpt = limit_string($value->post_excerpt, 30);
+        }
+        
     }
-
+    if(count($posts['posts']) > 6) {
+        $posts['have_more'] = true;
+    }
     $current_month_daycount = date("t", strtotime(date("Y-").$month."-1"));
     $calendar ='';
     $calendar_mobile ='';
