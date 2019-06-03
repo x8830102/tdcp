@@ -50,7 +50,7 @@
         }(document, 'script', 'facebook-jssdk'));
 
         // fb share
-        $(document).on('click', '.fb.share', function(){
+        $(document).on('click', '.fb.share', function(){console.log('fb share')
             FB.ui({
                 method: 'share',
                 mobile_iframe: true,
