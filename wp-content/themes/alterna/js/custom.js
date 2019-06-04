@@ -62,7 +62,6 @@
                     if(result.have_more != true) {
                         $('#event .load_more').hide();
                     } else {
-                        console.log('show??')
                         $('#event .load_more').show();
                     }
                     

@@ -4,7 +4,6 @@
     $(window).load(function(){
         // flexslide
         $('.rtbs_menu li').on('click', function(){
-            console.log('test')
             // $('#slider').resize();
             // $('#carousel').resize();
             $('#slider').flexslider({
@@ -50,7 +49,7 @@
         }(document, 'script', 'facebook-jssdk'));
 
         // fb share
-        $(document).on('click', '.fb.share', function(){console.log('fb share')
+        $(document).on('click', '.fb.share', function(){
             FB.ui({
                 method: 'share',
                 mobile_iframe: true,
