@@ -13,7 +13,7 @@ if($date) {
     $year = explode('-', $date)[0];
     $month = !empty(explode('-', $date)[1]) ? explode('-', $date)[1] : '';
     if (!empty($month)) {
-        $searh_date = $year.'-'.$month;
+        $searh_date = ($year-1).'-'.$month;
     } else {
         $searh_date = $year;
     }

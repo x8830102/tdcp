@@ -19,7 +19,7 @@ const paths = {
 // Webpack configuration
 module.exports = {
     entry: {
-        mainjs: glob.sync("{./js/custom.js,./js/jquery.theme.js,./js/single.js}"),
+        mainjs: glob.sync("{./js/custom.js,./js/jquery.theme.js,./js/single.js,./js/search.js}"),
         maincss: glob.sync("{./**/style.css,./../../uploads/alterna/alterna-styles.css}"),
     },
     output: {

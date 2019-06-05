@@ -1,4 +1,11 @@
 <?php
+function my_epl_modify_listing_quantity($query) {
+    if(!is_admin() && is_search()){
+        $query->set( 'posts_per_page' , 6 ); // Adjust the quantity
+        return;
+    }
+}
+add_action( 'pre_get_posts', 'my_epl_modify_listing_quantity' , 99  );
 add_action('wp_head', 'analytics_code');
 function analytics_code() {
     ?>
