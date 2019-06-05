@@ -213,7 +213,6 @@ function get_post_trim_title_for_api( $object ) {
 * 首頁依照月份tab 觸發ajax 取得文章資料 (預設取得當前月份)
 * 並產生 日歷HTML (PC,手機)
 */
-//
 add_action( 'wp_ajax_nopriv_get_post_list_by_date', 'get_post_list_by_date_func', 10, 2 );
 add_action( 'wp_ajax_get_post_list_by_date', 'get_post_list_by_date_func', 10, 2 );
 function get_post_list_by_date_func(){
@@ -360,6 +359,30 @@ function get_post_list_by_date_func(){
     $posts['calendar_mobile_html'] = $calendar_mobile;
     echo json_encode($posts);
     die();
+}
+
+/*
+* search page load more ajax function
+*/
+add_action( 'wp_ajax_nopriv_search_post', 'search_post_func', 10, 2 );
+add_action( 'wp_ajax_search_post', 'search_post_func', 10, 2 );
+function search_post_func() {
+
+    global $wpdb;
+
+    $s = sanitize_text_field($_POST['s']);
+    $post_type = $_POST['post_type'];
+    $offset = absint($_POST['offset']);
+    
+    $results = $wpdb->get_results("select * from {$wpdb->prefix}posts where (post_title LIKE '%{$s}%' OR post_content LIKE '%{$s}%' OR post_excerpt LIKE '%{$s}%') AND post_type = '{$post_type}' AND post_status = 'publish' ORDER BY ID DESC LIMIT {$offset},6" );
+    foreach ($results as $key => $value) {
+       $results[$key]->post_img = get_the_post_thumbnail_url($value->ID, 'medium');
+       $results[$key]->post_excerpt = limit_string($value->post_excerpt, 30);
+       // print_r( $value->ID);echo '/';
+    }
+     echo json_encode($results);
+    die();
+
 }
 
 // Async load

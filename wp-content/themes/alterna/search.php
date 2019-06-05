@@ -14,7 +14,6 @@ global $wp_query;
 if($wp_query->found_posts > 6) {
     $have_more = true; 
 }
-
 // get page layout
 $layout = alterna_get_page_layout('global'); 
 $layout_class = alterna_get_page_layout_class('global');
@@ -48,7 +47,7 @@ $layout_class = alterna_get_page_layout_class('global');
                     ?>
                     </div>
                     <div class="col-md-12 text-center">
-                        <button type="button" class="btn btn-light load_more <?php echo $have_more ? '': 'd-none'?>">
+                        <button type="button" class="btn btn-light load_more <?php echo $have_more ? '': 'd-none'?>" data-result="<?php echo $_GET['s'];?>" data-found_posts="<?php echo $wp_query->found_posts;?>">
                             More
                         </button>
                     </div>   
@@ -58,7 +57,7 @@ $layout_class = alterna_get_page_layout_class('global');
                 ?>
             </div>
             <?php
-					alterna_content_pagination('nav-bottom' , 'pagination-centered');
+					// alterna_content_pagination('nav-bottom' , 'pagination-centered');
 				}else{ 
 			?>
                 <article id="post-0" class="entry-post no-results not-found">

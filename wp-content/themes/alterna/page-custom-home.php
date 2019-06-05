@@ -21,6 +21,7 @@ get_header();
 // // get posts
 // $posts = get_posts($args);
 // print_r($posts);
+echo get_the_post_thumbnail_url(459, 'medium');
 ?>
 <?php get_template_part('template/page/carousel');?>
 
@@ -48,7 +49,7 @@ get_header();
     </div>
 </div>
 <div calss="container-fluid" style="background-color: #fff">
-  <div class="container" style="background-color: #f7e4e4 ">
+  <div class="container" style="background-color: #f7e4e4" id="home_page">
     <div class="tab-content">
 
       <div class="tab-pane fade " id="home" role="tabpanel" aria-labelledby="home-tab">

@@ -8,7 +8,7 @@ global $paged;
 $per_page_num = 10;
 $page_cats = '最新活動';
 $searh_date = '';
-$date = !empty($_GET['date']) ? $_GET['date'] : date('Y-m', strtotime('-1 year', strtotime(date('Y-m-d'))));
+$date = !empty($_GET['date']) ? $_GET['date'] : date('Y-12', strtotime('-1 year', strtotime(date('Y-m-d'))));
 if($date) {
     $year = explode('-', $date)[0];
     $month = !empty(explode('-', $date)[1]) ? explode('-', $date)[1] : '';

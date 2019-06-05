@@ -38,6 +38,7 @@
                 success: function(result){
                     let post_list_item =''
                     let load_more = ''
+                    console.log(result);
                     result.posts.forEach(function(item, index, array){
                         post_list_item +=`
                             <div class="col-md-5 col-sm-8 col-lg-3 post_list_item">
@@ -78,7 +79,7 @@
             $('.load_more').attr('data-event_date', $(this).data('event_date'))
         })
 
-        $('.load_more').on('click', function(e){
+        $('#home_page .load_more').on('click', function(e){
             let active_tab = $(this).attr('data-active_tab')
             // console.log(active_tab)
             if(active_tab == 'event') {
