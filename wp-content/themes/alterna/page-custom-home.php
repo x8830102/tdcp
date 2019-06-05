@@ -5,23 +5,7 @@
  */
 
 get_header();
-// $today = date('Ymd');
-// $args = array (
-//     'post_type' => 'post',
-//     'meta_query' => array(
-//     array(
-//           'key'   => 'event_start_date',
-//           'compare' => 'LIKE',
-//           'value'   => 201904,
-//       ),
-    
-//     ),
-// );
 
-// // get posts
-// $posts = get_posts($args);
-// print_r($posts);
-echo get_the_post_thumbnail_url(459, 'medium');
 ?>
 <?php get_template_part('template/page/carousel');?>
 
