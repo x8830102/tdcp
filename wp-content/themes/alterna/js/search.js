@@ -31,8 +31,7 @@
                                 </a>
                             </div>`
                     })
-                    console.log(arg.offset)
-                    console.log($('#search_result .load_more').data('found_posts'))
+
                     let found_posts = $('#search_result .load_more').data('found_posts') ;
                     $('.home_post_list .row').append(post_list_item)
                     if( arg.offset == found_posts || (found_posts - arg.offset) < 6 ) {
