@@ -62,7 +62,7 @@ $current_tax = get_query_var('taxonomy');
     <meta property="og:url" content="<?php echo get_permalink();?>">
     <meta property="og:site_name" content="台南數位文創園區" />
     <meta property="og:description" content="<?php echo get_the_excerpt() ? strip_tags(get_the_excerpt()): '臺南市政府資訊中心推動「臺南市政府數位文創園區」，希望點燃在地產業的創意之火，帶動區域的經濟發展，打造一個整合maker、hacker與creator的園區，提供在地數位與文創工作者討論、交流、育成、媒合的平台，形成數位文創產業聚落，融入地方經濟、文化與市民生活，充分發揮群聚的加乘效果，將數位文創園區發展成為南台灣的產業重鎮。';?>">
-    <meta property="og:image" content="<?php if(!empty(the_post_thumbnail_url( 'thumbnail' ))) { the_post_thumbnail_url( 'thumbnail' );} else { echo 'https://www.tdcp.org.tw/wp-content/uploads/2019/04/470305_293838900695223_666718057_o.jpg';};?>">
+    <meta property="og:image" content="<?php if(!empty(get_the_post_thumbnail_url( 'thumbnail' ))) { the_post_thumbnail_url( 'thumbnail' );} else { echo 'https://www.tdcp.org.tw/wp-content/uploads/2019/04/470305_293838900695223_666718057_o.jpg';};?>">
     <meta property="og:image:width" content="300">
     <meta property="og:image:height" content="300">
 <?php wp_head();?>
