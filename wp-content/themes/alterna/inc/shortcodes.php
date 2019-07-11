@@ -385,13 +385,13 @@ function alterna_flexslider_item_func($atts, $content = null){
 		  'type' 	=>	'image',
 		  'src'	 	=>	'',
 		  'url'		=>	'',
-		  'target'	=>	'_blank'
+		  'target'	=>	'_blank',
 		  'title'	=> 	''
 		  ), $atts ) );
 	switch($type){
 		case 'image' :
 			if($url != ""){
-				$alterna_flexslider_items[] = '<a href="'.esc_url($url).'" target="'.esc_attr($target).'"><img src="'.esc_url($src).'" alt="img" ></a>';
+				$alterna_flexslider_items[] = '<a href="'.esc_url($url).'" target="'.esc_attr($target).'"><img src="'.esc_url($src).'" alt="img" title="'.esc_attr($title).'"></a>';
 			}else{
 				$alterna_flexslider_items[] = '<img src="'.esc_url($src).'" alt="img" title="'.esc_attr($title).'">';
 			}
