@@ -18,6 +18,15 @@ if($sidebar_name == '' || $sidebar_name == "Global Sidebar"){
 	}
 }
 ?>
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body">
+            <img src="" alt="img" title="">
+        </div>
+    </div>
+  </div>
+</div>
 <div class="container-fuild page_top_banner">
     <div class="row top_banner p-5 justify-content-center">
         <a href="<?php echo get_field('page_top_banner_link', 2);?>"><img class="top_banner" src="<?php echo get_field('page_top_banner_img', 2);?>" alt=""></a>

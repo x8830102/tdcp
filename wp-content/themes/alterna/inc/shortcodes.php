@@ -358,9 +358,9 @@ function alterna_flexslider_func($atts, $content = null){
 	$output = '<div id="slider" class="flexslider " '.($auto == "yes" ? 'data-delay="'.esc_attr($delay).'"' : '').'><ul class="slides">';
 	
 	do_shortcode($content);
-	if(count($alterna_flexslider_items) > 0){
-		foreach($alterna_flexslider_items as $alterna_flexslider_item){
-			$output .= '<li>'.$alterna_flexslider_item.'</li>';
+	if(count($alterna_flexslider_items['slider']) > 0){
+		foreach($alterna_flexslider_items['slider'] as $alterna_flexslider_slider_item){
+			$output .= '<li>'.$alterna_flexslider_slider_item.'</li>';
 		}
 	}
 	
@@ -368,9 +368,9 @@ function alterna_flexslider_func($atts, $content = null){
 	
 
 	$output .= '<div id="carousel"  class="flexslider"><ul class="slides">';
-		if(count($alterna_flexslider_items) > 0){
-			foreach($alterna_flexslider_items as $alterna_flexslider_item){
-				$output .= '<li>'.$alterna_flexslider_item.'</li>';
+		if(count($alterna_flexslider_items['carousel']) > 0){
+			foreach($alterna_flexslider_items['carousel'] as $alterna_flexslider_carousel_item){
+				$output .= '<li>'.$alterna_flexslider_carousel_item.'</li>';
 			}
 		}
 	$output .=	'</ul></div>';
@@ -379,7 +379,7 @@ function alterna_flexslider_func($atts, $content = null){
 }
 add_shortcode('flexslider', 'alterna_flexslider_func');
 
-function alterna_flexslider_item_func($atts, $content = null){
+function alterna_flexslider_slider_item_func($atts, $content = null){
 	global $alterna_flexslider_items;
 	extract( shortcode_atts( array(
 		  'type' 	=>	'image',
@@ -390,11 +390,9 @@ function alterna_flexslider_item_func($atts, $content = null){
 		  ), $atts ) );
 	switch($type){
 		case 'image' :
-			if($url != ""){
-				$alterna_flexslider_items[] = '<a href="'.esc_url($url).'" target="'.esc_attr($target).'"><img src="'.esc_url($src).'" alt="img" title="'.esc_attr($title).'"></a>';
-			}else{
-				$alterna_flexslider_items[] = '<img src="'.esc_url($src).'" alt="img" title="'.esc_attr($title).'">';
-			}
+			$alterna_flexslider_items['slider'][] = '<a href="'.esc_url(!empty($url)?$url:"javascript:void(0);").'" data-toggle="modal" data-target="#myModal" target="'.esc_attr($target).'"><img src="'.esc_url($src).'" alt="img" title="'.esc_attr($title).'"></a>';
+			$alterna_flexslider_items['carousel'][] = '<a href="'.esc_url(!empty($url)?$url:"javascript:void(0);").'" target="'.esc_attr($target).'"><img src="'.esc_url($src).'" alt="img" title="'.esc_attr($title).'"></a>';
+				// $alterna_flexslider_items[] = '';
 			break;
 		case 'video' :
 			$alterna_flexslider_items[] = do_shortcode($content);
@@ -402,7 +400,29 @@ function alterna_flexslider_item_func($atts, $content = null){
 	}
 	return "";
 }
-add_shortcode('flexslider_item', 'alterna_flexslider_item_func');
+add_shortcode('flexslider_item', 'alterna_flexslider_slider_item_func');
+
+// function alterna_flexslide_carouselr_item_func($atts, $content = null){
+// 	global $alterna_flexslider_carousel_items;
+// 	extract( shortcode_atts( array(
+// 		  'type' 	=>	'image',
+// 		  'src'	 	=>	'',
+// 		  'url'		=>	'',
+// 		  'target'	=>	'_blank',
+// 		  'title'	=> 	''
+// 		  ), $atts ) );
+// 	switch($type){
+// 		case 'image' :
+			// $alterna_flexslider_carousel_items[] = '<a href="'.esc_url(!empty($url)?$url:"javascript:void(0);").'" target="'.esc_attr($target).'"><img src="'.esc_url($src).'" alt="img" title="'.esc_attr($title).'"></a>';
+// 				// $alterna_flexslider_items[] = '';
+// 			break;
+// 		case 'video' :
+// 			$alterna_flexslider_carousel_items[] = do_shortcode($content);
+// 			break;
+// 	}
+// 	return "";
+// }
+// add_shortcode('flexslider_item', 'alterna_flexslide_carouselr_item_func');
 
 //=============================
 // Carousel

@@ -66,5 +66,16 @@
         if($('.rtbs_menu ul li').length == 2) {
             $('<style>.rtbs_full .rtbs_menu ul::after{content:""}</style>').appendTo('head');
         }
+
+        $('#slider a').on('click',function(){
+            $(this).data("toggle","modal")
+            $(this).data("target","#myModal")
+            let active_img_src = $('.flex-active-slide a img').attr('src')
+            console.log(active_img_src)
+            $("#myModal img").attr("src",active_img_src);
+            $("#myModal").css('top','unset')
+            // $("#myModal").css('align-items','center')
+        })
+
     })
 })(jQuery,document)

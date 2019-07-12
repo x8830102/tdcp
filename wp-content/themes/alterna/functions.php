@@ -369,6 +369,6 @@ add_filter( 'login_headerurl', 'alterna_login_logo_url' );
 function alterna_login_logo_url_title() {
     return get_bloginfo('title');
 }
-add_filter( 'login_headertitle', 'alterna_login_logo_url_title' );
+add_filter( 'login_headertext', 'alterna_login_logo_url_title' );
 
 ?>
