@@ -1,0 +1,5263 @@
+# Copyright (C) 2019 Nelio Software
+# This file is distributed under the same license as the Nelio Content plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Nelio Content 1.6.17\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nelio-content\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-07-01T06:29:54+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.2.0\n"
+"X-Domain: nelio-content\n"
+
+#. Plugin Name of the plugin
+msgid "Nelio Content"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://neliosoftware.com/content"
+msgstr ""
+
+#. Description of the plugin
+msgid "Auto-post, schedule, and share your posts on Twitter, Facebook, LinkedIn, Instagram, and other social networks. Save time with useful automations."
+msgstr ""
+
+#. Author of the plugin
+msgid "Nelio Software"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://neliosoftware.com"
+msgstr ""
+
+#: includes/utils/class-nelio-content-reference-post-type-register.php:42
+#: includes/utils/class-nelio-content-reference-post-type-register.php:55
+#: includes/class-nelio-content-auto-sharer.php:51
+#: includes/class-nelio-content-auto-sharer.php:63
+#: includes/class-nelio-content.php:128
+#: includes/class-nelio-content.php:141
+#: includes/class-nelio-content-analytics-helper.php:42
+#: includes/class-nelio-content-analytics-helper.php:54
+#: includes/class-nelio-content-external-featured-image-helper.php:60
+#: includes/class-nelio-content-external-featured-image-helper.php:73
+#: includes/lib/settings/abstract-class-nelio-content-abstract-settings.php:198
+#: includes/lib/settings/abstract-class-nelio-content-abstract-settings.php:210
+#: includes/class-nelio-content-notifications.php:42
+#: includes/class-nelio-content-notifications.php:54
+#: public/class-nelio-content-public.php:76
+#: public/class-nelio-content-public.php:88
+#: admin/class-nelio-content-user-helper.php:42
+#: admin/class-nelio-content-user-helper.php:55
+#: admin/class-nelio-content-post-helper.php:44
+#: admin/class-nelio-content-post-helper.php:57
+#: admin/class-nelio-content-media-menus.php:73
+#: admin/class-nelio-content-media-menus.php:85
+#: admin/class-nelio-content-admin.php:78
+#: admin/class-nelio-content-admin.php:90
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: includes/utils/class-nelio-content-reference-post-type-register.php:135
+msgctxt "text"
+msgid "External References"
+msgstr ""
+
+#: includes/utils/class-nelio-content-reference-post-type-register.php:136
+#: admin/class-nelio-content-reference-ajax-api.php:546
+msgctxt "text"
+msgid "Reference"
+msgstr ""
+
+#: includes/utils/class-nelio-content-reference-post-type-register.php:137
+#: admin/class-nelio-content-links-meta-box.php:47
+msgctxt "text"
+msgid "References"
+msgstr ""
+
+#: includes/utils/class-nelio-content-reference-post-type-register.php:139
+msgctxt "command"
+msgid "Add Reference"
+msgstr ""
+
+#: includes/utils/class-nelio-content-reference-post-type-register.php:140
+msgctxt "text"
+msgid "Add Reference"
+msgstr ""
+
+#: includes/utils/class-nelio-content-reference-post-type-register.php:141
+msgctxt "text"
+msgid "Edit Reference"
+msgstr ""
+
+#: includes/utils/class-nelio-content-reference-post-type-register.php:142
+msgctxt "text"
+msgid "New Reference"
+msgstr ""
+
+#: includes/utils/class-nelio-content-reference-post-type-register.php:143
+msgctxt "command"
+msgid "Search References"
+msgstr ""
+
+#: includes/utils/class-nelio-content-reference-post-type-register.php:144
+msgctxt "text"
+msgid "No references found"
+msgstr ""
+
+#: includes/utils/class-nelio-content-reference-post-type-register.php:145
+msgctxt "text"
+msgid "No references found in trash"
+msgstr ""
+
+#: includes/utils/class-nelio-content-reference-post-type-register.php:180
+msgctxt "text (reference)"
+msgid "Pending"
+msgstr ""
+
+#. translators: a number
+#: includes/utils/class-nelio-content-reference-post-type-register.php:182
+msgctxt "text (reference)"
+msgid "Pending <span class=\"count\">(%s)</span>"
+msgid_plural "Pending <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/utils/class-nelio-content-reference-post-type-register.php:188
+msgctxt "text (reference)"
+msgid "Improvable"
+msgstr ""
+
+#. translators: a number
+#: includes/utils/class-nelio-content-reference-post-type-register.php:190
+msgctxt "text (reference)"
+msgid "Improvable <span class=\"count\">(%s)</span>"
+msgid_plural "Improvable <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/utils/class-nelio-content-reference-post-type-register.php:196
+msgctxt "text (reference)"
+msgid "Complete"
+msgstr ""
+
+#. translators: a number
+#: includes/utils/class-nelio-content-reference-post-type-register.php:198
+msgctxt "text (reference)"
+msgid "Complete <span class=\"count\">(%s)</span>"
+msgid_plural "Complete <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/utils/class-nelio-content-reference-post-type-register.php:204
+msgctxt "text (reference)"
+msgid "Broken"
+msgstr ""
+
+#. translators: a number
+#: includes/utils/class-nelio-content-reference-post-type-register.php:206
+msgctxt "text (reference)"
+msgid "Broken <span class=\"count\">(%s)</span>"
+msgid_plural "Broken <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/utils/class-nelio-content-reference-post-type-register.php:212
+msgctxt "text (reference)"
+msgid "Check Required"
+msgstr ""
+
+#. translators: a number
+#: includes/utils/class-nelio-content-reference-post-type-register.php:214
+msgctxt "text (reference)"
+msgid "Check Required <span class=\"count\">(%s)</span>"
+msgid_plural "Check Required <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/utils/nelio-content-api-errors.php:28
+msgctxt "error"
+msgid "Invalid license code."
+msgstr ""
+
+#: includes/utils/nelio-content-api-errors.php:92
+msgctxt "error"
+msgid "Unable to access Nelio Content's API."
+msgstr ""
+
+#. translators: an error description
+#: includes/utils/nelio-content-api-errors.php:116
+msgctxt "error"
+msgid "There was an error while accessing Nelio Content's API: %s."
+msgstr ""
+
+#: includes/utils/nelio-content-core-functions.php:163
+msgctxt "error"
+msgid "There was an error while accessing Nelio Content's API."
+msgstr ""
+
+#: includes/class-nelio-content.php:708
+msgctxt "text"
+msgid "Every Four Hours (Nelio Content)"
+msgstr ""
+
+#: includes/class-nelio-content-post-statuses.php:634
+msgctxt "text (status)"
+msgid "(unknown)"
+msgstr ""
+
+#: includes/class-nelio-content-post-statuses.php:648
+#: includes/class-nelio-content-post-statuses.php:875
+msgctxt "post status"
+msgid "Idea"
+msgstr ""
+
+#: includes/class-nelio-content-post-statuses.php:656
+#: includes/class-nelio-content-post-statuses.php:880
+msgctxt "post status"
+msgid "Assigned"
+msgstr ""
+
+#: includes/class-nelio-content-post-statuses.php:664
+#: includes/class-nelio-content-post-statuses.php:885
+msgctxt "post status"
+msgid "In Progress"
+msgstr ""
+
+#: includes/class-nelio-content-post-statuses.php:847
+msgctxt "text"
+msgid "No Change"
+msgstr ""
+
+#: includes/class-nelio-content-post-statuses.php:848
+#: admin/data/i18n/actions.php:38
+msgctxt "command"
+msgid "OK"
+msgstr ""
+
+#: includes/class-nelio-content-post-statuses.php:849
+#: admin/views/partials/editorial-tasks/editorial-task.php:62
+#: admin/views/partials/editorial-tasks/new-editorial-task.php:47
+#: admin/views/partials/social-timeline/social-timeline-message.php:103
+#: admin/views/partials/account/account-page.php:179
+#: admin/views/partials/editorial-comments/editorial-comment.php:73
+#: admin/views/partials/links/references/external-reference.php:113
+#: admin/views/partials/links/references/suggested-reference.php:133
+#: admin/views/partials/settings/google-analytics.php:50
+#: admin/views/partials/settings/google-analytics.php:77
+#: admin/views/partials/social-profile-settings/connected-social-profile.php:104
+#: admin/views/partials/social-message-editor/social-message-actual-editor.php:108
+#: admin/views/partials/feed-settings/feed.php:53
+#: admin/views/partials/social-template-settings/social-template.php:63
+#: admin/data/i18n/actions.php:14
+msgctxt "command"
+msgid "Cancel"
+msgstr ""
+
+#: includes/class-nelio-content-post-statuses.php:850
+#: includes/class-nelio-content-post-statuses.php:881
+#: includes/class-nelio-content-post-statuses.php:886
+#: includes/class-nelio-content-post-statuses.php:901
+#: includes/class-nelio-content-post-statuses.php:906
+#: admin/class-nelio-content-social-media-meta-box.php:115
+#: admin/data/i18n/actions.php:48
+msgctxt "command"
+msgid "Save"
+msgstr ""
+
+#: includes/class-nelio-content-post-statuses.php:851
+msgctxt "text"
+msgid "Published"
+msgstr ""
+
+#: includes/class-nelio-content-post-statuses.php:870
+msgctxt "post status"
+msgid "Private"
+msgstr ""
+
+#: includes/class-nelio-content-post-statuses.php:871
+msgctxt "command"
+msgid "Save as Private"
+msgstr ""
+
+#: includes/class-nelio-content-post-statuses.php:876
+msgctxt "command"
+msgid "Save Idea"
+msgstr ""
+
+#: includes/class-nelio-content-post-statuses.php:890
+msgctxt "post status"
+msgid "Draft"
+msgstr ""
+
+#: includes/class-nelio-content-post-statuses.php:891
+msgctxt "command"
+msgid "Save Draft"
+msgstr ""
+
+#: includes/class-nelio-content-post-statuses.php:895
+msgctxt "post status"
+msgid "Pending"
+msgstr ""
+
+#: includes/class-nelio-content-post-statuses.php:896
+msgctxt "command"
+msgid "Save as Pending"
+msgstr ""
+
+#: includes/class-nelio-content-post-statuses.php:900
+msgctxt "post status"
+msgid "Scheduled"
+msgstr ""
+
+#: includes/class-nelio-content-post-statuses.php:905
+msgctxt "post status"
+msgid "Published"
+msgstr ""
+
+#: includes/data/content-tab.php:20
+msgctxt "text"
+msgid "Calendar"
+msgstr ""
+
+#: includes/data/content-tab.php:26
+msgctxt "text"
+msgid "Post Status Colors"
+msgstr ""
+
+#: includes/data/content-tab.php:27
+msgctxt "command"
+msgid "Enable colors in calendar based on post status."
+msgstr ""
+
+#: includes/data/content-tab.php:34
+msgctxt "text"
+msgid "Post Quality"
+msgstr ""
+
+#: includes/data/content-tab.php:40
+msgctxt "text"
+msgid "Required Role"
+msgstr ""
+
+#: includes/data/content-tab.php:41
+msgctxt "text"
+msgid "Quality Checks will be available to users with the selected role or above."
+msgstr ""
+
+#: includes/data/content-tab.php:46
+msgctxt "text"
+msgid "Contributor"
+msgstr ""
+
+#: includes/data/content-tab.php:50
+#: includes/class-nelio-content-calendar-helper.php:426
+#: admin/views/partials/notifications/follower.php:49
+#: admin/views/partials/calendar/post-editor.php:126
+#: admin/views/partials/social-template-settings/social-template-editor.php:37
+msgctxt "text"
+msgid "Author"
+msgstr ""
+
+#: includes/data/content-tab.php:54
+msgctxt "text"
+msgid "Editor"
+msgstr ""
+
+#: includes/data/content-tab.php:58
+msgctxt "text"
+msgid "Admin"
+msgstr ""
+
+#. translators: a single setting's label
+#: includes/data/content-tab.php:67
+msgctxt "text"
+msgid "Post Length (words)"
+msgstr ""
+
+#: includes/data/content-tab.php:68
+msgctxt "text"
+msgid "How many words your blog posts should have. If a post has fewer words, Nelio Content will warn the author and suggest him to write more content."
+msgstr ""
+
+#: includes/data/content-tab.php:105
+msgctxt "text"
+msgid "Yoast SEO Integration"
+msgstr ""
+
+#: includes/data/content-tab.php:106
+msgctxt "command"
+msgid "Integrate Yoast SEO score in Nelio Content's post analysis."
+msgstr ""
+
+#: includes/data/content-tab.php:113
+msgctxt "text"
+msgid "Analytics"
+msgstr ""
+
+#: includes/data/content-tab.php:119
+msgctxt "text (analytics)"
+msgid "Basic"
+msgstr ""
+
+#: includes/data/content-tab.php:120
+msgctxt "command"
+msgid "Enable analytics for Nelio Content's managed post types."
+msgstr ""
+
+#: includes/data/content-tab.php:127
+msgctxt "text"
+msgid "Analytics Data"
+msgstr ""
+
+#: includes/data/content-tab.php:135
+#: includes/data/content-tab.php:141
+msgctxt "text"
+msgid "External Featured Images"
+msgstr ""
+
+#: includes/data/content-tab.php:142
+msgctxt "command"
+msgid "Enable External Featured Images."
+msgstr ""
+
+#: includes/data/content-tab.php:149
+msgctxt "text"
+msgid "Mode"
+msgstr ""
+
+#: includes/data/content-tab.php:150
+msgctxt "html"
+msgid "Themes can insert featured images in different ways. For example, some themes use a WordPress function named <code>(get_)the_post_thumbnail</code> whereas others use a combination of <code>wp_get_attachment_image_src</code> and <code>get_post_thumbnail_id</code>. Depending on how your theme operates, Nelio Content may or may not be compatible with it. In order to maximize the number of compatible themes, the plugin implements different <em>modes</em>."
+msgstr ""
+
+#: includes/data/content-tab.php:155
+msgctxt "text"
+msgid "Default Mode"
+msgstr ""
+
+#: includes/data/content-tab.php:156
+msgctxt "text"
+msgid "This mode assumes your theme uses the function <code>(get_)the_post_thumbnail</code> for inserting featured images. For example, WordPress default themes should work with this setting."
+msgstr ""
+
+#: includes/data/content-tab.php:160
+msgctxt "text"
+msgid "Double-Quote Mode"
+msgstr ""
+
+#: includes/data/content-tab.php:161
+msgctxt "text"
+msgid "If your theme retrieves the URL of the featured image and outputs it within an <code>img</code> tag, this mode might be the one you need. Compatible themes include Newspaper, Newsmag, Enfold, and others."
+msgstr ""
+
+#: includes/data/content-tab.php:165
+msgctxt "text"
+msgid "Single-Quote Mode"
+msgstr ""
+
+#: includes/data/content-tab.php:166
+msgctxt "text"
+msgid "Equivalent to «Double-Quote Mode», but using single quotes instead."
+msgstr ""
+
+#: includes/data/content-tab.php:174
+msgctxt "text"
+msgid "Autoset Featured Image"
+msgstr ""
+
+#: includes/data/content-tab.php:175
+msgctxt "text"
+msgid "If a post doesn't have a featured image set, Nelio Content can set it automatically for you. To do this, it looks for all the images included in the post and uses one of them as the featured image."
+msgstr ""
+
+#: includes/data/content-tab.php:180
+#: admin/data/i18n/templates.php:12
+msgctxt "text"
+msgid "Disabled"
+msgstr ""
+
+#: includes/data/content-tab.php:181
+msgctxt "text"
+msgid "Nelio Content doesn't set the featured image automatically."
+msgstr ""
+
+#: includes/data/content-tab.php:185
+msgctxt "text"
+msgid "Use First Image in Post"
+msgstr ""
+
+#: includes/data/content-tab.php:186
+msgctxt "text"
+msgid "Nelio Content will use the first image included in the post."
+msgstr ""
+
+#: includes/data/content-tab.php:190
+msgctxt "text"
+msgid "Use Any Image In Post"
+msgstr ""
+
+#: includes/data/content-tab.php:191
+msgctxt "text"
+msgid "Nelio Content will use one of the images included in the post, selecting it randomly. If there are more than two images, Nelio Content will ignore the first and the last image."
+msgstr ""
+
+#: includes/data/content-tab.php:195
+msgctxt "text"
+msgid "Use Last Image In Post"
+msgstr ""
+
+#: includes/data/content-tab.php:196
+msgctxt "text"
+msgid "Nelio Content will use the last image included in the post."
+msgstr ""
+
+#: includes/data/advanced-tab.php:20
+msgctxt "text"
+msgid "Plugin Setup"
+msgstr ""
+
+#: includes/data/advanced-tab.php:26
+#: includes/data/editorial-calendar-settings.php:20
+msgctxt "text"
+msgid "Managed Post Types"
+msgstr ""
+
+#: includes/data/advanced-tab.php:34
+#: includes/data/editorial-calendar-settings.php:28
+msgctxt "text"
+msgid "Custom Post Statuses"
+msgstr ""
+
+#: includes/data/advanced-tab.php:35
+#: includes/data/editorial-calendar-settings.php:29
+msgctxt "command"
+msgid "Add custom post statuses (such as \"Idea\", \"Assigned\", or \"In Progress\") to managed post types."
+msgstr ""
+
+#: includes/data/advanced-tab.php:42
+msgctxt "text"
+msgid "Notifications"
+msgstr ""
+
+#: includes/data/advanced-tab.php:43
+msgctxt "command"
+msgid "Send email notifications when the status of a post is updated, when an editorial task is created or completed, or when an editorial comment is added."
+msgstr ""
+
+#: includes/data/advanced-tab.php:50
+#: includes/data/editorial-calendar-settings.php:36
+msgctxt "text"
+msgid "iCal Calendar Feed"
+msgstr ""
+
+#: includes/data/advanced-tab.php:51
+#: includes/data/editorial-calendar-settings.php:37
+msgctxt "user"
+msgid "Export your calendar posts to Google Calendar or any other calendar tool."
+msgstr ""
+
+#: includes/data/advanced-tab.php:59
+msgctxt "text"
+msgid "API Proxy"
+msgstr ""
+
+#: includes/data/advanced-tab.php:60
+msgctxt "command"
+msgid "My server doesn't support SNI. Use Nelio's secure proxy to access the API."
+msgstr ""
+
+#: includes/data/advanced-tab.php:67
+msgctxt "text"
+msgid "Social Behavior"
+msgstr ""
+
+#: includes/data/advanced-tab.php:73
+msgctxt "text"
+msgid "Reshare"
+msgstr ""
+
+#: includes/data/advanced-tab.php:74
+msgctxt "html"
+msgid "Nelio Content can automatically reshare old content according to your preferences:"
+msgstr ""
+
+#: includes/data/advanced-tab.php:79
+msgctxt "text"
+msgid "Include all posts, unless stated otherwise"
+msgstr ""
+
+#: includes/data/advanced-tab.php:80
+msgctxt "text"
+msgid "Nelio Content may reshare any old post, unless you've explicitly excluded it from resharing."
+msgstr ""
+
+#: includes/data/advanced-tab.php:84
+msgctxt "text"
+msgid "Exclude all posts, unless stated otherwise"
+msgstr ""
+
+#: includes/data/advanced-tab.php:85
+msgctxt "text"
+msgid "Nelio Content will only reshare old posts that you've manually marked as eligible for resharing."
+msgstr ""
+
+#: includes/data/advanced-tab.php:93
+msgctxt "text"
+msgid "Automations Frequency"
+msgstr ""
+
+#: includes/data/advanced-tab.php:94
+msgctxt "command"
+msgid "Set publication and reshare frequencies manually."
+msgstr ""
+
+#: includes/class-nelio-content-calendar-helper.php:98
+#: includes/class-nelio-content-calendar-helper.php:103
+#: includes/class-nelio-content-calendar-helper.php:115
+#: includes/class-nelio-content-calendar-helper.php:126
+msgid "Invalid request"
+msgstr ""
+
+#: includes/class-nelio-content-calendar-helper.php:436
+msgctxt "text"
+msgid "Post Type"
+msgstr ""
+
+#: includes/class-nelio-content-calendar-helper.php:450
+msgctxt "text (post status)"
+msgid "Scheduled"
+msgstr ""
+
+#: includes/class-nelio-content-calendar-helper.php:455
+msgctxt "text (post status)"
+msgid "Published"
+msgstr ""
+
+#: includes/class-nelio-content-calendar-helper.php:516
+msgctxt "command"
+msgid "Preview"
+msgstr ""
+
+#: includes/class-nelio-content-calendar-helper.php:522
+msgctxt "command"
+msgid "View"
+msgstr ""
+
+#: includes/lib/settings/partials/nelio-content-input-setting.php:50
+msgctxt "user"
+msgid "Confirm Password&hellip;"
+msgstr ""
+
+#: includes/lib/settings/partials/nelio-content-input-setting.php:59
+#: includes/lib/settings/partials/nelio-content-select-setting.php:56
+#: includes/lib/settings/partials/nelio-content-radio-setting.php:48
+#: includes/lib/settings/partials/nelio-content-checkbox-setting.php:34
+#: includes/lib/settings/partials/nelio-content-range-setting.php:64
+#: includes/lib/settings/partials/nelio-content-text-area-setting.php:36
+msgctxt "user"
+msgid "Read more&hellip;"
+msgstr ""
+
+#: includes/lib/settings/abstract-class-nelio-content-abstract-settings.php:246
+msgctxt "error"
+msgid "Nelio Content settings should be used after plugins_loaded."
+msgstr ""
+
+#: includes/class-nelio-content-notifications.php:654
+#: includes/class-nelio-content-notifications.php:713
+#: includes/class-nelio-content-notifications.php:895
+#: includes/class-nelio-content-notifications.php:979
+#: includes/class-nelio-content-notifications.php:1045
+#: includes/class-nelio-content-notifications.php:1144
+msgctxt "text"
+msgid "(no title)"
+msgstr ""
+
+#. translators: 1: blog name, 2: post title
+#: includes/class-nelio-content-notifications.php:667
+msgctxt "text"
+msgid "[%1$s] New Editorial Comment: \"%2$s\""
+msgstr ""
+
+#. translators: 1: post id, 2: post title, 3. post type
+#: includes/class-nelio-content-notifications.php:673
+msgctxt "text"
+msgid "A new editorial comment was added to %3$s #%1$s \"%2$s\""
+msgstr ""
+
+#. translators: 1: comment author, 2: author email, 3: date, 4: time
+#: includes/class-nelio-content-notifications.php:679
+msgctxt "text"
+msgid "%1$s (%2$s) said on %3$s at %4$s:"
+msgstr ""
+
+#. translators: 1: user name, 2. user email
+#: includes/class-nelio-content-notifications.php:721
+#: includes/class-nelio-content-notifications.php:903
+msgctxt "text"
+msgid "%1$s (%2$s)"
+msgstr ""
+
+#: includes/class-nelio-content-notifications.php:723
+#: includes/class-nelio-content-notifications.php:905
+msgctxt "text"
+msgid "WordPress Scheduler"
+msgstr ""
+
+#. translators: 1: site name, 2: post type, 3. post title
+#: includes/class-nelio-content-notifications.php:734
+msgctxt "text"
+msgid "[%1$s] New %2$s Created: \"%3$s\""
+msgstr ""
+
+#. translators: 1: post type, 2: post id, 3. post title, 4. user name
+#: includes/class-nelio-content-notifications.php:740
+msgctxt "text"
+msgid "A new %1$s (#%2$s \"%3$s\") was created by %4$s"
+msgstr ""
+
+#. translators: 1: site name, 2: post type, 3. post title
+#: includes/class-nelio-content-notifications.php:748
+msgctxt "text"
+msgid "[%1$s] %2$s Trashed: \"%3$s\""
+msgstr ""
+
+#. translators: 1: post type, 2: post id, 3. post title, 4. user name
+#: includes/class-nelio-content-notifications.php:754
+msgctxt "text"
+msgid "%1$s #%2$s \"%3$s\" was moved to the trash by %4$s"
+msgstr ""
+
+#. translators: 1: site name, 2: post type, 3. post title
+#: includes/class-nelio-content-notifications.php:762
+msgctxt "text"
+msgid "[%1$s] %2$s Restored (from Trash): \"%3$s\""
+msgstr ""
+
+#. translators: 1: post type, 2: post id, 3. post title, 4. user name
+#: includes/class-nelio-content-notifications.php:768
+msgctxt "text"
+msgid "%1$s #%2$s \"%3$s\" was restored from trash by %4$s"
+msgstr ""
+
+#. translators: 1: site name, 2: post type, 3. post title
+#: includes/class-nelio-content-notifications.php:776
+msgctxt "text"
+msgid "[%1$s] %2$s Scheduled: \"%3$s\""
+msgstr ""
+
+#. translators: 1: post type, 2: post id, 3. post title, 4. user name, 5. scheduled date
+#: includes/class-nelio-content-notifications.php:782
+msgctxt "text"
+msgid "%1$s #%2$s \"%3$s\" was scheduled by %4$s. It will be published on %5$s"
+msgstr ""
+
+#. translators: 1: site name, 2: post type, 3. post title
+#: includes/class-nelio-content-notifications.php:790
+msgctxt "text"
+msgid "[%1$s] %2$s Published: \"%3$s\""
+msgstr ""
+
+#. translators: 1: post type, 2: post id, 3. post title, 4. user name
+#: includes/class-nelio-content-notifications.php:796
+msgctxt "text"
+msgid "%1$s #%2$s \"%3$s\" was published by %4$s"
+msgstr ""
+
+#. translators: 1: site name, 2: post type, 3. post title
+#: includes/class-nelio-content-notifications.php:804
+msgctxt "text"
+msgid "[%1$s] %2$s Unpublished: \"%3$s\""
+msgstr ""
+
+#. translators: 1: post type, 2: post id, 3. post title, 4. user name
+#: includes/class-nelio-content-notifications.php:810
+msgctxt "text"
+msgid "%1$s #%2$s \"%3$s\" was unpublished by %4$s"
+msgstr ""
+
+#. translators: 1: site name, 2: post type, 3. post title
+#: includes/class-nelio-content-notifications.php:818
+msgctxt "text"
+msgid "[%1$s] %2$s Status Changed for \"%3$s\""
+msgstr ""
+
+#. translators: 1: post type, 2: post id, 3. post title, 4. user name
+#: includes/class-nelio-content-notifications.php:824
+msgctxt "text"
+msgid "Status was changed for %1$s #%2$s \"%3$s\" by %4$s"
+msgstr ""
+
+#. translators: 1: date, 2: time, 3: timezone
+#: includes/class-nelio-content-notifications.php:832
+#: includes/class-nelio-content-notifications.php:922
+msgctxt "text"
+msgid "This action was taken on %1$s at %2$s %3$s"
+msgstr ""
+
+#. translators: 1: old status, 2: new status
+#: includes/class-nelio-content-notifications.php:846
+msgctxt "text"
+msgid "%1$s => %2$s"
+msgstr ""
+
+#. translators: post type
+#: includes/class-nelio-content-notifications.php:854
+#: includes/class-nelio-content-notifications.php:931
+msgctxt "title"
+msgid "== %s Details =="
+msgstr ""
+
+#. translators: post title
+#: includes/class-nelio-content-notifications.php:856
+#: includes/class-nelio-content-notifications.php:933
+msgctxt "text"
+msgid "Title: %s"
+msgstr ""
+
+#. translators: 1: author name, 2: author email
+#: includes/class-nelio-content-notifications.php:862
+#: includes/class-nelio-content-notifications.php:939
+msgctxt "text"
+msgid "Author: %1$s (%2$s)"
+msgstr ""
+
+#. translators: 1: site name, 2: post type, 3. post title
+#: includes/class-nelio-content-notifications.php:910
+msgctxt "text"
+msgid "[%1$s] You're now watching %2$s \"%3$s\""
+msgstr ""
+
+#. translators: 1: post type, 2: post title
+#: includes/class-nelio-content-notifications.php:916
+msgctxt "text"
+msgid "You're now watching %1$s \"%2$s\"."
+msgstr ""
+
+#. translators: post status
+#: includes/class-nelio-content-notifications.php:947
+msgctxt "text"
+msgid "Status: %s"
+msgstr ""
+
+#. translators: 1: blog name, 2: post title
+#: includes/class-nelio-content-notifications.php:992
+msgctxt "text"
+msgid "[%1$s] New Editorial Task in \"%2$s\""
+msgstr ""
+
+#. translators: 1: post id, 2: post title, 3. post type
+#: includes/class-nelio-content-notifications.php:998
+msgctxt "text"
+msgid "A new editorial task was added to %3$s #%1$s \"%2$s\"."
+msgstr ""
+
+#. translators: blog name
+#: includes/class-nelio-content-notifications.php:1005
+msgctxt "text"
+msgid "[%s] New Editorial Task"
+msgstr ""
+
+#: includes/class-nelio-content-notifications.php:1006
+msgctxt "text"
+msgid "A new editorial task was added."
+msgstr ""
+
+#. translators: 1: task author, 2: task author email
+#: includes/class-nelio-content-notifications.php:1012
+msgctxt "text"
+msgid "%1$s (%2$s) created the following task:"
+msgstr ""
+
+#. translators: 1: blog name, 2: post title
+#: includes/class-nelio-content-notifications.php:1058
+msgctxt "text"
+msgid "[%1$s] Editorial Task Completed in \"%2$s\""
+msgstr ""
+
+#. translators: 1: post id, 2: post title, 3. post type
+#: includes/class-nelio-content-notifications.php:1064
+msgctxt "text"
+msgid "An editorial task was completed in %3$s #%1$s \"%2$s\"."
+msgstr ""
+
+#. translators: blog name
+#: includes/class-nelio-content-notifications.php:1072
+msgctxt "text"
+msgid "[%s] Editorial Task Completed"
+msgstr ""
+
+#: includes/class-nelio-content-notifications.php:1075
+msgctxt "text"
+msgid "An editorial task was completed."
+msgstr ""
+
+#. translators: 1: task author, 2: task author email
+#: includes/class-nelio-content-notifications.php:1081
+msgctxt "text"
+msgid "%1$s (%2$s) completed the following task:"
+msgstr ""
+
+#. translators: a task description
+#: includes/class-nelio-content-notifications.php:1107
+msgctxt "text"
+msgid "Task: %s"
+msgstr ""
+
+#. translators: 1: user name, 2: user email
+#: includes/class-nelio-content-notifications.php:1109
+msgctxt "text"
+msgid "Assignee: %1$s (%2$s)"
+msgstr ""
+
+#. translators: 1: user name, 2: user email
+#: includes/class-nelio-content-notifications.php:1111
+msgctxt "text"
+msgid "Assigner: %1$s (%2$s)"
+msgstr ""
+
+#. translators: a date
+#: includes/class-nelio-content-notifications.php:1117
+msgctxt "text"
+msgid "Due Date: %s"
+msgstr ""
+
+#: includes/class-nelio-content-notifications.php:1155
+msgctxt "title"
+msgid "== Actions =="
+msgstr ""
+
+#. translators: 1: the "Edit" command, as in "Edit Post", 2: the edit link
+#: includes/class-nelio-content-notifications.php:1157
+msgctxt "command (edit)"
+msgid "%1$s: %2$s"
+msgstr ""
+
+#. translators: 1: the "View" command, as in "View Post", 2: the view link
+#: includes/class-nelio-content-notifications.php:1159
+msgctxt "command (view)"
+msgid "%1$s: %2$s"
+msgstr ""
+
+#. translators: a post title
+#: includes/class-nelio-content-notifications.php:1163
+msgctxt "user"
+msgid "You are receiving this email because you are subscribed to \"%s\"."
+msgstr ""
+
+#. translators: a blog URL
+#: includes/class-nelio-content-notifications.php:1169
+msgctxt "user"
+msgid "You are receiving this email because you are registered to %s."
+msgstr ""
+
+#. translators: 1: post scheduled date, 2: post scheduled time
+#: includes/class-nelio-content-notifications.php:1201
+msgctxt "text"
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: includes/class-nelio-content-settings.php:56
+msgctxt "text (settings tab)"
+msgid "Editorial Calendar"
+msgstr ""
+
+#: includes/class-nelio-content-settings.php:70
+msgctxt "text (settings tab)"
+msgid "Social Profiles"
+msgstr ""
+
+#: includes/class-nelio-content-settings.php:76
+msgctxt "text (settings tab)"
+msgid "Social Templates"
+msgstr ""
+
+#: includes/class-nelio-content-settings.php:82
+msgctxt "text (settings tab)"
+msgid "Content"
+msgstr ""
+
+#: includes/class-nelio-content-settings.php:88
+msgctxt "text (settings tab)"
+msgid "Feeds"
+msgstr ""
+
+#: includes/class-nelio-content-settings.php:94
+msgctxt "text (settings tab)"
+msgid "Advanced"
+msgstr ""
+
+#. translators: a URL
+#: nelio-content.php:82
+#: admin/views/partials/staging-url-warning.php:23
+msgctxt "user"
+msgid "<strong>Warning!</strong> This site has been identified as a <strong>staging site</strong> and, as a result, you can't use any of Nelio Content's features. If this is not correct and you want to use Nelio Content normally, please <a href=\"%s\">follow these instructions</a>."
+msgstr ""
+
+#: nelio-content.php:83
+#: admin/views/partials/staging-url-warning.php:29
+msgid "https://neliosoftware.com/content/help/modify-list-of-staging-urls/"
+msgstr ""
+
+#: public/class-nelio-content-public.php:179
+#: public/class-nelio-content-public.php:200
+#: admin/class-nelio-content-admin-menus.php:203
+#: admin/class-nelio-content-admin-menus.php:204
+#: admin/class-nelio-content-admin-menus.php:328
+#: admin/class-nelio-content-admin-menus.php:351
+msgctxt "text (menu)"
+msgid "Calendar"
+msgstr ""
+
+#: public/class-nelio-content-external-featured-image-public.php:392
+msgctxt "text"
+msgid "Placeholder by Nelio Content"
+msgstr ""
+
+#: public/class-nelio-content-external-featured-image-public.php:393
+msgctxt "text"
+msgid "External Featured Image Placeholder by Nelio Content."
+msgstr ""
+
+#: admin/class-nelio-content-social-media-meta-box.php:49
+msgctxt "text"
+msgid "Social Media"
+msgstr ""
+
+#: admin/class-nelio-content-account-ajax-api.php:122
+#: admin/class-nelio-content-account-ajax-api.php:230
+#: admin/class-nelio-content-account-ajax-api.php:292
+#: admin/class-nelio-content-account-ajax-api.php:341
+#: admin/class-nelio-content-account-ajax-api.php:390
+msgctxt "error"
+msgid "Response from Nelio Content's API couldn't be processed."
+msgstr ""
+
+#: admin/class-nelio-content-account-ajax-api.php:169
+msgctxt "error"
+msgid "License Key cannot be empty."
+msgstr ""
+
+#: admin/class-nelio-content-account-ajax-api.php:174
+msgctxt "error"
+msgid "Invalid License Key."
+msgstr ""
+
+#: admin/class-nelio-content-account-ajax-api.php:315
+msgctxt "error"
+msgid "Subscription cannot be canceled, because there's no account available."
+msgstr ""
+
+#: admin/class-nelio-content-account-ajax-api.php:364
+msgctxt "error"
+msgid "Subscription cannot be reactivated, because there's no account available."
+msgstr ""
+
+#: admin/class-nelio-content-generic-ajax-api.php:163
+msgctxt "error"
+msgid "Request does not contain a valid file URL."
+msgstr ""
+
+#: admin/class-nelio-content-generic-ajax-api.php:168
+msgctxt "error"
+msgid "Request does not contain a valid post ID."
+msgstr ""
+
+#: admin/class-nelio-content-generic-ajax-api.php:173
+msgctxt "error"
+msgid "Request does not contain a valid description."
+msgstr ""
+
+#: admin/class-nelio-content-generic-ajax-api.php:178
+msgctxt "error"
+msgid "Request does not contain a valid thumbnail size."
+msgstr ""
+
+#: admin/class-nelio-content-generic-ajax-api.php:216
+msgctxt "error"
+msgid "Request does not specify whether message publication should be paused or not."
+msgstr ""
+
+#: admin/class-nelio-content-generic-ajax-api.php:244
+msgctxt "error"
+msgid "Something went wrong when pausing the publication of social messages."
+msgstr ""
+
+#: admin/class-nelio-content-generic-ajax-api.php:246
+msgctxt "error"
+msgid "Something went wrong when resuming the publication of social messages."
+msgstr ""
+
+#: admin/class-nelio-content-post-analysis-meta-box-partial.php:73
+msgctxt "text"
+msgid "Quality Analysis"
+msgstr ""
+
+#: admin/class-nelio-content-post-helper.php:295
+msgctxt "error"
+msgid "The post does not exist"
+msgstr ""
+
+#: admin/class-nelio-content-post-helper.php:588
+#: admin/views/partials/settings/calendar-post-types.php:31
+msgctxt "text (default post type name)"
+msgid "Post"
+msgstr ""
+
+#: admin/class-nelio-content-admin-menus.php:140
+#: admin/class-nelio-content-admin-menus.php:141
+msgctxt "text (menu)"
+msgid "Nelio Content"
+msgstr ""
+
+#: admin/class-nelio-content-admin-menus.php:162
+#: admin/class-nelio-content-admin-menus.php:163
+msgctxt "text (menu)"
+msgid "Feeds"
+msgstr ""
+
+#: admin/class-nelio-content-admin-menus.php:173
+#: admin/class-nelio-content-admin-menus.php:174
+#: admin/class-nelio-content-admin-menus.php:183
+#: admin/class-nelio-content-admin-menus.php:184
+msgctxt "text (menu)"
+msgid "Analytics"
+msgstr ""
+
+#: admin/class-nelio-content-admin-menus.php:235
+msgctxt "text (menu)"
+msgid "Account Details"
+msgstr ""
+
+#: admin/class-nelio-content-admin-menus.php:236
+#: admin/views/nelio-content-account-page.php:21
+msgctxt "title"
+msgid "Account Details"
+msgstr ""
+
+#: admin/class-nelio-content-admin-menus.php:238
+msgctxt "text (menu)"
+msgid "Premium"
+msgstr ""
+
+#: admin/class-nelio-content-admin-menus.php:239
+msgctxt "title"
+msgid "Upgrade to Nelio Content Premium"
+msgstr ""
+
+#: admin/class-nelio-content-admin-menus.php:256
+#: admin/class-nelio-content-admin-menus.php:257
+#: admin/class-nelio-content-admin-menus.php:266
+#: admin/class-nelio-content-admin-menus.php:267
+msgctxt "text (menu)"
+msgid "Settings"
+msgstr ""
+
+#: admin/class-nelio-content-admin-menus.php:286
+#: admin/class-nelio-content-admin-menus.php:287
+msgctxt "text (menu)"
+msgid "Help"
+msgstr ""
+
+#: admin/class-nelio-content-admin-menus.php:302
+msgid "https://neliosoftware.com/content/help/"
+msgstr ""
+
+#: admin/class-nelio-content-admin-menus.php:391
+#: admin/class-nelio-content-admin-menus.php:392
+msgctxt "text (menu)"
+msgid "Setup"
+msgstr ""
+
+#: admin/class-nelio-content-notifications-meta-box.php:53
+msgid "Notifications"
+msgstr ""
+
+#: admin/class-nelio-content-analytics-ajax-api.php:243
+msgctxt "error"
+msgid "Unable to retrieve Google Analytics token."
+msgstr ""
+
+#: admin/class-nelio-content-analytics-ajax-api.php:270
+msgctxt "error"
+msgid "Unable to retrieve Google Analytics views."
+msgstr ""
+
+#: admin/class-nelio-content-editorial-tasks-meta-box.php:47
+msgctxt "text"
+msgid "Editorial Tasks"
+msgstr ""
+
+#: admin/views/partials/filters/multiple-post-types-filter.php:26
+msgctxt "command (post filter)"
+msgid "Show All Post Types"
+msgstr ""
+
+#: admin/views/partials/filters/multiple-post-types-filter.php:29
+msgctxt "command (post filter)"
+msgid "Hide All Post Types"
+msgstr ""
+
+#: admin/views/partials/filters/multiple-post-types-filter.php:33
+msgctxt "user (post filter, group name)"
+msgid "Filter by Post Type"
+msgstr ""
+
+#: admin/views/partials/filters/post-and-category-filter.php:20
+msgctxt "command (post filter)"
+msgid "Show All Posts"
+msgstr ""
+
+#: admin/views/partials/filters/post-and-category-filter.php:23
+msgctxt "command (post filter)"
+msgid "Hide All Posts"
+msgstr ""
+
+#: admin/views/partials/filters/post-and-category-filter.php:45
+msgctxt "user (post filter, group name)"
+msgid "Filter by Category"
+msgstr ""
+
+#. translators: e.g. Show Movies, Show Articles...
+#: admin/views/partials/filters/custom-post-type-filter.php:29
+msgctxt "command (post filter)"
+msgid "Show %s"
+msgstr ""
+
+#. translators: e.g. Hide Movies, Hide Articles...
+#: admin/views/partials/filters/custom-post-type-filter.php:36
+msgctxt "command (post filter)"
+msgid "Hide %s"
+msgstr ""
+
+#: admin/views/partials/filters/feed-filter.php:23
+msgctxt "command (feed filter)"
+msgid "Show All Feeds"
+msgstr ""
+
+#: admin/views/partials/filters/feed-filter.php:26
+msgctxt "user (feed filter, group name)"
+msgid "Filter by Feed"
+msgstr ""
+
+#: admin/views/partials/filters/date-filter.php:36
+msgctxt "text (option)"
+msgid "All Time"
+msgstr ""
+
+#: admin/views/partials/filters/date-filter.php:37
+msgctxt "text (option)"
+msgid "Filter by Publication Date"
+msgstr ""
+
+#: admin/views/partials/filters/date-filter.php:38
+msgctxt "text (option)"
+msgid "Month to Date"
+msgstr ""
+
+#: admin/views/partials/filters/date-filter.php:39
+msgctxt "text (option)"
+msgid "Last 30 Days"
+msgstr ""
+
+#: admin/views/partials/filters/date-filter.php:40
+msgctxt "text (option)"
+msgid "Last Month"
+msgstr ""
+
+#: admin/views/partials/filters/date-filter.php:41
+msgctxt "text (option)"
+msgid "Year to Date"
+msgstr ""
+
+#: admin/views/partials/filters/date-filter.php:42
+msgctxt "text (option)"
+msgid "Last 12 Months"
+msgstr ""
+
+#: admin/views/partials/filters/date-filter.php:43
+msgctxt "text (option)"
+msgid "Last Year"
+msgstr ""
+
+#: admin/views/partials/filters/date-filter.php:44
+msgctxt "text (option)"
+msgid "Custom&hellip;"
+msgstr ""
+
+#: admin/views/partials/filters/date-filter.php:57
+msgctxt "command"
+msgid "Back to predefined date intervals"
+msgstr ""
+
+#: admin/views/partials/editorial-tasks/editorial-task.php:50
+msgid "Deleting&hellip;"
+msgstr ""
+
+#: admin/views/partials/editorial-tasks/editorial-task.php:56
+#: admin/views/partials/social-timeline/social-timeline-message.php:97
+#: admin/views/partials/editorial-comments/editorial-comment.php:66
+#: admin/views/partials/settings/google-analytics.php:43
+#: admin/views/partials/feed-settings/feed.php:47
+#: admin/views/partials/social-template-settings/social-template.php:57
+msgid "Are you sure?"
+msgstr ""
+
+#: admin/views/partials/editorial-tasks/editorial-task.php:59
+#: admin/views/partials/social-timeline/social-timeline-message.php:100
+#: admin/views/partials/social-template-settings/social-template.php:60
+msgctxt "command (social message)"
+msgid "Yes, Delete It"
+msgstr ""
+
+#: admin/views/partials/editorial-tasks/editorial-task.php:68
+#: admin/views/partials/social-timeline/social-timeline-message.php:118
+#: admin/views/partials/social-timeline/social-timeline-message.php:133
+#: admin/views/partials/editorial-comments/editorial-comment.php:91
+#: admin/views/partials/social-profile-settings/connected-social-profile.php:120
+#: admin/views/partials/feed-settings/feed.php:64
+#: admin/views/partials/social-template-settings/social-template.php:83
+#: admin/data/i18n/actions.php:24
+msgctxt "command"
+msgid "Delete"
+msgstr ""
+
+#: admin/views/partials/editorial-tasks/editorial-task.php:111
+msgid "Saving&hellip;"
+msgstr ""
+
+#: admin/views/partials/editorial-tasks/editorial-task.php:120
+msgctxt "text (assignee)"
+msgid "You"
+msgstr ""
+
+#: admin/views/partials/editorial-tasks/editorial-task.php:129
+msgctxt "text (editorial task)"
+msgid "Overdue"
+msgstr ""
+
+#: admin/views/partials/editorial-tasks/editorial-tasks.php:30
+#: admin/views/partials/editorial-tasks/editorial-tasks.php:61
+msgctxt "user"
+msgid "Keep track of the things that need to get done with tasks."
+msgstr ""
+
+#: admin/views/partials/editorial-tasks/editorial-tasks.php:52
+#: admin/views/partials/editorial-tasks/new-editorial-task.php:50
+#: admin/views/partials/calendar/day.php:53
+#: admin/views/partials/calendar/context-actions.php:42
+msgctxt "command"
+msgid "Add Task"
+msgstr ""
+
+#: admin/views/partials/editorial-tasks/editorial-tasks.php:68
+msgid "https://neliosoftware.com/content/help/editorial-tasks/"
+msgstr ""
+
+#: admin/views/partials/editorial-tasks/editorial-tasks.php:70
+msgctxt "user"
+msgid "Learn more&hellip;"
+msgstr ""
+
+#: admin/views/partials/editorial-tasks/editorial-tasks.php:79
+#: admin/views/partials/social-timeline/social-timeline-message.php:233
+#: admin/views/partials/account/subscribe-dialog.php:40
+#: admin/views/partials/account/subscribe-dialog.php:68
+#: admin/views/partials/account/subscribe-dialog.php:95
+#: admin/views/partials/editorial-comments/editorial-comments.php:43
+#: admin/data/i18n/dialogs.php:16
+msgid "https://neliosoftware.com/content/pricing/"
+msgstr ""
+
+#: admin/views/partials/editorial-tasks/editorial-tasks.php:81
+#: admin/views/partials/editorial-comments/editorial-comments.php:45
+msgctxt "command"
+msgid "Subscribe to Unlock"
+msgstr ""
+
+#: admin/views/partials/editorial-tasks/new-editorial-task.php:27
+#: admin/views/partials/calendar/task-dialog.php:24
+msgid "Enter a task&hellip;"
+msgstr ""
+
+#: admin/views/partials/editorial-tasks/new-editorial-task.php:30
+#: admin/views/partials/calendar/task-dialog.php:31
+msgctxt "text"
+msgid "Assignee"
+msgstr ""
+
+#: admin/views/partials/editorial-tasks/new-editorial-task.php:32
+#: admin/views/partials/calendar/task-dialog.php:38
+msgctxt "text"
+msgid "Due Date"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:28
+msgctxt "text (post status, HTML)"
+msgid "The post looks <strong>awesome</strong>!"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:35
+msgctxt "text (post status, HTML)"
+msgid "The post looks <strong>good</strong>"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:43
+msgctxt "text (post status, HTML)"
+msgid "The post is <strong>improvable</strong>:"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:47
+msgctxt "text (post status, HTML)"
+msgid "The post is <strong>improvable</strong>"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:56
+msgctxt "text (post status, HTML)"
+msgid "This post is <strong>poor</strong>:"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:60
+msgctxt "text (post status, HTML)"
+msgid "This post is <strong>poor</strong>"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:68
+msgctxt "text (post status)"
+msgid "Analyzing post&hellip;"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:98
+msgctxt "user (post status)"
+msgid "Yoast SEO is unavailable"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:107
+msgctxt "user (post status)"
+msgid "Address your Yoast SEO score"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:116
+msgctxt "user (post status)"
+msgid "Improve your Yoast SEO score"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:125
+msgctxt "user (post status)"
+msgid "Your Yoast SEO looks good"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:134
+msgctxt "user (post status)"
+msgid "Waiting for Yoast SEO evaluation&hellip;"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:145
+msgctxt "user (post status)"
+msgid "Yoast Content Analysis is unavailable"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:154
+msgctxt "user (post status)"
+msgid "According to Yoast, content is bad."
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:163
+msgctxt "user (post status)"
+msgid "According to Yoast, content is improvable."
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:172
+msgctxt "user (post status)"
+msgid "According to Yoast, content is good."
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:181
+msgctxt "user (post status)"
+msgid "Waiting for Yoast Content analysis&hellip;"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:202
+msgctxt "user (post status)"
+msgid "Unable to check social messages"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:211
+msgctxt "user (post status)"
+msgid "Schedule social messages"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:220
+msgctxt "user (post status)"
+msgid "Schedule another social message"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:229
+msgctxt "user (post status)"
+msgid "Social messages look good"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:238
+msgctxt "user (post status)"
+msgid "Checking social messages&hellip;"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:256
+msgctxt "user (post status)"
+msgid "Unable to check editorial tasks"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:265
+msgctxt "user (post status)"
+msgid "Complete all tasks"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:274
+msgctxt "user (post status)"
+msgid "There are no pending tasks"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:283
+msgctxt "user (post status)"
+msgid "Checking editorial tasks&hellip;"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:299
+msgctxt "user (post status)"
+msgid "Unable to check the feat. image"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:308
+#: admin/views/partials/post-analysis.php:317
+msgctxt "user (post status)"
+msgid "Set a featured image"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:326
+msgctxt "user (post status)"
+msgid "There's a featured image"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:335
+msgctxt "user (post status)"
+msgid "Checking featured image&hellip;"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:354
+msgctxt "user (post status)"
+msgid "Unable to check the excerpt"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:363
+msgctxt "user (post status)"
+msgid "Write an excerpt"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:372
+msgctxt "user (post status)"
+msgid "Excerpt looks good"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:381
+msgctxt "user (post status)"
+msgid "Checking excerpt&hellip;"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:397
+msgctxt "user (post status)"
+msgid "Unable to check post's copy"
+msgstr ""
+
+#. translators: a number
+#: admin/views/partials/post-analysis.php:406
+#: admin/views/partials/post-analysis.php:421
+msgctxt "text"
+msgid "Your post should be about %s words long"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:412
+#: admin/views/partials/post-analysis.php:427
+msgctxt "user (post status)"
+msgid "Write a longer copy"
+msgstr ""
+
+#. translators: a number
+#: admin/views/partials/post-analysis.php:436
+msgctxt "text"
+msgid "Minimum required post length is set to %s words"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:442
+msgctxt "user (post status)"
+msgid "Copy length looks good"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:451
+msgctxt "user (post status)"
+msgid "Checking post content&hellip;"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:467
+msgctxt "user (post status)"
+msgid "Unable to check images"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:476
+msgctxt "user (post status)"
+msgid "Add one image in the copy"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:485
+msgctxt "user (post status)"
+msgid "There's at least one image"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:494
+msgctxt "user (post status)"
+msgid "Checking images in copy&hellip;"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:510
+msgctxt "user (post status)"
+msgid "Unable to check internal links"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:519
+#: admin/views/partials/post-analysis.php:528
+msgctxt "user (post status)"
+msgid "Add links to your own site"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:537
+msgctxt "user (post status)"
+msgid "Internal links look good"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:546
+msgctxt "user (post status)"
+msgid "Checking usage of internal links&hellip;"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:562
+msgctxt "user (post status)"
+msgid "Unable to check external links"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:571
+#: admin/views/partials/post-analysis.php:580
+msgctxt "user (post status)"
+msgid "Add links to external sources"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:589
+msgctxt "user (post status)"
+msgid "External links look good"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:598
+msgctxt "user (post status)"
+msgid "Checking usage of external links&hellip;"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:609
+msgctxt "user (post status)"
+msgid "Unable to check tags"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:618
+msgctxt "user (post status)"
+msgid "Add one or more tags"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:627
+msgctxt "user (post status)"
+msgid "Post is properly tagged"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:636
+msgctxt "user (post status)"
+msgid "Checking tags&hellip;"
+msgstr ""
+
+#: admin/views/partials/post-analysis.php:660
+msgctxt "user (post status)"
+msgid "Select a non-admin author"
+msgstr ""
+
+#: admin/views/partials/bulk-reshare.php:12
+#: admin/views/partials/social-template-settings/social-template-settings.php:39
+#: admin/class-nelio-content-reshare-bulk-action.php:83
+msgctxt "title"
+msgid "Reshare"
+msgstr ""
+
+#: admin/views/partials/bulk-reshare.php:14
+msgctxt "text"
+msgid "&mdash; No Change &mdash;"
+msgstr ""
+
+#: admin/views/partials/bulk-reshare.php:15
+msgctxt "command"
+msgid "Exclude from Automatic Reshare"
+msgstr ""
+
+#: admin/views/partials/bulk-reshare.php:16
+msgctxt "command"
+msgid "Include in Automatic Reshare"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline-message.php:33
+msgctxt "text (social message status)"
+msgid "Sent"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline-message.php:41
+msgctxt "text (social message status)"
+msgid "Enqueuing&hellip;"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline-message.php:47
+msgctxt "text (social message status)"
+msgid "Ready!"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline-message.php:59
+#: admin/data/i18n/dialogs.php:32
+msgctxt "error"
+msgid "Social message couldn't be shared because of an unknown error."
+msgstr ""
+
+#. translators: a failure description (text)
+#: admin/views/partials/social-timeline/social-timeline-message.php:67
+msgctxt "error"
+msgid "The following error occurred while sharing social message: &ldquo;%s&rdquo;"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline-message.php:83
+msgctxt "user"
+msgid "Automatic Social Messages are only available to subscribers. Subscribe to Nelio Content Premium!"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline-message.php:85
+msgctxt "user"
+msgid "Subscribe to Unlock"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline-message.php:91
+#: admin/views/partials/social-template-settings/social-template.php:44
+msgctxt "text (social message)"
+msgid "Deleting&hellip;"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline-message.php:109
+#: admin/views/partials/social-timeline/social-timeline-message.php:124
+msgctxt "command"
+msgid "Show Image"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline-message.php:112
+#: admin/views/partials/social-timeline/social-timeline-message.php:127
+msgctxt "command"
+msgid "Hide Image"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline-message.php:115
+#: admin/views/partials/social-timeline/social-timeline-message.php:130
+#: admin/views/partials/links/broken-links/broken-link.php:61
+#: admin/views/partials/social-template-settings/social-template.php:79
+msgctxt "command"
+msgid "Edit"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline-message.php:136
+#: admin/data/i18n/actions.php:51
+msgctxt "command (social message)"
+msgid "Send Now"
+msgstr ""
+
+#. translators: Example: "David published this post _ON_ TWITTER"
+#: admin/views/partials/social-timeline/social-timeline-message.php:168
+msgctxt "text (social timeline)"
+msgid "on %s"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline-message.php:190
+msgctxt "text"
+msgid "Reshare Template"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline-message.php:196
+msgctxt "text"
+msgid "Publication Template"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline-message.php:202
+msgctxt "text"
+msgid "Reference Template"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline-message.php:208
+msgctxt "text"
+msgid "User Highlighted Fragment"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline-message.php:214
+msgctxt "text"
+msgid "Automatically Extracted Sentence"
+msgstr ""
+
+#: admin/views/partials/social-timeline/auto-generating-social-messages.php:21
+msgctxt "text"
+msgid "Generating Social Messages&hellip;"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline-block.php:63
+#: admin/views/partials/social-timeline/social-timeline-block.php:74
+msgctxt "command (social message)"
+msgid "Add Another"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline-block.php:82
+msgctxt "user (social message)"
+msgid "Want more? Subscribe!"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline-block.php:113
+#: admin/views/partials/social-timeline/social-timeline-block.php:116
+#: admin/views/partials/social-timeline/social-timeline.php:54
+#: admin/views/partials/calendar/day.php:43
+#: admin/views/partials/calendar/context-actions.php:32
+msgctxt "command"
+msgid "Add Social Message"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline-block.php:118
+#: admin/views/partials/social-timeline/social-timeline-block.php:122
+msgctxt "user"
+msgid "Subscribe to Nelio Content and schedule more messages"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline.php:27
+#: admin/views/partials/analytics/top-posts.php:26
+msgctxt "title"
+msgid "Analytics"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline.php:50
+msgctxt "command"
+msgid "Create Social Messages Automatically"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline.php:63
+msgctxt "title"
+msgid "Scheduled Messages"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline.php:66
+msgctxt "command"
+msgid "Fill Automatically"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline.php:89
+msgctxt "text (timeline summary)"
+msgid "Today"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline.php:91
+msgctxt "text (timeline summary)"
+msgid "Publication"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline.php:103
+msgctxt "text (timeline summary)"
+msgid "Tomorrow"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline.php:105
+msgctxt "text (timeline summary)"
+msgid "Next Day"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline.php:116
+msgctxt "text (timeline summary)"
+msgid "Week"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline.php:126
+msgctxt "text (timeline summary)"
+msgid "Month"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline.php:136
+msgctxt "text (timeline summary)"
+msgid "Other"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline.php:151
+msgctxt "text (timeline)"
+msgid "Today"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline.php:153
+msgctxt "text (timeline)"
+msgid "Publication Day"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline.php:162
+msgctxt "text (timeline)"
+msgid "Tomorrow"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline.php:164
+msgctxt "text (timeline)"
+msgid "Day After Publication"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline.php:173
+#: admin/views/partials/social-timeline/social-timeline.php:174
+msgctxt "text (timeline)"
+msgid "Week"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline.php:182
+#: admin/views/partials/social-timeline/social-timeline.php:183
+msgctxt "text (timeline)"
+msgid "Month"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline.php:191
+#: admin/views/partials/social-timeline/social-timeline.php:192
+msgctxt "text (timeline)"
+msgid "Other"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline.php:206
+msgctxt "title"
+msgid "Social Reshare"
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline.php:213
+msgctxt "title"
+msgid "Exclude this content from automatic resharing on social media."
+msgstr ""
+
+#: admin/views/partials/social-timeline/social-timeline.php:218
+msgctxt "title"
+msgid "Make this post eligible in automatic resharing of old content on social media."
+msgstr ""
+
+#: admin/views/partials/social-timeline/no-social-timeline-on-auto-draft.php:23
+msgctxt "user"
+msgid "Save post to access social timeline."
+msgstr ""
+
+#. translators: a URL
+#: admin/views/partials/misc-dialogs/no-profile-available.php:24
+msgctxt "user"
+msgid "Nelio Content helps you to engage your audience and promote your WordPress contents in social media. <a href=\"%s\">Connect one or more social profiles</a> and expand your limits!"
+msgstr ""
+
+#: admin/views/partials/analytics/top-post.php:80
+msgctxt "text"
+msgid "Total number of scheduled social messages."
+msgstr ""
+
+#: admin/views/partials/analytics/top-post.php:88
+msgctxt "text"
+msgid "Social Queue"
+msgstr ""
+
+#: admin/views/partials/analytics/top-post.php:108
+msgctxt "text (social message)"
+msgid "Sent:"
+msgstr ""
+
+#: admin/views/partials/analytics/top-post.php:123
+#: admin/views/partials/analytics/top-post.php:129
+msgctxt "command"
+msgid "Add Message"
+msgstr ""
+
+#: admin/views/partials/analytics/top-post.php:127
+#: admin/views/partials/feeds/feed-item.php:66
+msgctxt "text"
+msgid "Only available to subscribers"
+msgstr ""
+
+#: admin/views/partials/analytics/pageviews.php:24
+msgctxt "text"
+msgid "Total pageviews and traffic driven by each social network according to Google Analytics."
+msgstr ""
+
+#: admin/views/partials/analytics/pageviews.php:33
+#: admin/views/partials/analytics/pageviews-not-configured.php:25
+msgctxt "text"
+msgid "Pageviews"
+msgstr ""
+
+#: admin/views/partials/analytics/pageviews.php:37
+msgctxt "user"
+msgid "Google Analytics tokens expired. Please reconnect your account in Settings."
+msgstr ""
+
+#: admin/views/partials/analytics/pageviews-not-configured.php:26
+msgctxt "user"
+msgid "Connect Google Analytics"
+msgstr ""
+
+#: admin/views/partials/analytics/engagement.php:25
+msgctxt "text"
+msgid "Number of interactions (likes, shares, &hellip;) on social networks and comments in WordPress."
+msgstr ""
+
+#: admin/views/partials/analytics/engagement.php:33
+msgctxt "text"
+msgid "Engagement"
+msgstr ""
+
+#: admin/views/partials/analytics/top-posts.php:53
+msgctxt "command"
+msgid "Apply"
+msgstr ""
+
+#: admin/views/partials/featured-image/external-featured-image-dialog.php:22
+#: admin/views/partials/featured-image/featured-image.php:22
+msgctxt "user"
+msgid "Click the image to edit or update"
+msgstr ""
+
+#: admin/views/partials/featured-image/external-featured-image-dialog.php:40
+msgctxt "text"
+msgid "Alt Text"
+msgstr ""
+
+#: admin/views/partials/featured-image/featured-image.php:41
+msgctxt "text"
+msgid "Remove featured image"
+msgstr ""
+
+#: admin/views/partials/featured-image/featured-image.php:47
+msgctxt "action"
+msgid "Set external featured image"
+msgstr ""
+
+#: admin/views/partials/account/subscribe-dialog.php:24
+#: admin/views/partials/loading-container.php:41
+#: admin/views/partials/social-template-settings/social-template.php:72
+#: admin/data/i18n/feedback.php:33
+#: admin/data/i18n/feedback.php:34
+msgctxt "text"
+msgid "Loading&hellip;"
+msgstr ""
+
+#: admin/views/partials/account/subscribe-dialog.php:31
+msgctxt "user"
+msgid "Thanks for your interest in Nelio Content Premium! Unfortunately, we weren't able to load our pricing tiers. Please try again later or click on the following button to continue:"
+msgstr ""
+
+#: admin/views/partials/account/subscribe-dialog.php:42
+msgid "View Nelio Content Pricing"
+msgstr ""
+
+#: admin/views/partials/account/subscribe-dialog.php:48
+msgctxt "user"
+msgid "Subscribe to Nelio Content Premium and let us do the hard work for you:"
+msgstr ""
+
+#: admin/views/partials/account/subscribe-dialog.php:55
+msgid "Monthly Plan"
+msgstr ""
+
+#: admin/views/partials/account/subscribe-dialog.php:58
+msgid "month"
+msgstr ""
+
+#: admin/views/partials/account/subscribe-dialog.php:70
+#: admin/views/partials/account/subscribe-dialog.php:97
+msgid "Subscribe"
+msgstr ""
+
+#: admin/views/partials/account/subscribe-dialog.php:76
+msgid "Yearly Plan"
+msgstr ""
+
+#: admin/views/partials/account/subscribe-dialog.php:79
+msgid "year"
+msgstr ""
+
+#. translators: a price (such as $5)
+#: admin/views/partials/account/subscribe-dialog.php:84
+msgid "equivalent to %s/month"
+msgstr ""
+
+#: admin/views/partials/account/invoice.php:29
+msgctxt "text (invoice)"
+msgid "(Refunded)"
+msgstr ""
+
+#: admin/views/partials/account/billing.php:22
+msgctxt "text (account, billing table title)"
+msgid "Invoice Reference"
+msgstr ""
+
+#: admin/views/partials/account/billing.php:23
+msgctxt "text (account, billing table title)"
+msgid "Date"
+msgstr ""
+
+#: admin/views/partials/account/billing.php:24
+msgctxt "text (account, billing table title)"
+msgid "Total"
+msgstr ""
+
+#. translators: a Twitter handler
+#: admin/views/partials/account/account-page.php:19
+msgctxt "text (account, share text)"
+msgid "Write better content in #WordPress with %s's plugin #NelioContent"
+msgstr ""
+
+#. translators: a Twitter handler
+#: admin/views/partials/account/account-page.php:21
+msgctxt "text (account, share text)"
+msgid "#NelioContent is an awesome #EditorialCalendar for #WordPress, by %s"
+msgstr ""
+
+#. translators: a Twitter handler
+#: admin/views/partials/account/account-page.php:23
+msgctxt "text (account, share text)"
+msgid "I'm using #NelioContent by %s in my #WordPress site and it's great!"
+msgstr ""
+
+#. translators: a Twitter handler
+#: admin/views/partials/account/account-page.php:25
+msgctxt "text (account, share text)"
+msgid "Want to promote your content easily? Check this out: #NelioContent by %s"
+msgstr ""
+
+#. translators: a Twitter handler
+#: admin/views/partials/account/account-page.php:27
+msgctxt "text (account, share text)"
+msgid "The guys at %s created a great #WordPress plugin. Take a look at #NelioContent"
+msgstr ""
+
+#. translators: We only have two twitter accounts, @NelioSoft in English and @NelioSoft_ES in Spanish.
+#: admin/views/partials/account/account-page.php:31
+msgctxt "text (Nelio's twitter username)"
+msgid "@NelioSoft"
+msgstr ""
+
+#: admin/views/partials/account/account-page.php:53
+msgctxt "title (account)"
+msgid "Nelio Content Premium Subscription"
+msgstr ""
+
+#: admin/views/partials/account/account-page.php:63
+msgctxt "text (account, subscription period)"
+msgid "Invitation"
+msgstr ""
+
+#: admin/views/partials/account/account-page.php:70
+msgctxt "text (account, subscription period)"
+msgid "Monthly (canceled)"
+msgstr ""
+
+#: admin/views/partials/account/account-page.php:74
+msgctxt "text (account, subscription period)"
+msgid "Monthly"
+msgstr ""
+
+#: admin/views/partials/account/account-page.php:82
+msgctxt "text (account, subscription period)"
+msgid "Yearly (canceled)"
+msgstr ""
+
+#: admin/views/partials/account/account-page.php:86
+msgctxt "text (account, subscription period)"
+msgid "Yearly"
+msgstr ""
+
+#: admin/views/partials/account/account-page.php:124
+msgctxt "user"
+msgid "You're currently using a Free Pass to Nelio Content's Premium Features. Enjoy the plugin and, please, help us improve it with your feedback!"
+msgstr ""
+
+#. translators: 1: a price, 2: a date (e.g. "Next charge will be $99.00 on December 1, 2016.")
+#: admin/views/partials/account/account-page.php:132
+msgctxt "text"
+msgid "Next charge will be %1$s on %2$s."
+msgstr ""
+
+#. translators: a date (e.g. "Your subscription will end on December 1, 2016.")
+#: admin/views/partials/account/account-page.php:143
+msgctxt "text"
+msgid "Your subscription will end on %1$s."
+msgstr ""
+
+#: admin/views/partials/account/account-page.php:163
+msgctxt "user"
+msgid "Tweet About Nelio Content"
+msgstr ""
+
+#: admin/views/partials/account/account-page.php:173
+#: admin/views/partials/account/account-page.php:287
+#: admin/views/nelio-content-setup-page.php:84
+msgctxt "text"
+msgid "License Key"
+msgstr ""
+
+#: admin/views/partials/account/account-page.php:186
+msgctxt "command (license key)"
+msgid "Validating&hellip;"
+msgstr ""
+
+#: admin/views/partials/account/account-page.php:192
+msgctxt "command (license key)"
+msgid "Validate"
+msgstr ""
+
+#: admin/views/partials/account/account-page.php:203
+msgctxt "command"
+msgid "Use License Key"
+msgstr ""
+
+#: admin/views/partials/account/account-page.php:207
+#: admin/data/i18n/actions.php:55
+msgctxt "command"
+msgid "Subscribe"
+msgstr ""
+
+#: admin/views/partials/account/account-page.php:215
+#: admin/views/partials/account/account-page.php:221
+#: admin/data/i18n/actions.php:15
+msgctxt "command"
+msgid "Cancel Subscription"
+msgstr ""
+
+#: admin/views/partials/account/account-page.php:225
+msgctxt "command"
+msgid "Upgrade to Yearly Plan"
+msgstr ""
+
+#: admin/views/partials/account/account-page.php:233
+msgctxt "command"
+msgid "Use New License Key"
+msgstr ""
+
+#: admin/views/partials/account/account-page.php:237
+#: admin/data/i18n/actions.php:43
+msgctxt "command"
+msgid "Reactivate Subscription"
+msgstr ""
+
+#: admin/views/partials/account/account-page.php:252
+msgctxt "title (account)"
+msgid "Additional Information"
+msgstr ""
+
+#. translators: a date
+#: admin/views/partials/account/account-page.php:278
+msgctxt "text (account)"
+msgid "Member since %s"
+msgstr ""
+
+#: admin/views/partials/account/account-page.php:306
+msgctxt "title"
+msgid "Billing History"
+msgstr ""
+
+#: admin/views/partials/editorial-comments/editorial-comment.php:52
+msgctxt "text (saving editorial comment)"
+msgid "Sending&hellip;"
+msgstr ""
+
+#: admin/views/partials/editorial-comments/editorial-comment.php:58
+#: admin/views/partials/settings/google-analytics.php:35
+msgctxt "text (comment)"
+msgid "Deleting&hellip;"
+msgstr ""
+
+#: admin/views/partials/editorial-comments/editorial-comment.php:70
+msgctxt "command (comment)"
+msgid "Yes, Delete It"
+msgstr ""
+
+#: admin/views/partials/editorial-comments/editorial-comments.php:31
+msgid "Write a comment and press enter to send&hellip;"
+msgstr ""
+
+#: admin/views/partials/links/references/reference-tabs.php:28
+msgctxt "text (reference)"
+msgid "Suggested"
+msgstr ""
+
+#: admin/views/partials/links/references/reference-tabs.php:29
+msgctxt "text (reference)"
+msgid "External"
+msgstr ""
+
+#: admin/views/partials/links/references/reference-editor.php:29
+msgctxt "text"
+msgid "Internal references cannot be edited."
+msgstr ""
+
+#: admin/views/partials/links/references/reference-editor.php:35
+msgctxt "text"
+msgid "Reference's Title"
+msgstr ""
+
+#: admin/views/partials/links/references/reference-editor.php:37
+msgctxt "user"
+msgid "Enter the title&hellip;"
+msgstr ""
+
+#: admin/views/partials/links/references/reference-editor.php:43
+msgctxt "text"
+msgid "URL"
+msgstr ""
+
+#: admin/views/partials/links/references/reference-editor.php:45
+msgctxt "user"
+msgid "Enter a valid, working URL&hellip;"
+msgstr ""
+
+#: admin/views/partials/links/references/reference-editor.php:51
+msgctxt "text"
+msgid "URL:"
+msgstr ""
+
+#: admin/views/partials/links/references/reference-editor.php:56
+msgctxt "text"
+msgid "Author Information"
+msgstr ""
+
+#: admin/views/partials/links/references/reference-editor.php:59
+msgctxt "text"
+msgid "Name"
+msgstr ""
+
+#: admin/views/partials/links/references/reference-editor.php:61
+msgctxt "text"
+msgid "Name Surname"
+msgstr ""
+
+#: admin/views/partials/links/references/reference-editor.php:66
+msgctxt "text"
+msgid "Email"
+msgstr ""
+
+#: admin/views/partials/links/references/reference-editor.php:68
+msgctxt "text"
+msgid "author@example.com"
+msgstr ""
+
+#: admin/views/partials/links/references/reference-editor.php:73
+msgctxt "text"
+msgid "Twitter"
+msgstr ""
+
+#: admin/views/partials/links/references/reference-editor.php:75
+msgctxt "text"
+msgid "@username"
+msgstr ""
+
+#: admin/views/partials/links/references/external-reference.php:73
+#: admin/views/partials/links/references/external-reference.php:142
+#: admin/views/partials/links/references/suggested-reference.php:73
+#: admin/views/partials/links/references/suggested-reference.php:177
+msgctxt "text"
+msgid "Automatically retrieving data&hellip;"
+msgstr ""
+
+#: admin/views/partials/links/references/external-reference.php:79
+#: admin/views/partials/links/references/external-reference.php:150
+#: admin/views/partials/links/references/suggested-reference.php:79
+#: admin/views/partials/links/references/suggested-reference.php:185
+#: admin/views/partials/links/broken-links/broken-link.php:31
+#: admin/views/partials/links/broken-links/broken-link.php:54
+msgctxt "text"
+msgid "Checking link&hellip;"
+msgstr ""
+
+#: admin/views/partials/links/references/external-reference.php:85
+#: admin/views/partials/links/references/external-reference.php:158
+msgctxt "text"
+msgid "Saving link&hellip;"
+msgstr ""
+
+#: admin/views/partials/links/references/external-reference.php:93
+#: admin/views/partials/links/references/suggested-reference.php:93
+#: admin/views/partials/links/broken-links/broken-link.php:39
+msgctxt "text"
+msgid "Broken Link"
+msgstr ""
+
+#: admin/views/partials/links/references/external-reference.php:96
+#: admin/views/partials/links/references/suggested-reference.php:96
+msgctxt "text"
+msgid "Link is broken"
+msgstr ""
+
+#: admin/views/partials/links/references/external-reference.php:107
+#: admin/views/partials/links/references/suggested-reference.php:127
+#: admin/views/partials/social-profile-settings/connected-social-profile.php:101
+#: admin/views/partials/social-message-editor/social-message-actual-editor.php:102
+msgctxt "user"
+msgid "Are you sure?"
+msgstr ""
+
+#: admin/views/partials/links/references/external-reference.php:110
+#: admin/views/partials/links/references/suggested-reference.php:130
+msgctxt "command (reference)"
+msgid "Yes, Discard It"
+msgstr ""
+
+#: admin/views/partials/links/references/external-reference.php:126
+#: admin/views/partials/links/references/suggested-reference.php:146
+msgctxt "command (reference)"
+msgid "Edit"
+msgstr ""
+
+#: admin/views/partials/links/references/external-references.php:32
+msgctxt "user"
+msgid "External references included in your content will appear here as you add them."
+msgstr ""
+
+#: admin/views/partials/links/references/suggested-reference.php:85
+#: admin/views/partials/links/references/suggested-reference.php:193
+msgctxt "text"
+msgid "Discarding link&hellip;"
+msgstr ""
+
+#: admin/views/partials/links/references/suggested-reference.php:105
+msgctxt "text (reference)"
+msgid "Suggested by you"
+msgstr ""
+
+#. translators: a user's name
+#: admin/views/partials/links/references/suggested-reference.php:113
+msgctxt "text (reference)"
+msgid "Suggested by %s"
+msgstr ""
+
+#: admin/views/partials/links/references/suggested-reference.php:155
+#: admin/views/partials/links/references/suggested-reference.php:161
+msgctxt "command (reference)"
+msgid "Discard"
+msgstr ""
+
+#: admin/views/partials/links/references/suggested-references.php:34
+msgctxt "user"
+msgid "Do you have an interesting link for writing this post? Save it here!"
+msgstr ""
+
+#: admin/views/partials/links/references/suggested-references.php:38
+msgctxt "user"
+msgid "Suggest one or more links to the author and contribute to the creation of better content."
+msgstr ""
+
+#: admin/views/partials/links/references/suggested-references.php:51
+msgctxt "user"
+msgid "Enter a URL&hellip;"
+msgstr ""
+
+#: admin/views/partials/links/references/suggested-references.php:53
+msgctxt "user"
+msgid "Suggest a URL to the author&hellip;"
+msgstr ""
+
+#: admin/views/partials/links/references/suggested-references.php:59
+msgctxt "command (reference)"
+msgid "Save for later"
+msgstr ""
+
+#: admin/views/partials/links/references/suggested-references.php:61
+msgctxt "command (reference)"
+msgid "Suggest"
+msgstr ""
+
+#: admin/views/partials/links/broken-links/broken-link.php:65
+msgctxt "command"
+msgid "Delete from this post"
+msgstr ""
+
+#: admin/views/partials/links/broken-links/broken-link.php:69
+msgctxt "command"
+msgid "Discard"
+msgstr ""
+
+#: admin/views/partials/links/broken-links/broken-links.php:27
+msgctxt "text (links)"
+msgid "Broken"
+msgstr ""
+
+#: admin/views/partials/settings/google-analytics.php:47
+msgctxt "command"
+msgid "Yes, change Google Analytics account"
+msgstr ""
+
+#: admin/views/partials/settings/google-analytics.php:60
+msgctxt "user"
+msgid "Don't you find the view you're looking for?"
+msgstr ""
+
+#: admin/views/partials/settings/google-analytics.php:62
+msgctxt "user"
+msgid "Use a different Google Analytics account."
+msgstr ""
+
+#: admin/views/partials/settings/google-analytics.php:65
+#: admin/data/i18n/actions.php:44
+msgctxt "command (analytics)"
+msgid "Refresh Analytics"
+msgstr ""
+
+#: admin/views/partials/settings/google-analytics.php:75
+msgctxt "user"
+msgid "Paste code here"
+msgstr ""
+
+#: admin/views/partials/settings/google-analytics.php:76
+#: admin/data/i18n/actions.php:34
+msgctxt "command"
+msgid "Load"
+msgstr ""
+
+#: admin/views/partials/settings/google-analytics.php:87
+msgctxt "text (analytics update period)"
+msgid "Posts from last month"
+msgstr ""
+
+#: admin/views/partials/settings/google-analytics.php:88
+msgctxt "text (analytics update period)"
+msgid "Posts from last year"
+msgstr ""
+
+#: admin/views/partials/settings/google-analytics.php:89
+msgctxt "text (analytics update period)"
+msgid "All posts"
+msgstr ""
+
+#: admin/views/partials/settings/calendar-post-types.php:61
+msgctxt "user"
+msgid "Select which post types can be managed by Nelio Content. Default: Post"
+msgstr ""
+
+#: admin/views/partials/feeds/feed-items.php:28
+msgctxt "title"
+msgid "Feeds"
+msgstr ""
+
+#: admin/views/partials/feeds/feed-items.php:40
+#: admin/views/partials/media/external-images.php:36
+msgctxt "text"
+msgid "No items found."
+msgstr ""
+
+#. translators: a URL
+#: admin/views/partials/feeds/feed-items.php:55
+msgctxt "text"
+msgid "There are no feeds. <a href=\"%s\">Add one to start</a>."
+msgstr ""
+
+#: admin/views/partials/feeds/feed-items.php:59
+msgctxt "text"
+msgid "There are no feeds."
+msgstr ""
+
+#. translators: %1$s is a comma-separated author list and %2$s is a date.
+#: admin/views/partials/feeds/feed-item.php:47
+msgctxt "text"
+msgid "Published by %1$s on %2$s."
+msgstr ""
+
+#: admin/views/partials/feeds/feed-item.php:62
+#: admin/views/partials/feeds/feed-item.php:68
+#: admin/js/src/gutenberg.js:38
+#: admin/js/src/gutenberg.js:48
+msgctxt "command"
+msgid "Share"
+msgstr ""
+
+#: admin/views/partials/feeds/feed-item.php:76
+msgctxt "command"
+msgid "Write about it"
+msgstr ""
+
+#. translators: 1: author of the picture; 2: source (such as giphy or unsplash)
+#: admin/views/partials/media/external-image-description.php:29
+#: admin/views/partials/media/external-image-description.php:35
+msgctxt "text"
+msgid "Picture by %1$s on %2$s."
+msgstr ""
+
+#. translators: an HTML anchor tag
+#: admin/views/partials/media/external-image-description.php:42
+msgctxt "text"
+msgid "Source: %s."
+msgstr ""
+
+#: admin/views/partials/media/external-image-details.php:64
+msgctxt "title"
+msgid "Attachment Details"
+msgstr ""
+
+#: admin/views/partials/media/external-image-details.php:88
+msgctxt "user"
+msgid "View Source"
+msgstr ""
+
+#: admin/views/partials/media/external-image-details.php:93
+msgctxt "field"
+msgid "URL"
+msgstr ""
+
+#: admin/views/partials/media/external-image-details.php:98
+msgctxt "field"
+msgid "Title"
+msgstr ""
+
+#: admin/views/partials/media/external-image-details.php:103
+msgctxt "field"
+msgid "Caption"
+msgstr ""
+
+#: admin/views/partials/media/external-image-details.php:108
+msgctxt "field"
+msgid "Alt Text"
+msgstr ""
+
+#: admin/views/partials/media/external-image-details.php:113
+msgctxt "field"
+msgid "Description"
+msgstr ""
+
+#: admin/views/partials/media/external-image-details.php:117
+msgctxt "title"
+msgid "Attachment Display Settings"
+msgstr ""
+
+#: admin/views/partials/media/external-image-details.php:120
+msgctxt "field"
+msgid "Alignment"
+msgstr ""
+
+#: admin/views/partials/media/external-image-details.php:122
+msgctxt "option"
+msgid "Left"
+msgstr ""
+
+#: admin/views/partials/media/external-image-details.php:123
+msgctxt "option"
+msgid "Center"
+msgstr ""
+
+#: admin/views/partials/media/external-image-details.php:124
+msgctxt "option"
+msgid "Right"
+msgstr ""
+
+#: admin/views/partials/media/external-image-details.php:125
+#: admin/views/partials/media/external-image-details.php:133
+msgctxt "option"
+msgid "None"
+msgstr ""
+
+#: admin/views/partials/media/external-image-details.php:131
+msgctxt "field"
+msgid "Link To"
+msgstr ""
+
+#: admin/views/partials/media/external-image-details.php:134
+msgctxt "option"
+msgid "Media File"
+msgstr ""
+
+#: admin/views/partials/media/external-image-details.php:135
+msgctxt "option"
+msgid "Custom URL"
+msgstr ""
+
+#: admin/views/partials/media/external-image-details.php:142
+msgctxt "field"
+msgid "Size"
+msgstr ""
+
+#: admin/views/partials/media/external-image-details.php:155
+msgctxt "option"
+msgid "Full Size"
+msgstr ""
+
+#: admin/views/partials/media/external-image-details.php:163
+msgctxt "option"
+msgid "Small"
+msgstr ""
+
+#: admin/views/partials/media/external-image-details.php:170
+msgctxt "option"
+msgid "Medium"
+msgstr ""
+
+#: admin/views/partials/media/external-image-details.php:177
+msgctxt "option"
+msgid "Large"
+msgstr ""
+
+#: admin/views/partials/media/external-image-details.php:184
+msgctxt "option"
+msgid "Original"
+msgstr ""
+
+#: admin/views/partials/media/external-images.php:30
+msgctxt "command"
+msgid "Search images…"
+msgstr ""
+
+#: admin/views/partials/media/external-images.php:37
+msgctxt "user"
+msgid "Try again with a different set of keywords."
+msgstr ""
+
+#: admin/views/partials/media/external-images.php:57
+msgctxt "command"
+msgid "Upload and insert into post"
+msgstr ""
+
+#: admin/views/partials/media/external-images.php:59
+msgctxt "command"
+msgid "Insert into post"
+msgstr ""
+
+#: admin/views/partials/media/external-image.php:31
+msgctxt "command"
+msgid "Deselect"
+msgstr ""
+
+#: admin/views/partials/media/subscribe.php:27
+msgctxt "user"
+msgid "Subscribe to Nelio Content to unlock this feature."
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-profile-settings.php:34
+msgctxt "text (social profile settings)"
+msgid "Checking if there are any social profiles connected to Nelio Content&hellip;"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-profile-settings.php:41
+msgctxt "text"
+msgid "Connected Profiles"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-profile-settings.php:46
+msgctxt "text (auto publication frequency)"
+msgid "High Auto Publication Frequency"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-profile-settings.php:47
+msgctxt "text (auto publication frequency)"
+msgid "Medium Auto Publication Frequency"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-profile-settings.php:48
+msgctxt "text (auto publication frequency)"
+msgid "Low Auto Publication Frequency"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-profile-settings.php:53
+msgctxt "text"
+msgid "Help"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-profile-settings.php:59
+msgctxt "text"
+msgid "The following profiles can be managed by any author in your team:"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-profile-settings.php:66
+msgctxt "title"
+msgid "Add Profiles"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-profile-settings.php:69
+msgctxt "user"
+msgid "Connect your social media profiles to Nelio Content using the following buttons:"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-profile-settings.php:81
+msgctxt "text"
+msgid "The maximum number of Twitter profiles you may configure has been reached."
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-profile-settings.php:85
+msgctxt "command"
+msgid "Add Twitter Profile"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-profile-settings.php:95
+msgctxt "text"
+msgid "The maximum number of Facebook profiles you may configure has been reached."
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-profile-settings.php:99
+msgctxt "command"
+msgid "Add Facebook Profile"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-profile-settings.php:104
+msgctxt "text"
+msgid "The maximum number of LinkedIn profiles you may configure has been reached."
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-profile-settings.php:108
+msgctxt "command"
+msgid "Add LinkedIn Profile"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-profile-settings.php:112
+msgctxt "text"
+msgid "The maximum number of Instagram profiles you may configure has been reached."
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-profile-settings.php:116
+msgctxt "text"
+msgid "Add Instagram Profile via Buffer Reminders"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-profile-settings.php:126
+msgctxt "text"
+msgid "The maximum number of Pinterest profiles you may configure has been reached."
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-profile-settings.php:130
+msgctxt "command"
+msgid "Add Pinterest Profile"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-profile-settings.php:140
+msgctxt "text"
+msgid "The maximum number of Tumblr profiles you may configure has been reached."
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-profile-settings.php:144
+msgctxt "command"
+msgid "Add Tumblr Profile"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-profile-settings.php:163
+msgctxt "text"
+msgid "Delete automatic social messages and regenerate them again using current settings"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connect-googleplus-profile-dialog.php:23
+msgctxt "user"
+msgid "Please select the Google+ resource you want to connect to Nelio Content (requires a Buffer account):"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connect-googleplus-profile-dialog.php:38
+msgctxt "text"
+msgid "Google+ Personal Profile (via Buffer)"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connect-googleplus-profile-dialog.php:40
+msgctxt "text (googleplus)"
+msgid "Personal"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connect-googleplus-profile-dialog.php:53
+msgctxt "text"
+msgid "Google+ Page (via Buffer)"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connect-googleplus-profile-dialog.php:55
+msgctxt "text (googleplus)"
+msgid "Page"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connect-facebook-profile-dialog.php:23
+msgctxt "user"
+msgid "Please select the Facebook resource you want to connect to Nelio Content:"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connect-facebook-profile-dialog.php:38
+msgctxt "text"
+msgid "Facebook Page"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connect-facebook-profile-dialog.php:40
+msgctxt "text (facebook)"
+msgid "Page"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connect-facebook-profile-dialog.php:53
+msgctxt "text"
+msgid "Facebook Group"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connect-facebook-profile-dialog.php:55
+msgctxt "text (facebook)"
+msgid "Group"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connected-social-profile.php:63
+#: admin/views/partials/social-profile-settings/connected-social-profile.php:75
+msgctxt "momentjs (as in 'Something happened on DATE')"
+msgid "MMMM DD, YYYY"
+msgstr ""
+
+#. translators: a date
+#: admin/views/partials/social-profile-settings/connected-social-profile.php:66
+msgctxt "text"
+msgid "Added by you on %2$s"
+msgstr ""
+
+#. translators: e.g. [Social profile was] Added by 'David' on 'a certain date'
+#: admin/views/partials/social-profile-settings/connected-social-profile.php:78
+msgctxt "text"
+msgid "Added by %1$s on %2$s"
+msgstr ""
+
+#. translators: e.g. [Social profile was] Added on 'a certain date'
+#: admin/views/partials/social-profile-settings/connected-social-profile.php:89
+msgctxt "text"
+msgid "Added on %1$s"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connected-social-profile.php:107
+msgctxt "command (social profile)"
+msgid "Yes, Delete It"
+msgstr ""
+
+#. translators: this command refreshes the name and image of a Twitter, Facebook, ... social profile.
+#: admin/views/partials/social-profile-settings/connected-social-profile.php:116
+msgctxt "command (social profile)"
+msgid "Refresh"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connected-social-profile.php:137
+msgctxt "command (social profile)"
+msgid "Re-Authenticate"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connected-social-profile.php:145
+msgctxt "command"
+msgid "Automatic social messages on post publication"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connected-social-profile.php:150
+msgctxt "command"
+msgid "Enable automatic social messages on post publication"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connected-social-profile.php:154
+msgctxt "command"
+msgid "Disable automatic social messages on post publication"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connected-social-profile.php:160
+msgctxt "command"
+msgid "Automatic resharing of old content"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connected-social-profile.php:165
+msgctxt "command"
+msgid "Enable automatic resharing of old content"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connected-social-profile.php:169
+msgctxt "command"
+msgid "Disable automatic resharing of old content"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connect-linkedin-profile-dialog.php:23
+msgctxt "user"
+msgid "Please select the LinkedIn resource you want to connect to Nelio Content:"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connect-linkedin-profile-dialog.php:38
+msgctxt "text"
+msgid "LinkedIn Personal Profile"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connect-linkedin-profile-dialog.php:40
+msgctxt "text (linkedin)"
+msgid "Personal"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connect-linkedin-profile-dialog.php:53
+msgctxt "text"
+msgid "LinkedIn Company"
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/connect-linkedin-profile-dialog.php:55
+msgctxt "text (linkedin)"
+msgid "Company"
+msgstr ""
+
+#. translators: an HTML tag that renders a dashicons
+#: admin/views/partials/social-profile-settings/social-automations-walkthrough-pointers.php:27
+msgctxt "user"
+msgid "Enable <em>%s Automations on Publication</em> and Nelio Content will fill the social timeline of your new posts."
+msgstr ""
+
+#. translators: an HTML tag that renders a dashicons
+#: admin/views/partials/social-profile-settings/social-automations-walkthrough-pointers.php:38
+msgctxt "user"
+msgid "Enable <em>%s Social Resharing</em> and Nelio Content will make sure your calendar is never empty."
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-automations-walkthrough-pointers.php:47
+msgctxt "user"
+msgid "Choose the frequency at which Nelio Content should publish automatic messages for you."
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-automations-walkthrough-pointers.php:53
+msgctxt "user"
+msgid "Get an estimate of the maximum number of social messages that Nelio Content will automatically publish."
+msgstr ""
+
+#: admin/views/partials/social-profile-settings/social-automations-walkthrough-pointers.php:59
+msgctxt "user"
+msgid "Define your own templates to customize automatic social messages."
+msgstr ""
+
+#: admin/views/partials/social-message-editor/facebook-preview.php:45
+#: admin/views/partials/social-message-editor/instagram-preview.php:65
+#: admin/views/partials/social-message-editor/googleplus-preview.php:44
+#: admin/views/partials/social-message-editor/linkedin-preview.php:44
+#: admin/views/partials/social-message-editor/twitter-preview.php:42
+#: admin/views/partials/social-message-editor/pinterest-preview.php:65
+#: admin/views/partials/social-message-editor/tumblr-preview.php:88
+msgid "Your status update&hellip;"
+msgstr ""
+
+#. translators: a name
+#: admin/views/partials/social-message-editor/facebook-preview.php:81
+msgctxt "text"
+msgid "by %s"
+msgstr ""
+
+#. translators: 1: post type, 2: author name, 3: date
+#: admin/views/partials/social-message-editor/post-result.php:41
+msgctxt "text ({post type} by {author name} • {date})"
+msgid "%1$s by %2$s • %3$s"
+msgstr ""
+
+#: admin/views/partials/social-message-editor/instagram-preview.php:36
+msgctxt "text"
+msgid "Select an image to share using the social message controls above"
+msgstr ""
+
+#: admin/views/partials/social-message-editor/warning-message.php:17
+msgctxt "title"
+msgid "Preview not available"
+msgstr ""
+
+#. translators: a URL
+#: admin/views/partials/social-message-editor/warning-message.php:23
+msgctxt "user"
+msgid "Please select a social profile using the selector above. <a href=\"%s\" target=\"_blank\">Show me how&hellip;</a>"
+msgstr ""
+
+#: admin/views/partials/social-message-editor/warning-message.php:29
+msgctxt "text"
+msgid "https://neliosoftware.com/content/help/how-to-select-social-profiles/"
+msgstr ""
+
+#: admin/views/partials/social-message-editor/pinterest-preview.php:36
+msgctxt "text (pinterest)"
+msgid "Select an image to pin using the social message controls above"
+msgstr ""
+
+#: admin/views/partials/social-message-editor/pinterest-preview.php:54
+msgctxt "text (pinterest)"
+msgid "Saved by"
+msgstr ""
+
+#: admin/views/partials/social-message-editor/multiple-profile-selector-profile.php:33
+msgctxt "error"
+msgid "Subscribe to Nelio Content and schedule more messages for this profile"
+msgstr ""
+
+#: admin/views/partials/social-message-editor/social-message-actual-editor.php:32
+msgctxt "user"
+msgid "Your status update&hellip;"
+msgstr ""
+
+#: admin/views/partials/social-message-editor/social-message-actual-editor.php:65
+msgctxt "user"
+msgid "Share old post&hellip;"
+msgstr ""
+
+#: admin/views/partials/social-message-editor/social-message-actual-editor.php:77
+msgctxt "text"
+msgid "Related Post:"
+msgstr ""
+
+#: admin/views/partials/social-message-editor/social-message-actual-editor.php:89
+msgctxt "text"
+msgid "This message doesn't have any related post."
+msgstr ""
+
+#: admin/views/partials/social-message-editor/social-message-actual-editor.php:105
+msgctxt "command (shared image)"
+msgid "Yes, Remove Image"
+msgstr ""
+
+#: admin/views/partials/social-message-editor/social-message-actual-editor.php:116
+msgctxt "command"
+msgid "Remove Image"
+msgstr ""
+
+#: admin/views/partials/social-message-editor/social-message-actual-editor.php:122
+msgctxt "command"
+msgid "Add Image"
+msgstr ""
+
+#: admin/views/partials/social-message-editor/social-message-actual-editor.php:131
+msgctxt "command"
+msgid "Hide Preview"
+msgstr ""
+
+#: admin/views/partials/social-message-editor/social-message-actual-editor.php:135
+msgctxt "command"
+msgid "Show Preview"
+msgstr ""
+
+#: admin/views/partials/social-message-editor/social-message-actual-editor.php:141
+msgctxt "command"
+msgid "Reuse Previous Social Message"
+msgstr ""
+
+#: admin/views/partials/time-selector.php:33
+#: admin/views/partials/calendar/post-editor.php:144
+msgctxt "text"
+msgid "Time"
+msgstr ""
+
+#: admin/views/partials/time-selector.php:42
+msgctxt "text"
+msgid "hh:mm (e.g. 08:00 or 21:32)"
+msgstr ""
+
+#: admin/views/partials/time-selector.php:45
+#: admin/views/partials/time-selector.php:60
+#: admin/views/partials/time-selector.php:84
+#: admin/views/partials/date-selector.php:47
+#: admin/views/partials/date-selector.php:62
+#: admin/views/partials/date-selector.php:85
+msgctxt "command"
+msgid "Change"
+msgstr ""
+
+#. translators: a number
+#: admin/views/partials/time-selector.php:56
+msgctxt "text (input)"
+msgid "%s hours before publication."
+msgstr ""
+
+#. translators: a number
+#: admin/views/partials/time-selector.php:72
+msgctxt "text (input)"
+msgid "%s hours after publication."
+msgstr ""
+
+#. translators: a number
+#: admin/views/partials/time-selector.php:78
+msgctxt "text (input)"
+msgid "In %s hours."
+msgstr ""
+
+#: admin/views/partials/time-selector.php:94
+msgctxt "text (option)"
+msgid "Morning (8am &ndash; 11am)"
+msgstr ""
+
+#: admin/views/partials/time-selector.php:95
+msgctxt "text (option)"
+msgid "Noon (11am &ndash; 3pm)"
+msgstr ""
+
+#: admin/views/partials/time-selector.php:96
+msgctxt "text (option)"
+msgid "Afternoon (3pm &ndash; 7pm)"
+msgstr ""
+
+#: admin/views/partials/time-selector.php:97
+msgctxt "text (option)"
+msgid "Night (7pm &ndash; 11pm)"
+msgstr ""
+
+#: admin/views/partials/time-selector.php:98
+#: admin/views/partials/time-selector.php:116
+#: admin/views/partials/time-selector.php:123
+#: admin/views/partials/time-selector.php:130
+msgctxt "text (option)"
+msgid "Choose a custom time&hellip;"
+msgstr ""
+
+#: admin/views/partials/time-selector.php:110
+#: admin/views/partials/time-selector.php:118
+msgctxt "text (option)"
+msgid "Same time as publication"
+msgstr ""
+
+#: admin/views/partials/time-selector.php:111
+msgctxt "text (option)"
+msgid "One hour before publication"
+msgstr ""
+
+#: admin/views/partials/time-selector.php:112
+msgctxt "text (option)"
+msgid "Three hours before publication"
+msgstr ""
+
+#: admin/views/partials/time-selector.php:113
+msgctxt "text (option)"
+msgid "Five hours before publication"
+msgstr ""
+
+#: admin/views/partials/time-selector.php:114
+msgctxt "text (option)"
+msgid "__ hours before publication"
+msgstr ""
+
+#: admin/views/partials/time-selector.php:115
+#: admin/views/partials/time-selector.php:122
+msgctxt "text (option)"
+msgid "__ hours after publication"
+msgstr ""
+
+#: admin/views/partials/time-selector.php:119
+msgctxt "text (option)"
+msgid "One hour after publication"
+msgstr ""
+
+#: admin/views/partials/time-selector.php:120
+msgctxt "text (option)"
+msgid "Three hours after publication"
+msgstr ""
+
+#: admin/views/partials/time-selector.php:121
+msgctxt "text (option)"
+msgid "Five hours after publication"
+msgstr ""
+
+#: admin/views/partials/time-selector.php:125
+msgctxt "text (option)"
+msgid "Now"
+msgstr ""
+
+#: admin/views/partials/time-selector.php:126
+msgctxt "text (option)"
+msgid "In one hour"
+msgstr ""
+
+#: admin/views/partials/time-selector.php:127
+msgctxt "text (option)"
+msgid "In three hours"
+msgstr ""
+
+#: admin/views/partials/time-selector.php:128
+msgctxt "text (option)"
+msgid "In five hours"
+msgstr ""
+
+#: admin/views/partials/time-selector.php:129
+msgctxt "text (option)"
+msgid "In __ hours"
+msgstr ""
+
+#: admin/views/partials/feed-settings/feed.php:40
+msgctxt "text (feed)"
+msgid "Deleting&hellip;"
+msgstr ""
+
+#: admin/views/partials/feed-settings/feed.php:50
+msgctxt "command (feed)"
+msgid "Yes, Delete It"
+msgstr ""
+
+#: admin/views/partials/feed-settings/feed.php:61
+msgctxt "command"
+msgid "Rename"
+msgstr ""
+
+#: admin/views/partials/feed-settings/feed-settings.php:28
+msgctxt "command"
+msgid "Write the URL of a RSS feed…"
+msgstr ""
+
+#: admin/views/partials/feed-settings/feed-settings.php:42
+msgctxt "text"
+msgid "There are no feeds connected"
+msgstr ""
+
+#: admin/views/partials/notifications/notifications.php:34
+msgctxt "user"
+msgid "Select the users who should receive email notifications when the status of this post is updated, when an editorial task is created or completed, or when an editorial comment is added."
+msgstr ""
+
+#: admin/views/partials/notifications/follower.php:41
+msgctxt "text (user)"
+msgid "You"
+msgstr ""
+
+#: admin/views/partials/notifications/follower.php:70
+msgctxt "command (follower)"
+msgid "Remove"
+msgstr ""
+
+#: admin/views/partials/cleaner/cleaner-dialog.php:21
+msgctxt "user"
+msgid "Please select one action:"
+msgstr ""
+
+#: admin/views/partials/cleaner/cleaner-dialog.php:29
+msgctxt "command"
+msgid "Deactivate the plugin temporarily"
+msgstr ""
+
+#: admin/views/partials/cleaner/cleaner-dialog.php:39
+msgctxt "command"
+msgid "Cancel my subscription, clean database, and deactivate the plugin"
+msgstr ""
+
+#: admin/views/partials/cleaner/cleaner-dialog.php:49
+msgctxt "command"
+msgid "Clean database and deactivate the plugin"
+msgstr ""
+
+#: admin/views/partials/calendar/export-dialog.php:27
+msgctxt "user"
+msgid "Export your editorial calendar in CSV format:"
+msgstr ""
+
+#: admin/views/partials/calendar/export-dialog.php:29
+msgctxt "action"
+msgid "Download CSV"
+msgstr ""
+
+#: admin/views/partials/calendar/export-dialog.php:42
+msgctxt "user"
+msgid "Export your editorial calendar to Google Calendar or any tool that supports iCalendar (.ics) format."
+msgstr ""
+
+#: admin/views/partials/calendar/export-dialog.php:53
+msgctxt "user"
+msgid "URL to export <strong>your posts</strong>:"
+msgstr ""
+
+#: admin/views/partials/calendar/export-dialog.php:68
+msgctxt "user"
+msgid "URL to export <strong>all the posts</strong>:"
+msgstr ""
+
+#: admin/views/partials/calendar/task-dialog.php:41
+#: admin/views/partials/calendar/post-editor.php:137
+msgctxt "user"
+msgid "Select a date&hellip;"
+msgstr ""
+
+#: admin/views/partials/calendar/post-item.php:42
+msgctxt "text (post)"
+msgid "Idea"
+msgstr ""
+
+#: admin/views/partials/calendar/post-item.php:46
+msgctxt "text (post)"
+msgid "Assigned"
+msgstr ""
+
+#: admin/views/partials/calendar/post-item.php:50
+msgctxt "text (post)"
+msgid "In Progress"
+msgstr ""
+
+#: admin/views/partials/calendar/post-item.php:54
+msgctxt "text (post)"
+msgid "Draft"
+msgstr ""
+
+#: admin/views/partials/calendar/post-item.php:58
+msgctxt "text (post)"
+msgid "Pending Review"
+msgstr ""
+
+#: admin/views/partials/calendar/post-item.php:62
+msgctxt "text (post)"
+msgid "Scheduled"
+msgstr ""
+
+#. translators: 1: month, 2: year. For instance, January 2019
+#: admin/views/partials/calendar/calendar.php:46
+msgctxt "text (calendar title: {month} {year})"
+msgid "%1$s %2$s"
+msgstr ""
+
+#: admin/views/partials/calendar/calendar.php:50
+msgid "Today"
+msgstr ""
+
+#: admin/views/partials/calendar/calendar.php:58
+#: admin/views/partials/calendar/calendar.php:61
+msgctxt "command"
+msgid "Export Calendar&hellip;"
+msgstr ""
+
+#: admin/views/partials/calendar/calendar.php:61
+#: admin/views/partials/calendar/day.php:46
+#: admin/views/partials/calendar/day.php:56
+#: admin/views/partials/calendar/context-actions.php:35
+#: admin/views/partials/calendar/context-actions.php:45
+#: admin/data/i18n/feedback.php:48
+msgctxt "text"
+msgid "(only available to subscribers)"
+msgstr ""
+
+#: admin/views/partials/calendar/calendar.php:70
+msgctxt "text"
+msgid "Synching calendar&hellip;"
+msgstr ""
+
+#: admin/views/partials/calendar/calendar.php:124
+msgctxt "title"
+msgid "Unscheduled"
+msgstr ""
+
+#: admin/views/partials/calendar/calendar.php:129
+msgctxt "user"
+msgid "Search&hellip;"
+msgstr ""
+
+#: admin/views/partials/calendar/day.php:33
+#: admin/views/partials/calendar/context-actions.php:23
+msgctxt "command"
+msgid "Add Post"
+msgstr ""
+
+#: admin/views/partials/calendar/context-actions.php:67
+msgid "Previous Month"
+msgstr ""
+
+#: admin/views/partials/calendar/context-actions.php:74
+msgid "Next Month"
+msgstr ""
+
+#: admin/views/partials/calendar/post-editor.php:28
+msgctxt "text"
+msgid "Title"
+msgstr ""
+
+#. translators: a category name
+#: admin/views/partials/calendar/post-editor.php:92
+msgctxt "text"
+msgid "Post in %s"
+msgstr ""
+
+#: admin/views/partials/calendar/post-editor.php:133
+#: admin/views/partials/date-selector.php:32
+msgctxt "text"
+msgid "Date"
+msgstr ""
+
+#: admin/views/partials/calendar/post-editor.php:160
+msgctxt "title"
+msgid "Editor Information"
+msgstr ""
+
+#: admin/views/partials/calendar/post-editor.php:172
+msgctxt "text"
+msgid "Suggested Reference"
+msgstr ""
+
+#: admin/views/partials/calendar/post-editor.php:176
+msgctxt "user"
+msgid "Suggest a reference&hellip;"
+msgstr ""
+
+#: admin/views/partials/calendar/post-editor.php:186
+msgctxt "text"
+msgid "Initial Comment"
+msgstr ""
+
+#: admin/views/partials/calendar/post-editor.php:190
+msgctxt "user"
+msgid "Leave a comment to the author&hellip;"
+msgstr ""
+
+#: admin/views/partials/social-template-settings/social-template.php:30
+msgctxt "text"
+msgid "Default Template"
+msgstr ""
+
+#: admin/views/partials/social-template-settings/social-template-settings.php:27
+msgctxt "title"
+msgid "Publication"
+msgstr ""
+
+#: admin/views/partials/social-template-settings/social-template-settings.php:29
+#: admin/views/partials/social-template-settings/social-template-settings.php:41
+msgctxt "command (template)"
+msgid "Add Template"
+msgstr ""
+
+#: admin/views/partials/social-template-settings/social-template-settings.php:32
+msgctxt "user"
+msgid "Used to promote new posts upon publication."
+msgstr ""
+
+#: admin/views/partials/social-template-settings/social-template-settings.php:44
+msgctxt "user"
+msgid "Used to promote posts published some time ago."
+msgstr ""
+
+#: admin/views/partials/social-template-settings/social-template-editor.php:29
+msgctxt "user"
+msgid "Your social message template&hellip;"
+msgstr ""
+
+#: admin/views/partials/social-template-settings/social-template-editor.php:44
+msgctxt "text"
+msgid "Content"
+msgstr ""
+
+#: admin/views/partials/social-template-settings/social-template-editor.php:74
+msgctxt "text (post type)"
+msgid "Any"
+msgstr ""
+
+#. translators: 1: a custom post type name, 2: a category name
+#: admin/views/partials/social-template-settings/social-template-editor.php:111
+msgctxt "text"
+msgid "%1$s in %2$s"
+msgstr ""
+
+#. translators: a number
+#: admin/views/partials/date-selector.php:58
+msgctxt "text (input)"
+msgid "%s days before publication."
+msgstr ""
+
+#. translators: a number
+#: admin/views/partials/date-selector.php:74
+msgctxt "text (input)"
+msgid "%s days after publication."
+msgstr ""
+
+#. translators: a number
+#: admin/views/partials/date-selector.php:80
+msgctxt "text (input)"
+msgid "In %s days."
+msgstr ""
+
+#: admin/views/partials/date-selector.php:97
+#: admin/views/partials/date-selector.php:103
+msgctxt "text (option)"
+msgid "Same day as publication"
+msgstr ""
+
+#: admin/views/partials/date-selector.php:98
+msgctxt "text (option)"
+msgid "The day before publication"
+msgstr ""
+
+#: admin/views/partials/date-selector.php:99
+msgctxt "text (option)"
+msgid "A week before publication"
+msgstr ""
+
+#: admin/views/partials/date-selector.php:100
+msgctxt "text (option)"
+msgid "__ days before publication"
+msgstr ""
+
+#: admin/views/partials/date-selector.php:101
+#: admin/views/partials/date-selector.php:107
+msgctxt "text (option)"
+msgid "__ days after publication"
+msgstr ""
+
+#: admin/views/partials/date-selector.php:104
+msgctxt "text (option)"
+msgid "The day after publication"
+msgstr ""
+
+#: admin/views/partials/date-selector.php:105
+msgctxt "text (option)"
+msgid "A week after publication"
+msgstr ""
+
+#: admin/views/partials/date-selector.php:106
+msgctxt "text (option)"
+msgid "A month after publication"
+msgstr ""
+
+#: admin/views/partials/date-selector.php:109
+msgctxt "text (option)"
+msgid "Today"
+msgstr ""
+
+#: admin/views/partials/date-selector.php:110
+msgctxt "text (option)"
+msgid "Tomorrow"
+msgstr ""
+
+#: admin/views/partials/date-selector.php:111
+msgctxt "text (option)"
+msgid "Next week"
+msgstr ""
+
+#: admin/views/partials/date-selector.php:112
+msgctxt "text (option)"
+msgid "Next month"
+msgstr ""
+
+#: admin/views/partials/date-selector.php:113
+msgctxt "text (option)"
+msgid "In __ days"
+msgstr ""
+
+#: admin/views/partials/date-selector.php:118
+msgctxt "text (option)"
+msgid "Choose a custom date&hellip;"
+msgstr ""
+
+#: admin/views/nelio-content-setup-page.php:61
+#: admin/views/nelio-content-analytics-welcome-page.php:79
+msgctxt "text"
+msgid "Nelio Content Logo"
+msgstr ""
+
+#: admin/views/nelio-content-setup-page.php:65
+msgctxt "user"
+msgid "Auto-post, schedule, and share your posts on social media. Save time with useful automations."
+msgstr ""
+
+#: admin/views/nelio-content-setup-page.php:69
+msgctxt "user"
+msgid "<strong>Nelio Content</strong> is almost ready!"
+msgstr ""
+
+#. translators: 1: a URL, 2: a URL
+#: admin/views/nelio-content-setup-page.php:75
+msgctxt "user"
+msgid "Please accept our <a target=\"_blank\" href=\"%1$s\">Terms and Conditions</a> and our <a target=\"_blank\" href=\"%2$s\">Privacy Policy</a> to continue and have access your editorial calendar."
+msgstr ""
+
+#: admin/views/nelio-content-setup-page.php:76
+msgctxt "text"
+msgid "https://neliosoftware.com/nelio-content-terms-conditions/"
+msgstr ""
+
+#: admin/views/nelio-content-setup-page.php:77
+msgctxt "text"
+msgid "https://neliosoftware.com/privacy-policy-cookies/"
+msgstr ""
+
+#: admin/views/nelio-content-setup-page.php:92
+#: admin/views/nelio-content-setup-page.php:145
+msgctxt "command"
+msgid "Continue »"
+msgstr ""
+
+#: admin/views/nelio-content-setup-page.php:129
+msgctxt "user"
+msgid "Preparing your calendar&hellip;"
+msgstr ""
+
+#: admin/views/nelio-content-social-profile-settings-page.php:21
+msgid "Nelio Content - Social Profile Settings"
+msgstr ""
+
+#: admin/views/nelio-content-analytics-welcome-page.php:83
+msgctxt "user"
+msgid "Analytics offers useful information about traffic&nbsp;acquisition and content&nbsp;engagement."
+msgstr ""
+
+#: admin/views/nelio-content-analytics-welcome-page.php:91
+#: admin/views/nelio-content-analytics-welcome-page.php:225
+msgctxt "command"
+msgid "Enable Analytics"
+msgstr ""
+
+#: admin/views/nelio-content-analytics-welcome-page.php:100
+msgctxt "user"
+msgid "Get better insights with <strong>Google Analytics</strong> data."
+msgstr ""
+
+#: admin/views/nelio-content-analytics-welcome-page.php:104
+msgctxt "command"
+msgid "Skip"
+msgstr ""
+
+#: admin/views/nelio-content-analytics-welcome-page.php:108
+#: admin/data/i18n/actions.php:21
+msgctxt "command"
+msgid "Connect Google Analytics"
+msgstr ""
+
+#: admin/views/nelio-content-analytics-welcome-page.php:117
+msgctxt "user"
+msgid "<strong>Analytics</strong> is almost ready!"
+msgstr ""
+
+#: admin/views/nelio-content-analytics-welcome-page.php:121
+msgctxt "command"
+msgid "Compute Analytics Now!"
+msgstr ""
+
+#: admin/views/nelio-content-analytics-welcome-page.php:131
+msgctxt "user"
+msgid "Computing analytics of all your posts&hellip;"
+msgstr ""
+
+#: admin/views/nelio-content-analytics-welcome-page.php:207
+#: admin/data/i18n/feedback.php:31
+msgctxt "text"
+msgid "Enabling&hellip;"
+msgstr ""
+
+#. translators: a mailto: URL
+#: admin/views/nelio-content-analytics-welcome-page.php:222
+msgctxt "command"
+msgid "An error occurred while enabling Nelio Content Analytics. If the error persists, please <a href=\"%s\">contact our support team</a>."
+msgstr ""
+
+#: admin/views/nelio-content-connected-profile-callback.php:29
+msgctxt "title (New Profile Added)"
+msgid "New Social Profile Successfully Added!"
+msgstr ""
+
+#: admin/views/nelio-content-connected-profile-callback.php:64
+msgctxt "text"
+msgid "Updating social profiles&hellip;"
+msgstr ""
+
+#: admin/views/nelio-content-connected-profile-callback.php:68
+msgctxt "user"
+msgid "Your new social profile has been successfully added."
+msgstr ""
+
+#: admin/views/nelio-content-connected-profile-callback.php:70
+msgctxt "user"
+msgid "Please wait a moment while we update your list of social profiles&hellip;"
+msgstr ""
+
+#: admin/views/nelio-content-connected-profile-callback.php:71
+msgctxt "user"
+msgid "Please refresh the settings page that contains the list with your social profiles&hellip;"
+msgstr ""
+
+#: admin/views/nelio-content-account-page.php:23
+msgctxt "title"
+msgid "Nelio Content Premium"
+msgstr ""
+
+#: admin/views/nelio-content-settings-page.php:22
+msgid "Nelio Content - Settings"
+msgstr ""
+
+#: admin/class-nelio-content-media-menus.php:244
+msgctxt "command"
+msgid "Insert from Unsplash"
+msgstr ""
+
+#: admin/class-nelio-content-media-menus.php:245
+msgctxt "command"
+msgid "Insert from Giphy"
+msgstr ""
+
+#: admin/class-nelio-content-media-menus.php:246
+msgctxt "command"
+msgid "Insert from Pixabay"
+msgstr ""
+
+#: admin/class-nelio-content-editorial-comments-meta-box.php:47
+msgid "Editorial Comments"
+msgstr ""
+
+#: admin/class-nelio-content-feeds-ajax-api.php:57
+#: admin/class-nelio-content-feeds-ajax-api.php:150
+msgctxt "error"
+msgid "Feed URL is empty."
+msgstr ""
+
+#: admin/class-nelio-content-feeds-ajax-api.php:66
+#: admin/class-nelio-content-feeds-ajax-api.php:216
+msgctxt "error"
+msgid "Error while processing feeds."
+msgstr ""
+
+#: admin/class-nelio-content-feeds-ajax-api.php:105
+msgctxt "error"
+msgid "Feed ID is empty."
+msgstr ""
+
+#: admin/class-nelio-content-feeds-ajax-api.php:110
+msgctxt "error"
+msgid "New feed name is empty."
+msgstr ""
+
+#. translators: feed ID (a URL)
+#: admin/class-nelio-content-feeds-ajax-api.php:128
+msgctxt "error"
+msgid "Feed «%s» could not be found."
+msgstr ""
+
+#: admin/class-nelio-content-user-ajax-api.php:56
+msgctxt "error"
+msgid "Author ID is missing."
+msgstr ""
+
+#: admin/class-nelio-content-user-ajax-api.php:61
+msgctxt "error"
+msgid "Invalid user ID."
+msgstr ""
+
+#. translators: user ID
+#: admin/class-nelio-content-user-ajax-api.php:70
+msgctxt "error"
+msgid "Author %s not found."
+msgstr ""
+
+#: admin/data/network-metas/linkedin.php:13
+msgid "LinkedIn"
+msgstr ""
+
+#: admin/data/network-metas/tumblr.php:13
+msgid "Tumblr"
+msgstr ""
+
+#: admin/data/network-metas/googleplus.php:13
+msgid "Google+"
+msgstr ""
+
+#: admin/data/network-metas/pinterest.php:13
+msgid "Pinterest"
+msgstr ""
+
+#: admin/data/network-metas/pinterest.php:17
+msgctxt "title (pinterest boards)"
+msgid "Select Boards"
+msgstr ""
+
+#: admin/data/network-metas/pinterest.php:18
+msgctxt "user (pinterest boards)"
+msgid "Please select the boards your message will be shared on:"
+msgstr ""
+
+#: admin/data/network-metas/pinterest.php:19
+msgctxt "user (no pinterest boards)"
+msgid "Your Pinterest profile does not have any boards yet. Go to Pinterest and create one first."
+msgstr ""
+
+#: admin/data/network-metas/pinterest.php:20
+msgctxt "text (pinterest boards)"
+msgid "Loading boards…"
+msgstr ""
+
+#: admin/data/network-metas/pinterest.php:21
+msgctxt "text (pinterest target name)"
+msgid "Board"
+msgstr ""
+
+#: admin/data/network-metas/instagram.php:13
+msgid "Instagram"
+msgstr ""
+
+#: admin/data/network-metas/twitter.php:13
+msgid "Twitter"
+msgstr ""
+
+#: admin/data/network-metas/facebook.php:13
+msgid "Facebook"
+msgstr ""
+
+#. translators: a number
+#: admin/data/i18n.php:27
+msgctxt "text"
+msgid "<strong>+%d more</strong> social message sent"
+msgid_plural "<strong>+%d more</strong> social messages sent"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: String used for 51 or more social messages sent. Up to 50, proper i18n is used in JavaScript
+#: admin/data/i18n.php:33
+#: admin/data/i18n.php:46
+msgctxt "text"
+msgid "<strong>+%s more</strong>"
+msgstr ""
+
+#. translators: 1: a name, 2: a surname
+#: admin/data/i18n.php:40
+msgctxt "text: {firstname} {lastname}"
+msgid "%1$s %2$s"
+msgstr ""
+
+#: admin/data/i18n.php:60
+msgid "David Aguilera, Co-Founder of Nelio Software"
+msgstr ""
+
+#: admin/data/i18n.php:61
+msgctxt "user"
+msgid "Hey! Did you know you can leave comments to the members of your team using Editorial Comments? Subscribe to Nelio Content Premium using the button below and start saving time today!"
+msgstr ""
+
+#. translators: e.g. $19/month or $59/year
+#: admin/data/i18n.php:65
+msgctxt "text"
+msgid "%1$s or %2$s"
+msgstr ""
+
+#. translators: e.g. $19/month
+#: admin/data/i18n.php:67
+msgctxt "text"
+msgid "$%d/month"
+msgstr ""
+
+#. translators: e.g. $59/year
+#: admin/data/i18n.php:69
+msgctxt "text"
+msgid "$%d/year"
+msgstr ""
+
+#. translators: Syntax of moment.js library. Translate "Now" surrounded by square brackes.
+#: admin/data/i18n.php:73
+msgctxt "momentjs"
+msgid "[Now]"
+msgstr ""
+
+#. translators: Time using moment.js library's syntax. For instance, "8:03pm".
+#: admin/data/i18n.php:75
+msgctxt "momentjs"
+msgid "h:mma"
+msgstr ""
+
+#. translators: a number
+#: admin/data/i18n/settings.php:17
+msgctxt "user"
+msgid "Your calendar will contain <strong>%d social message per day</strong>."
+msgid_plural "Your calendar will contain about <strong>%d social messages per day</strong>."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: a number
+#: admin/data/i18n/settings.php:22
+msgctxt "text"
+msgid "When publishing new content, Nelio will automatically generate up to <strong>%d social message</strong>."
+msgid_plural "When publishing new content, Nelio will automatically generate up to <strong>%d social messages</strong>."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/data/i18n/settings.php:33
+msgctxt "user"
+msgid "Enable social automations on one or more profiles to allow Nelio Content to generate messages automatically."
+msgstr ""
+
+#: admin/data/i18n/settings.php:34
+msgctxt "user"
+msgid "Select which view can be accessed by Nelio Content"
+msgstr ""
+
+#: admin/data/i18n/titles.php:12
+msgctxt "title"
+msgid "Add Social Profiles"
+msgstr ""
+
+#: admin/data/i18n/titles.php:13
+msgctxt "title"
+msgid "Cancel Subscription"
+msgstr ""
+
+#: admin/data/i18n/titles.php:14
+msgctxt "title"
+msgid "Delete Social Message"
+msgstr ""
+
+#: admin/data/i18n/titles.php:15
+msgctxt "title"
+msgid "Delete Social Template"
+msgstr ""
+
+#: admin/data/i18n/titles.php:16
+msgctxt "title"
+msgid "Edit Social Message"
+msgstr ""
+
+#: admin/data/i18n/titles.php:17
+msgctxt "title"
+msgid "Edit Reference"
+msgstr ""
+
+#: admin/data/i18n/titles.php:18
+msgctxt "title"
+msgid "Edit Template"
+msgstr ""
+
+#: admin/data/i18n/titles.php:19
+msgctxt "title"
+msgid "Export Calendar"
+msgstr ""
+
+#: admin/data/i18n/titles.php:20
+msgctxt "title"
+msgid "Error"
+msgstr ""
+
+#: admin/data/i18n/titles.php:21
+msgctxt "title"
+msgid "External Featured Image"
+msgstr ""
+
+#: admin/data/i18n/titles.php:22
+msgctxt "title (social message)"
+msgid "Invalid Scheduling"
+msgstr ""
+
+#: admin/data/i18n/titles.php:23
+msgctxt "title"
+msgid "New Social Message"
+msgstr ""
+
+#: admin/data/i18n/titles.php:24
+msgctxt "title"
+msgid "New Task"
+msgstr ""
+
+#: admin/data/i18n/titles.php:25
+msgctxt "title"
+msgid "New Template"
+msgstr ""
+
+#: admin/data/i18n/titles.php:26
+msgctxt "title"
+msgid "Pause Message Publication"
+msgstr ""
+
+#: admin/data/i18n/titles.php:27
+msgctxt "title"
+msgid "Reactivate Subscription"
+msgstr ""
+
+#: admin/data/i18n/titles.php:28
+msgctxt "title"
+msgid "Refresh Analytics"
+msgstr ""
+
+#: admin/data/i18n/titles.php:29
+msgctxt "title"
+msgid "Rename Feed"
+msgstr ""
+
+#: admin/data/i18n/titles.php:30
+msgctxt "title"
+msgid "Success!"
+msgstr ""
+
+#: admin/data/i18n/titles.php:31
+msgctxt "title"
+msgid "Reuse Previous Social Message"
+msgstr ""
+
+#: admin/data/i18n/titles.php:32
+msgctxt "title"
+msgid "Twitter Search"
+msgstr ""
+
+#: admin/data/i18n/titles.php:33
+msgctxt "title"
+msgid "Profile Search"
+msgstr ""
+
+#: admin/data/i18n/titles.php:34
+msgctxt "title"
+msgid "Select an Image"
+msgstr ""
+
+#: admin/data/i18n/titles.php:35
+msgctxt "title"
+msgid "Social Automations by Nelio Content"
+msgstr ""
+
+#: admin/data/i18n/titles.php:36
+msgctxt "title"
+msgid "Social Message"
+msgstr ""
+
+#: admin/data/i18n/titles.php:37
+msgctxt "title"
+msgid "Social Message Failed"
+msgstr ""
+
+#: admin/data/i18n/titles.php:38
+msgctxt "title"
+msgid "New Subscription"
+msgstr ""
+
+#: admin/data/i18n/titles.php:39
+msgctxt "title"
+msgid "Subscribe"
+msgstr ""
+
+#: admin/data/i18n/titles.php:40
+msgctxt "title"
+msgid "Trash Post"
+msgstr ""
+
+#: admin/data/i18n/titles.php:41
+msgctxt "title"
+msgid "Trash Element"
+msgstr ""
+
+#: admin/data/i18n/titles.php:42
+msgctxt "title"
+msgid "Upgrade Subscription"
+msgstr ""
+
+#: admin/data/i18n/dates.php:12
+msgctxt "momentjs (as in \"The subscription will continue until {date}\")"
+msgid "LL"
+msgstr ""
+
+#: admin/data/i18n/dates.php:13
+msgctxt "momentjs (as in \"Your subscription will end on {date}\")"
+msgid "LL"
+msgstr ""
+
+#: admin/data/i18n/dates.php:14
+msgctxt "momentjs (as in \"Member since {date}\")"
+msgid "LL"
+msgstr ""
+
+#. translators: a number
+#: admin/data/i18n/dates.php:16
+msgctxt "text"
+msgid "%s days after publication"
+msgstr ""
+
+#. translators: a number
+#: admin/data/i18n/dates.php:18
+msgctxt "text"
+msgid "%s days before publication"
+msgstr ""
+
+#: admin/data/i18n/dates.php:19
+msgctxt "momentjs (default date)"
+msgid "L"
+msgstr ""
+
+#. translators: a number
+#: admin/data/i18n/dates.php:21
+msgctxt "text"
+msgid "%s hours after publication"
+msgstr ""
+
+#. translators: Syntax of moment.js library. Translate "Yesterday" surrounded by square brackes.
+#: admin/data/i18n/dates.php:23
+msgctxt "momentjs"
+msgid "[Yesterday]"
+msgstr ""
+
+#. translators: Date using the syntax of moment.js library. Example: "Last Monday".
+#: admin/data/i18n/dates.php:25
+msgctxt "momentjs"
+msgid "[Last] dddd"
+msgstr ""
+
+#. translators: Syntax of moment.js library. Translate "Tomorrow" surrounded by square brackes.
+#: admin/data/i18n/dates.php:27
+msgctxt "momentjs"
+msgid "[Tomorrow]"
+msgstr ""
+
+#. translators: Date using the syntax of moment.js library. Example: "Next Thursday".
+#: admin/data/i18n/dates.php:29
+msgctxt "momentjs"
+msgid "[Next] dddd"
+msgstr ""
+
+#: admin/data/i18n/dates.php:30
+msgctxt "momentjs (as in \"Next charge will be on {date}\")"
+msgid "LL"
+msgstr ""
+
+#: admin/data/i18n/dates.php:31
+msgctxt "text"
+msgid "Same time as publication"
+msgstr ""
+
+#: admin/data/i18n/dates.php:32
+msgctxt "text"
+msgid "One hour after publication"
+msgstr ""
+
+#: admin/data/i18n/dates.php:33
+msgctxt "text"
+msgid "Publication day"
+msgstr ""
+
+#. translators: Syntax of moment.js library. Translate "Today" surrounded by square brackes.
+#: admin/data/i18n/dates.php:35
+msgctxt "momentjs"
+msgid "[Today]"
+msgstr ""
+
+#: admin/data/i18n/dates.php:36
+msgctxt "text (date)"
+msgid "Someday"
+msgstr ""
+
+#. translators: format a date as Facebook does in your timeline, using the syntax of moment.js library.
+#: admin/data/i18n/dates.php:39
+msgctxt "text (Facebook preview date)"
+msgid "MMMM Do, YYYY"
+msgstr ""
+
+#. translators: format a date as Google Plus does in your timeline, using the syntax of moment.js library.
+#: admin/data/i18n/dates.php:41
+msgctxt "text (Google+ preview date)"
+msgid "MMMM Do, YYYY"
+msgstr ""
+
+#. translators: format a date as Pinterest does in your timeline, using the syntax of moment.js library.
+#: admin/data/i18n/dates.php:43
+msgctxt "text (Instagram preview date)"
+msgid "MMMM Do, YYYY"
+msgstr ""
+
+#. translators: format a date as LinkedIn does in your timeline, using the syntax of moment.js library.
+#: admin/data/i18n/dates.php:45
+msgctxt "text (LinkedIn preview date)"
+msgid "MMMM Do, YYYY"
+msgstr ""
+
+#. translators: format a date as Pinterest does in your timeline, using the syntax of moment.js library.
+#: admin/data/i18n/dates.php:47
+msgctxt "text (Pinterest preview date)"
+msgid "MMMM Do, YYYY"
+msgstr ""
+
+#. translators: format a date as Tumblr does in your timeline, using the syntax of moment.js library.
+#: admin/data/i18n/dates.php:49
+msgctxt "text (Tumblr preview date)"
+msgid "MMMM Do, YYYY"
+msgstr ""
+
+#. translators: format a date as Twitter does in your timeline (including time), using the syntax of moment.js library.
+#: admin/data/i18n/dates.php:51
+msgctxt "text (Twitter preview date)"
+msgid "h:mm A - DD MMM YYYY"
+msgstr ""
+
+#. translators: format a date as Twitter does in your timeline (without time), using the syntax of moment.js library.
+#: admin/data/i18n/dates.php:53
+msgctxt "text (Twitter preview date)"
+msgid "DD MMM YYYY"
+msgstr ""
+
+#: admin/data/i18n/pointers.php:13
+msgctxt "title"
+msgid "Automatic Messages"
+msgstr ""
+
+#: admin/data/i18n/pointers.php:14
+msgctxt "title"
+msgid "Reshare Old Content"
+msgstr ""
+
+#: admin/data/i18n/pointers.php:15
+msgctxt "title"
+msgid "Publication Frequency"
+msgstr ""
+
+#: admin/data/i18n/pointers.php:16
+msgctxt "title"
+msgid "Templates"
+msgstr ""
+
+#: admin/data/i18n/pointers.php:17
+msgctxt "title"
+msgid "Message Counter"
+msgstr ""
+
+#: admin/data/i18n/filters.php:13
+msgctxt "command (social filter)"
+msgid "Show All Messages"
+msgstr ""
+
+#: admin/data/i18n/filters.php:14
+msgctxt "command (task filter)"
+msgid "Show All Tasks"
+msgstr ""
+
+#: admin/data/i18n/filters.php:15
+msgctxt "command (social filter)"
+msgid "Hide All Messages"
+msgstr ""
+
+#: admin/data/i18n/filters.php:16
+msgctxt "command (task filter)"
+msgid "Hide All Tasks"
+msgstr ""
+
+#: admin/data/i18n/filters.php:17
+msgctxt "command (user filter)"
+msgid "Show All Posts"
+msgstr ""
+
+#: admin/data/i18n/filters.php:20
+msgctxt "user (social filter, group name)"
+msgid "Filter by Network"
+msgstr ""
+
+#: admin/data/i18n/filters.php:21
+msgctxt "user (social filter, group name)"
+msgid "Filter by Profile"
+msgstr ""
+
+#: admin/data/i18n/filters.php:22
+msgctxt "user (task filter, group name)"
+msgid "Filter by Assignee"
+msgstr ""
+
+#: admin/data/i18n/filters.php:23
+msgctxt "text (user filter, group name)"
+msgid "Posts by author"
+msgstr ""
+
+#: admin/data/i18n/filters.php:26
+msgctxt "text (post filter, selection)"
+msgid "All Post Types"
+msgstr ""
+
+#: admin/data/i18n/filters.php:27
+msgctxt "text (social filter, selection)"
+msgid "All Social Messages"
+msgstr ""
+
+#: admin/data/i18n/filters.php:28
+msgctxt "text (task filter, selection)"
+msgid "All Tasks"
+msgstr ""
+
+#: admin/data/i18n/filters.php:29
+msgctxt "text (user filter, selection)"
+msgid "All Authors"
+msgstr ""
+
+#: admin/data/i18n/filters.php:30
+msgctxt "text (metric sorter, selection)"
+msgid "Sorted By Engagement"
+msgstr ""
+
+#: admin/data/i18n/filters.php:31
+msgctxt "text (metric sorter, selection)"
+msgid "Sorted By Pageviews"
+msgstr ""
+
+#: admin/data/i18n/filters.php:32
+msgctxt "text (post filter, selection)"
+msgid "No Posts"
+msgstr ""
+
+#: admin/data/i18n/filters.php:33
+msgctxt "text (post filter, selection)"
+msgid "No Post Types"
+msgstr ""
+
+#: admin/data/i18n/filters.php:34
+msgctxt "text (social filter, selection)"
+msgid "No Social Messages"
+msgstr ""
+
+#: admin/data/i18n/filters.php:35
+msgctxt "text (task filter, selection)"
+msgid "No Tasks"
+msgstr ""
+
+#. translators: a user's name. For instance: "David's Tasks".
+#: admin/data/i18n/filters.php:37
+msgctxt "text (task filter, selection)"
+msgid "%s's Tasks"
+msgstr ""
+
+#. translators: sorting criterion, such as "Posts by engagement" or "Posts by pageviews"
+#: admin/data/i18n/filters.php:39
+msgctxt "text (user filter, selection)"
+msgid "Posts by %s"
+msgstr ""
+
+#: admin/data/i18n/filters.php:42
+msgctxt "text (metric sorter, analytics)"
+msgid "Sorted by <strong>Pageviews</strong>."
+msgstr ""
+
+#: admin/data/i18n/filters.php:43
+msgctxt "text (metric sorter, analytics)"
+msgid "Sorted by <strong>Engagement</strong>."
+msgstr ""
+
+#: admin/data/i18n/filters.php:46
+msgctxt "text (metric sorter, analytics)"
+msgid "Sort by Pageviews."
+msgstr ""
+
+#: admin/data/i18n/filters.php:47
+msgctxt "text (metric sorter, analytics)"
+msgid "Sort by Engagement."
+msgstr ""
+
+#: admin/data/i18n/actions.php:12
+msgctxt "command"
+msgid "Add"
+msgstr ""
+
+#: admin/data/i18n/actions.php:13
+msgctxt "command"
+msgid "Add Social Profile"
+msgstr ""
+
+#: admin/data/i18n/actions.php:16
+msgctxt "command (image)"
+msgid "Choose"
+msgstr ""
+
+#: admin/data/i18n/actions.php:17
+#: admin/class-nelio-content-cleaner.php:281
+msgctxt "command"
+msgid "Close"
+msgstr ""
+
+#: admin/data/i18n/actions.php:18
+msgctxt "command"
+msgid "Collapse messages"
+msgstr ""
+
+#: admin/data/i18n/actions.php:19
+msgctxt "command"
+msgid "Continue"
+msgstr ""
+
+#: admin/data/i18n/actions.php:20
+msgctxt "command (account)"
+msgid "Connect"
+msgstr ""
+
+#: admin/data/i18n/actions.php:22
+msgctxt "command"
+msgid "Create Social Message"
+msgstr ""
+
+#: admin/data/i18n/actions.php:23
+msgctxt "command (task)"
+msgid "Create"
+msgstr ""
+
+#: admin/data/i18n/actions.php:25
+msgctxt "command (social message)"
+msgid "Yes, delete it"
+msgstr ""
+
+#: admin/data/i18n/actions.php:26
+msgctxt "command (social template)"
+msgid "Yes, delete it"
+msgstr ""
+
+#: admin/data/i18n/actions.php:27
+msgctxt "command (post)"
+msgid "Yes, trash it"
+msgstr ""
+
+#: admin/data/i18n/actions.php:28
+msgctxt "command (element)"
+msgid "Yes, trash it"
+msgstr ""
+
+#: admin/data/i18n/actions.php:29
+msgctxt "command (social message)"
+msgid "Edit"
+msgstr ""
+
+#: admin/data/i18n/actions.php:30
+msgctxt "command"
+msgid "Enable"
+msgstr ""
+
+#: admin/data/i18n/actions.php:31
+msgctxt "command"
+msgid "Highlight for Auto Sharing"
+msgstr ""
+
+#: admin/data/i18n/actions.php:32
+msgctxt "command"
+msgid "Hide Unscheduled Posts"
+msgstr ""
+
+#: admin/data/i18n/actions.php:33
+msgctxt "command"
+msgid "Ignore"
+msgstr ""
+
+#: admin/data/i18n/actions.php:35
+msgctxt "command (unscheduled posts)"
+msgid "Load More"
+msgstr ""
+
+#: admin/data/i18n/actions.php:36
+msgctxt "command"
+msgid "Next"
+msgstr ""
+
+#: admin/data/i18n/actions.php:37
+msgctxt "command"
+msgid "Not Interested"
+msgstr ""
+
+#: admin/data/i18n/actions.php:39
+msgctxt "command"
+msgid "Pause"
+msgstr ""
+
+#: admin/data/i18n/actions.php:40
+msgctxt "command"
+msgid "Pause Publication Of Social Messages"
+msgstr ""
+
+#: admin/data/i18n/actions.php:41
+msgctxt "command"
+msgid "Remind Me Later"
+msgstr ""
+
+#: admin/data/i18n/actions.php:42
+msgctxt "command"
+msgid "Previous"
+msgstr ""
+
+#: admin/data/i18n/actions.php:45
+msgctxt "command"
+msgid "Remove Highlighting"
+msgstr ""
+
+#: admin/data/i18n/actions.php:46
+msgctxt "command"
+msgid "Rename Feed"
+msgstr ""
+
+#: admin/data/i18n/actions.php:47
+msgctxt "command"
+msgid "Resume Publication Of Social Messages"
+msgstr ""
+
+#: admin/data/i18n/actions.php:49
+msgctxt "command"
+msgid "Save Changes"
+msgstr ""
+
+#: admin/data/i18n/actions.php:50
+msgctxt "command"
+msgid "Select a user…"
+msgstr ""
+
+#: admin/data/i18n/actions.php:52
+msgctxt "command"
+msgid "Share Selection"
+msgstr ""
+
+#: admin/data/i18n/actions.php:53
+msgctxt "command"
+msgid "Show Unscheduled Posts"
+msgstr ""
+
+#: admin/data/i18n/actions.php:54
+msgctxt "command"
+msgid "Start"
+msgstr ""
+
+#: admin/data/i18n/actions.php:56
+msgctxt "command"
+msgid "Monthly Subscription"
+msgstr ""
+
+#: admin/data/i18n/actions.php:57
+msgctxt "command"
+msgid "Yearly Subscription"
+msgstr ""
+
+#: admin/data/i18n/actions.php:58
+msgctxt "command"
+msgid "Trash"
+msgstr ""
+
+#: admin/data/i18n/actions.php:59
+msgctxt "command (subscription)"
+msgid "Upgrade"
+msgstr ""
+
+#: admin/data/i18n/actions.php:60
+msgctxt "command"
+msgid "View Account"
+msgstr ""
+
+#: admin/data/i18n/templates.php:13
+msgctxt "text"
+msgid "All Content"
+msgstr ""
+
+#. translators: All Content by "author name"
+#: admin/data/i18n/templates.php:15
+msgctxt "text"
+msgid "All Content by %s"
+msgstr ""
+
+#. translators: "Post Type" by "author name"
+#: admin/data/i18n/templates.php:17
+msgctxt "text"
+msgid "%1$s by %2$s"
+msgstr ""
+
+#. translators: Posts in "category name"
+#: admin/data/i18n/templates.php:19
+msgctxt "text"
+msgid "Posts in %s"
+msgstr ""
+
+#. translators: Posts by "author name" in "category name"
+#: admin/data/i18n/templates.php:21
+msgctxt "text"
+msgid "Posts by %1$s in %2$s"
+msgstr ""
+
+#: admin/data/i18n/templates.php:22
+msgctxt "text"
+msgid "Related post category couldn't be found"
+msgstr ""
+
+#: admin/data/i18n/templates.php:23
+msgctxt "text"
+msgid "Related post type couldn't be found"
+msgstr ""
+
+#: admin/data/i18n/templates.php:24
+msgctxt "text"
+msgid "Related author couldn't be found"
+msgstr ""
+
+#: admin/data/i18n/templates.php:25
+msgctxt "text"
+msgid "No profiles associated with this template"
+msgstr ""
+
+#: admin/data/i18n/templates.php:26
+msgctxt "text"
+msgid "All Authors"
+msgstr ""
+
+#: admin/data/i18n/templates.php:27
+msgctxt "text (author)"
+msgid "Any"
+msgstr ""
+
+#: admin/data/i18n/errors.php:13
+msgctxt "text"
+msgid "The following error occurred while accessing Nelio Content's API:"
+msgstr ""
+
+#: admin/data/i18n/errors.php:14
+msgctxt "user"
+msgid "There was an error while accessing Nelio Content's API. Please try again later."
+msgstr ""
+
+#: admin/data/i18n/errors.php:15
+msgctxt "user"
+msgid "There was an error while retrieving your invoices. Please try again later."
+msgstr ""
+
+#. translators: an error description
+#: admin/data/i18n/errors.php:17
+msgctxt "user"
+msgid "The following error occurred while retrieving the list of available plans: %s. Please try again later."
+msgstr ""
+
+#: admin/data/i18n/errors.php:18
+msgctxt "user"
+msgid "There was an error while accessing Nelio Content's API and your social profiles couldn't be retrieved. Please try again later."
+msgstr ""
+
+#: admin/data/i18n/errors.php:19
+msgctxt "user"
+msgid "There was an error while accessing Nelio Content's API and some items in your calendar couldn't be retrieved. Please try again later."
+msgstr ""
+
+#: admin/data/i18n/errors.php:22
+msgctxt "error"
+msgid "Please write the URL of an external image."
+msgstr ""
+
+#: admin/data/i18n/errors.php:23
+#: admin/data/i18n/errors.php:44
+#: admin/data/i18n/errors.php:52
+msgctxt "error"
+msgid "URL is invalid"
+msgstr ""
+
+#: admin/data/i18n/errors.php:24
+msgctxt "error"
+msgid "Image can't be loaded. Please try again with a different URL."
+msgstr ""
+
+#: admin/data/i18n/errors.php:27
+msgctxt "user"
+msgid "An error occured while rescheduling the item. Please try again later."
+msgstr ""
+
+#: admin/data/i18n/errors.php:28
+msgctxt "user"
+msgid "An error occured while deleting the item. Please try again later."
+msgstr ""
+
+#: admin/data/i18n/errors.php:29
+msgctxt "user"
+msgid "An error occured while accessing your WordPress site. Please try again later."
+msgstr ""
+
+#: admin/data/i18n/errors.php:30
+msgctxt "text (username)"
+msgid "Unknown"
+msgstr ""
+
+#: admin/data/i18n/errors.php:33
+msgctxt "error"
+msgid "Please write your status update"
+msgstr ""
+
+#: admin/data/i18n/errors.php:34
+msgctxt "error"
+msgid "Please write a shorter social message"
+msgstr ""
+
+#: admin/data/i18n/errors.php:35
+msgctxt "error"
+msgid "Please select a social profile"
+msgstr ""
+
+#: admin/data/i18n/errors.php:36
+msgctxt "error"
+msgid "Selected profiles require you to share an image"
+msgstr ""
+
+#: admin/data/i18n/errors.php:37
+msgctxt "error"
+msgid "Selected profile requires you to share an image"
+msgstr ""
+
+#: admin/data/i18n/errors.php:38
+msgctxt "error"
+msgid "Please select a target"
+msgstr ""
+
+#. translators: an error description
+#: admin/data/i18n/errors.php:40
+msgctxt "error"
+msgid "The related post couldn't be loaded, because of the following error: %s"
+msgstr ""
+
+#: admin/data/i18n/errors.php:43
+msgctxt "error"
+msgid "Please specify the reference's URL"
+msgstr ""
+
+#: admin/data/i18n/errors.php:45
+msgctxt "error"
+msgid "Twitter username has to start with «@»"
+msgstr ""
+
+#: admin/data/i18n/errors.php:46
+msgctxt "error"
+msgid "Email is invalid"
+msgstr ""
+
+#: admin/data/i18n/errors.php:47
+msgctxt "error"
+msgid "The following error occurred while suggesting the reference:"
+msgstr ""
+
+#: admin/data/i18n/errors.php:48
+msgctxt "error"
+msgid "The following error occurred while discarding the reference:"
+msgstr ""
+
+#: admin/data/i18n/errors.php:51
+msgctxt "error"
+msgid "Please specify the feed's URL"
+msgstr ""
+
+#: admin/data/i18n/errors.php:53
+msgctxt "error"
+msgid "The following error occurred while adding the feed:"
+msgstr ""
+
+#: admin/data/i18n/errors.php:56
+msgctxt "error"
+msgid "Please create a template with some content"
+msgstr ""
+
+#: admin/data/i18n/errors.php:59
+msgctxt "error"
+msgid "Please enter a task"
+msgstr ""
+
+#: admin/data/i18n/errors.php:62
+msgctxt "error"
+msgid "Please set post's title"
+msgstr ""
+
+#: admin/data/i18n/errors.php:63
+msgctxt "error"
+msgid "Reference's URL is invalid"
+msgstr ""
+
+#. translators: an error description
+#: admin/data/i18n/errors.php:65
+msgctxt "error"
+msgid "The following error ocurred while trashing the post: %s."
+msgstr ""
+
+#: admin/data/i18n/errors.php:68
+msgctxt "error"
+msgid "Date and time cannot be older than current date"
+msgstr ""
+
+#: admin/data/i18n/errors.php:69
+msgctxt "error"
+msgid "Date format is invalid"
+msgstr ""
+
+#: admin/data/i18n/errors.php:70
+msgctxt "error"
+msgid "Please specify a date"
+msgstr ""
+
+#: admin/data/i18n/errors.php:71
+msgctxt "error"
+msgid "Time format is invalid"
+msgstr ""
+
+#: admin/data/i18n/errors.php:72
+msgctxt "error"
+msgid "Please specify a time"
+msgstr ""
+
+#: admin/data/i18n/dialogs.php:19
+msgctxt "user"
+msgid "No posts found."
+msgstr ""
+
+#. translators: a number
+#: admin/data/i18n/dialogs.php:21
+msgctxt "user"
+msgid "Analytics successfully updated.<br>Posts processed: %s"
+msgstr ""
+
+#: admin/data/i18n/dialogs.php:22
+msgctxt "user"
+msgid "Do you really want to delete this social message? <strong>This operation cannot be undone</strong>."
+msgstr ""
+
+#: admin/data/i18n/dialogs.php:23
+msgctxt "user"
+msgid "Do you really want to delete this social template? <strong>This operation cannot be undone</strong>."
+msgstr ""
+
+#. translators: a URL
+#: admin/data/i18n/dialogs.php:25
+msgctxt "user"
+msgid "Nelio Content can automatically generate social messages based on your content and preferences. Unfortunately, none of your social profiles has social automations enabled. Please activate them in the <a href=\"%s\">settings page</a>."
+msgstr ""
+
+#. translators: a date
+#: admin/data/i18n/dialogs.php:27
+msgctxt "user"
+msgid "Canceling your subscription will cause it not to renew. If you cancel your subscription, it will continue until <strong>%s</strong>. Then, the subscription will expire and will not be invoiced again, but you will be able to use the Free Version of Nelio Content. Do you want to cancel your subscription?"
+msgstr ""
+
+#: admin/data/i18n/dialogs.php:28
+msgctxt "user"
+msgid "You're about to pause the publication of social messages. If you continue, none of your scheduled social messages will be published on your social media accounts. Do you really want to continue?"
+msgstr ""
+
+#: admin/data/i18n/dialogs.php:29
+msgctxt "user"
+msgid "Reactivating your subscription will cause it to renew. Do you want to reactivate your subscription?"
+msgstr ""
+
+#: admin/data/i18n/dialogs.php:30
+msgctxt "user"
+msgid "Automatic social messages will be regenerated shortly. Please check your editorial calendar in few minutes&hellip;"
+msgstr ""
+
+#: admin/data/i18n/dialogs.php:31
+msgctxt "user"
+msgid "Please select the text you want to reuse:"
+msgstr ""
+
+#. translators: an error message
+#: admin/data/i18n/dialogs.php:34
+msgctxt "error"
+msgid "The following error occurred while sharing social message:<br><strong>%s</strong>"
+msgstr ""
+
+#: admin/data/i18n/dialogs.php:35
+msgctxt "user"
+msgid "Nelio Content can automatically fill your editorial calendar with social messages. Let us help you to save time with your Social Media strategy!"
+msgstr ""
+
+#: admin/data/i18n/dialogs.php:35
+msgctxt "user"
+msgid "Subscribe to Nelio Content Premium"
+msgstr ""
+
+#: admin/data/i18n/dialogs.php:36
+msgctxt "user"
+msgid "Do you really want to trash this post?"
+msgstr ""
+
+#: admin/data/i18n/dialogs.php:37
+msgctxt "user"
+msgid "Do you really want to trash this element?"
+msgstr ""
+
+#: admin/data/i18n/dialogs.php:38
+msgctxt "user"
+msgid "Social messages whose publication date is relative to the publication date of a post <strong>can't be scheduled before the post is published</strong>. If you want to do so, please edit the social message and use an <em>exact</em> date."
+msgstr ""
+
+#. translators: number of seconds
+#: admin/data/i18n/feedback.php:18
+msgctxt "text"
+msgid "Wait %s second&hellip;"
+msgid_plural "Wait %s seconds&hellip;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/data/i18n/feedback.php:24
+msgctxt "text (analytics)"
+msgid "Retrieving posts&hellip;"
+msgstr ""
+
+#: admin/data/i18n/feedback.php:25
+msgctxt "text"
+msgid "Adding&hellip;"
+msgstr ""
+
+#: admin/data/i18n/feedback.php:26
+#: admin/class-nelio-content-cleaner.php:289
+msgctxt "text"
+msgid "Canceling Subscription&hellip;"
+msgstr ""
+
+#: admin/data/i18n/feedback.php:27
+msgctxt "text"
+msgid "Creating&hellip;"
+msgstr ""
+
+#: admin/data/i18n/feedback.php:28
+msgctxt "text (messages)"
+msgid "Creating&hellip;"
+msgstr ""
+
+#: admin/data/i18n/feedback.php:29
+msgctxt "text (task)"
+msgid "Creating&hellip;"
+msgstr ""
+
+#: admin/data/i18n/feedback.php:30
+msgctxt "text"
+msgid "Deleting&hellip;"
+msgstr ""
+
+#: admin/data/i18n/feedback.php:32
+msgctxt "text"
+msgid "<strong>Warning!</strong> Your Google Analytics tokens have expired."
+msgstr ""
+
+#: admin/data/i18n/feedback.php:35
+msgctxt "text"
+msgid "No invoices found."
+msgstr ""
+
+#: admin/data/i18n/feedback.php:36
+msgctxt "text"
+msgid "No social messages found."
+msgstr ""
+
+#: admin/data/i18n/feedback.php:37
+msgctxt "text [unscheduled posts]"
+msgid "None"
+msgstr ""
+
+#: admin/data/i18n/feedback.php:38
+msgctxt "text"
+msgid "No posts found"
+msgstr ""
+
+#: admin/data/i18n/feedback.php:39
+msgctxt "text"
+msgid "Reactivating Subscription&hellip;"
+msgstr ""
+
+#: admin/data/i18n/feedback.php:40
+msgctxt "text (analytics)"
+msgid "Refreshing"
+msgstr ""
+
+#: admin/data/i18n/feedback.php:41
+msgctxt "text"
+msgid "Renaming Feed&hellip;"
+msgstr ""
+
+#: admin/data/i18n/feedback.php:42
+msgctxt "text"
+msgid "Saving&hellip;"
+msgstr ""
+
+#: admin/data/i18n/feedback.php:43
+msgctxt "text"
+msgid "Searching&hellip;"
+msgstr ""
+
+#. translators: a number of characters
+#: admin/data/i18n/feedback.php:45
+msgctxt "text"
+msgid "Selection length: %s"
+msgstr ""
+
+#. translators: a number of characters
+#: admin/data/i18n/feedback.php:47
+msgctxt "text"
+msgid "Auto share length: %s"
+msgstr ""
+
+#: admin/data/i18n/feedback.php:49
+msgctxt "text"
+msgid "Starting&hellip;"
+msgstr ""
+
+#: admin/data/i18n/feedback.php:50
+msgctxt "text"
+msgid "Trashing&hellip;"
+msgstr ""
+
+#: admin/data/i18n/feedback.php:51
+msgctxt "text"
+msgid "Uploading&hellip;"
+msgstr ""
+
+#: admin/data/i18n/feedback.php:52
+msgctxt "text"
+msgid "Upgrading&hellip;"
+msgstr ""
+
+#: admin/data/i18n/feedback.php:53
+msgctxt "user"
+msgid "Please wait a moment&hellip;"
+msgstr ""
+
+#: admin/class-nelio-content-ics-calendar-setting.php:69
+msgctxt "command"
+msgid "Export your calendar posts to Google Calendar or any other calendar tool."
+msgstr ""
+
+#. translators: a mailto: URL
+#: admin/class-nelio-content-cleaner.php:158
+msgctxt "error"
+msgid "Something went wrong when cancelling your subscription. Please <a href=\"%1$s\">get in touch with us</a> and we'll take care of it manually."
+msgstr ""
+
+#. translators: a mailto: URL
+#: admin/class-nelio-content-cleaner.php:165
+msgctxt "error"
+msgid "Something went wrong when clearing your scheduled social messages. Please <a href=\"%s\">get in touch with us</a> and we'll take care of it manually."
+msgstr ""
+
+#: admin/class-nelio-content-cleaner.php:217
+#: admin/class-nelio-content-cleaner.php:282
+msgctxt "command (plugins)"
+msgid "Deactivate"
+msgstr ""
+
+#: admin/class-nelio-content-cleaner.php:273
+msgctxt "command (plugins)"
+msgid "Cancel Subscription and Deactivate"
+msgstr ""
+
+#: admin/class-nelio-content-cleaner.php:283
+msgctxt "command (plugins)"
+msgid "Clean and Deactivate"
+msgstr ""
+
+#: admin/class-nelio-content-cleaner.php:287
+msgctxt "text"
+msgid "Deactivating&hellip;"
+msgstr ""
+
+#: admin/class-nelio-content-cleaner.php:288
+msgctxt "text"
+msgid "Cleaning&hellip;"
+msgstr ""
+
+#: admin/class-nelio-content-cleaner.php:292
+msgctxt "text"
+msgid "Error"
+msgstr ""
+
+#: admin/class-nelio-content-cleaner.php:293
+msgctxt "title (plugins)"
+msgid "Deactivate"
+msgstr ""
+
+#: admin/class-nelio-content-reshare-bulk-action.php:106
+msgid "No"
+msgstr ""
+
+#: admin/class-nelio-content-reshare-bulk-action.php:110
+msgid "Yes"
+msgstr ""
+
+#: admin/class-nelio-content-reference-ajax-api.php:90
+#: admin/class-nelio-content-reference-ajax-api.php:423
+msgctxt "error"
+msgid "Reference ID is missing."
+msgstr ""
+
+#. translators: a reference ID
+#: admin/class-nelio-content-reference-ajax-api.php:97
+msgctxt "error"
+msgid "Reference %s not found."
+msgstr ""
+
+#: admin/class-nelio-content-reference-ajax-api.php:111
+#: admin/class-nelio-content-reference-ajax-api.php:205
+#: admin/class-nelio-content-reference-ajax-api.php:267
+#: admin/class-nelio-content-reference-ajax-api.php:367
+msgctxt "error"
+msgid "URL cannot be empty."
+msgstr ""
+
+#: admin/class-nelio-content-reference-ajax-api.php:116
+#: admin/class-nelio-content-reference-ajax-api.php:210
+#: admin/class-nelio-content-reference-ajax-api.php:272
+#: admin/class-nelio-content-reference-ajax-api.php:372
+msgctxt "error"
+msgid "Invalid URL."
+msgstr ""
+
+#: admin/class-nelio-content-reference-ajax-api.php:169
+#: admin/class-nelio-content-reference-ajax-api.php:257
+#: admin/class-nelio-content-reference-ajax-api.php:314
+#: admin/class-nelio-content-reference-ajax-api.php:357
+#: admin/class-nelio-content-reference-ajax-api.php:413
+#: admin/class-nelio-content-post-ajax-api.php:369
+#: admin/class-nelio-content-post-ajax-api.php:498
+#: admin/class-nelio-content-post-ajax-api.php:550
+#: admin/class-nelio-content-post-ajax-api.php:586
+#: admin/class-nelio-content-post-ajax-api.php:621
+#: admin/class-nelio-content-post-ajax-api.php:658
+msgctxt "error"
+msgid "Post ID is missing."
+msgstr ""
+
+#. translators: a post ID
+#: admin/class-nelio-content-reference-ajax-api.php:176
+#: admin/class-nelio-content-post-ajax-api.php:280
+#: admin/class-nelio-content-post-ajax-api.php:510
+#: admin/class-nelio-content-post-ajax-api.php:557
+#: admin/class-nelio-content-post-ajax-api.php:634
+#: admin/class-nelio-content-post-ajax-api.php:674
+msgctxt "error"
+msgid "Post %s not found."
+msgstr ""
+
+#: admin/class-nelio-content-reference-ajax-api.php:324
+msgctxt "error"
+msgid "Reference URL is missing."
+msgstr ""
+
+#: admin/class-nelio-content-post-ajax-api.php:111
+msgctxt "error"
+msgid "You're not allowed to create pages."
+msgstr ""
+
+#: admin/class-nelio-content-post-ajax-api.php:117
+#: admin/class-nelio-content-post-ajax-api.php:272
+msgctxt "error"
+msgid "Title cannot be empty."
+msgstr ""
+
+#: admin/class-nelio-content-post-ajax-api.php:130
+msgctxt "error"
+msgid "Reference has to be a valid URL."
+msgstr ""
+
+#: admin/class-nelio-content-post-ajax-api.php:165
+msgctxt "error"
+msgid "Post could not be created."
+msgstr ""
+
+#: admin/class-nelio-content-post-ajax-api.php:225
+msgctxt "error"
+msgid "Post was successfully created, but could not be retrieved."
+msgstr ""
+
+#: admin/class-nelio-content-post-ajax-api.php:285
+msgctxt "error"
+msgid "You're not allowed to edit pages."
+msgstr ""
+
+#. translators: a post ID
+#: admin/class-nelio-content-post-ajax-api.php:317
+msgctxt "error"
+msgid "Post %s could not be updated."
+msgstr ""
+
+#: admin/class-nelio-content-post-ajax-api.php:324
+msgctxt "error"
+msgid "Unable to retrieve post."
+msgstr ""
+
+#: admin/class-nelio-content-post-ajax-api.php:374
+#: admin/class-nelio-content-post-ajax-api.php:503
+msgctxt "error"
+msgid "Date is missing."
+msgstr ""
+
+#: admin/class-nelio-content-post-ajax-api.php:442
+msgctxt "error"
+msgid "Assignee ID is missing."
+msgstr ""
+
+#: admin/class-nelio-content-post-ajax-api.php:447
+msgctxt "error"
+msgid "Assigner ID is missing."
+msgstr ""
+
+#: admin/class-nelio-content-post-ajax-api.php:591
+#: admin/class-nelio-content-post-ajax-api.php:626
+#: admin/class-nelio-content-post-ajax-api.php:663
+msgctxt "error"
+msgid "Invalid post ID."
+msgstr ""
+
+#. translators: a post ID
+#: admin/class-nelio-content-post-ajax-api.php:599
+msgctxt "error"
+msgid "Post %s could not be deleted."
+msgstr ""
+
+#: admin/js/src/gutenberg.js:15
+#: admin/js/src/gutenberg.js:25
+msgctxt "text"
+msgid "Social Media Highlight"
+msgstr ""
